@@ -1,0 +1,11 @@
+_id,title,awards,lastupdated,year,imdb,type
+573a1390f29313caabcd4135,Blacksmith Scene,"{'wins': 1, 'nominations': 0, 'text': '1 win.'}",2015-08-26 00:03:50.133000000,1893,"{'rating': 6.2, 'votes': 1189, 'id': 5}",movie
+573a1390f29313caabcd42e8,The Great Train Robbery,"{'wins': 1, 'nominations': 0, 'text': '1 win.'}",2015-08-13 00:27:59.177000000,1903,"{'rating': 7.4, 'votes': 9847, 'id': 439}",movie
+573a1390f29313caabcd4323,The Land Beyond the Sunset,"{'wins': 1, 'nominations': 0, 'text': '1 win.'}",2015-08-29 00:27:45.437000000,1912,"{'rating': 7.1, 'votes': 448, 'id': 488}",movie
+573a1390f29313caabcd446f,A Corner in Wheat,"{'wins': 1, 'nominations': 0, 'text': '1 win.'}",2015-08-13 00:46:30.660000000,1909,"{'rating': 6.6, 'votes': 1375, 'id': 832}",movie
+573a1390f29313caabcd4803,"Winsor McCay, the Famous Cartoonist of the N.Y. Herald and His Moving Comics","{'wins': 1, 'nominations': 0, 'text': '1 win.'}",2015-08-29 01:09:03.030000000,1911,"{'rating': 7.3, 'votes': 1034, 'id': 1737}",movie
+573a1390f29313caabcd4eaf,Traffic in Souls,"{'wins': 1, 'nominations': 0, 'text': '1 win.'}",2015-09-15 02:07:14.247000000,1913,"{'rating': 6.0, 'votes': 371, 'id': 3471}",movie
+573a1390f29313caabcd50e5,Gertie the Dinosaur,"{'wins': 1, 'nominations': 0, 'text': '1 win.'}",2015-08-18 01:03:15.313000000,1914,"{'rating': 7.3, 'votes': 1837, 'id': 4008}",movie
+573a1390f29313caabcd516c,In the Land of the Head Hunters,"{'wins': 1, 'nominations': 0, 'text': '1 win.'}",2015-09-16 12:11:37.770000000,1914,"{'rating': 5.8, 'votes': 223, 'id': 4150}",movie
+573a1390f29313caabcd5293,The Perils of Pauline,"{'wins': 1, 'nominations': 0, 'text': '1 win.'}",2015-09-12 00:01:18.647000000,1914,"{'rating': 7.6, 'votes': 744, 'id': 4465}",movie
+573a1390f29313caabcd548c,The Birth of a Nation,"{'wins': 2, 'nominations': 0, 'text': '2 wins.'}",2015-09-11 00:32:27.763000000,1915,"{'rating': 6.8, 'votes': 15715, 'id': 4972}",movie
