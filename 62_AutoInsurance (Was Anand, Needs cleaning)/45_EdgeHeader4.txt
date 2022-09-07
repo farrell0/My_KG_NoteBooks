@@ -1,0 +1,14 @@
+
+
+KATANA_DEFAULT_LABEL=WAS_PAID
+:START_ID(payment)|:END_ID(claimant)|AMOUNT:STRING
+e_payment_claimant4.csv
+
+                                              
+
+
+
+
+
+
+
