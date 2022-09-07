@@ -1,0 +1,55 @@
+
+
+
+
+   Assorted
+   ============================================================
+
+   Location of MongoDB sample databases,
+
+      https://github.com/huynhsamha/quick-mongo-atlas-datasets/tree/master/dump
+      https://github.com/huynhsamha/quick-mongo-atlas-datasets/tree/master/dump/sample_mflix
+
+   How to read bson,
+      https://www.kaggle.com/code/inversion/processing-bson-files/notebook
+
+   Mongorestore
+      Unzip the tools Tar ball in bin   (not automated)
+         Distro sits in  ./80*
+         export PATH=$PATH:`pwd`
+      Example,
+         mongorestore --host=localhost --port=7777 -d my_db_m -c users       users.bson
+         mongorestore --host=localhost --port=7777 -d my_db_m -c movies      movies.bson
+         mongorestore --host=localhost --port=7777 -d my_db_m -c comments    comments.bson
+         mongorestore --host=localhost --port=7777 -d my_db_m -c theaters    theaters.bson
+         mongorestore --host=localhost --port=7777 -d my_db_m -c sessions    sessions.bson
+
+      mongo --host=localhost --port=7777
+
+
+   Mongoexport
+      mongoexport --collection=movies   --db=my_db_m --out=20_movies.csv   --host localhost --port 7777 --type=csv --fields=_id
+      mongoexport --collection=comments --db=my_db_m --out=30_comments.csv --host localhost --port 7777 --type=csv --fields=movie_id
+
+      mongoexport --collection=users    --db=my_db_m --out=40_users.csv    --host localhost --port 7777 --type=csv --fields=email
+      mongoexport --collection=comments --db=my_db_m --out=50_comments.csv --host localhost --port 7777 --type=csv --fields=email
+
+         ###
+
+      mongoexport --collection=movies   --db=my_db_m --out=20_movies.csv   --host localhost --port 7777 --type=csv --fields=_id,title,awards,lastupdated,year,imdb,type
+      mongoexport --collection=users    --db=my_db_m --out=21_users.csv    --host localhost --port 7777 --type=csv --fields=_id,name,email,password
+
+         ###
+
+      mongoexport --collection=users    --db=my_db_m --out=20_users.csv    --host localhost --port 7777 
+      mongoexport --collection=comments --db=my_db_m --out=21_comments.csv --host localhost --port 7777 
+      mongoexport --collection=movies   --db=my_db_m --out=22_movies.csv   --host localhost --port 7777 
+      mongoexport --collection=sessions --db=my_db_m --out=23_sessions.csv --host localhost --port 7777 
+      mongoexport --collection=theaters --db=my_db_m --out=24_theaters.csv --host localhost --port 7777 
+
+
+
+
+
+
+
