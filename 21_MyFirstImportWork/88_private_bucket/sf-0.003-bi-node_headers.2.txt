@@ -1,0 +1,53 @@
+
+
+
+KATANA_DEFAULT_LABEL=Organisation
+id:ID(Organisation)|:LABEL|name:STRING|url:STRING
+part-00000-7f44383d-f8da-47c8-a6af-25a5f2da542d-c000.csv
+
+# KATANA_DEFAULT_LABEL=Place
+# id:ID(Place)|name:STRING|url:STRING|:LABEL
+# part-00000-c16729dd-16d5-456b-84ca-d0f19fa783d6-c000.csv
+
+# KATANA_DEFAULT_LABEL=TagClass
+# id:ID(TagClass)|name:STRING|url:STRING
+# part-00000-6a26364a-69f6-47d5-87a9-e59a5ebb48bc-c000.csv
+
+# KATANA_DEFAULT_LABEL=Tag
+# id:ID(Tag)|name:STRING|url:STRING
+# part-00000-be1f364b-3428-4d0b-8e87-143f4bd2c8bf-c000.csv
+
+# KATANA_DEFAULT_LABEL=Message
+# creationDate:DATETIME|id:ID(Comment)|locationIP:STRING|browserUsed:STRING|content:STRING|length:LONG
+# part-00000-ea432755-894c-4e09-bea3-e7a85e691d52-c000.csv
+
+# KATANA_DEFAULT_LABEL=Forum
+# creationDate:DATETIME|id:ID(Forum)|title:STRING
+# part-00000-f80cc3ea-0251-4111-adc3-2b6dbce5bfe2-c000.csv
+
+# KATANA_DEFAULT_LABEL=Person
+# creationDate:DATETIME|id:ID(Person)|firstName:STRING|lastName:STRING|gender:STRING|birthday:DATE|locationIP:STRING|browserUsed:STRING|speaks:STRING|email:STRING
+# part-00000-18fa0376-2cfb-4b82-a7a6-e136cd266801-c000.csv
+# part-00001-18fa0376-2cfb-4b82-a7a6-e136cd266801-c000.csv
+# part-00002-18fa0376-2cfb-4b82-a7a6-e136cd266801-c000.csv
+# part-00003-18fa0376-2cfb-4b82-a7a6-e136cd266801-c000.csv
+# part-00004-18fa0376-2cfb-4b82-a7a6-e136cd266801-c000.csv
+# part-00005-18fa0376-2cfb-4b82-a7a6-e136cd266801-c000.csv
+# part-00006-18fa0376-2cfb-4b82-a7a6-e136cd266801-c000.csv
+# part-00007-18fa0376-2cfb-4b82-a7a6-e136cd266801-c000.csv
+# part-00008-18fa0376-2cfb-4b82-a7a6-e136cd266801-c000.csv
+# part-00009-18fa0376-2cfb-4b82-a7a6-e136cd266801-c000.csv
+# part-00010-18fa0376-2cfb-4b82-a7a6-e136cd266801-c000.csv
+# part-00011-18fa0376-2cfb-4b82-a7a6-e136cd266801-c000.csv
+# part-00012-18fa0376-2cfb-4b82-a7a6-e136cd266801-c000.csv
+# part-00013-18fa0376-2cfb-4b82-a7a6-e136cd266801-c000.csv
+# part-00014-18fa0376-2cfb-4b82-a7a6-e136cd266801-c000.csv
+# part-00015-18fa0376-2cfb-4b82-a7a6-e136cd266801-c000.csv
+
+# KATANA_DEFAULT_LABEL=Message
+# creationDate:DATETIME|id:ID(Post)|imageFile:STRING|locationIP:STRING|browserUsed:STRING|language:STRING|content:STRING|length:LONG|:IGNORE
+# part-00000-e99d9b79-e000-4cdf-8924-ca71ee3c988b-c000.csv
+
+
+
+
