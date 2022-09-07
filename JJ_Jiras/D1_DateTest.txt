@@ -1,0 +1,5 @@
+
+
+KATANA_DEFAULT_LABEL=Person
+id:ID(Person)|creationDate:DATETIME|firstName:STRING|birthday:DATE
+D2_Person.txt
