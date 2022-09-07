@@ -1,0 +1,9 @@
+
+
+KATANA_DEFAULT_LABEL=Node
+_id:ID(Node),_labels:LABEL,born:String,name:String,released:String,tagline:String,title:String
+24_nodes.txt
+
+
+
+

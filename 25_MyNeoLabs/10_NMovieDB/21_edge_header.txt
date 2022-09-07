@@ -1,0 +1,8 @@
+
+
+_start:START_ID(Node),_end:END_ID(Node),_type:TYPE,rating:String,roles:String,summary:String
+25_edges.txt
+
+
+
+

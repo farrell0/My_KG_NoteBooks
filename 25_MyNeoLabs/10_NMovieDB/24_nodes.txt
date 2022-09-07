@@ -1,0 +1,172 @@
+_id,_labels,born,name,released,tagline,title
+0.0,;Movie,,,1999.0,Welcome to the Real World,The Matrix
+1.0,;Person,1964.0,Keanu Reeves,,,
+2.0,;Person,1967.0,Carrie-Anne Moss,,,
+3.0,;Person,1961.0,Laurence Fishburne,,,
+4.0,;Person,1960.0,Hugo Weaving,,,
+5.0,;Person,1967.0,Lilly Wachowski,,,
+6.0,;Person,1965.0,Lana Wachowski,,,
+7.0,;Person,1952.0,Joel Silver,,,
+8.0,;Person,1978.0,Emil Eifrem,,,
+9.0,;Movie,,,2003.0,Free your mind,The Matrix Reloaded
+10.0,;Movie,,,2003.0,Everything that has a beginning has an end,The Matrix Revolutions
+11.0,;Movie,,,1997.0,Evil has its winning ways,The Devil's Advocate
+12.0,;Person,1975.0,Charlize Theron,,,
+13.0,;Person,1940.0,Al Pacino,,,
+14.0,;Person,1944.0,Taylor Hackford,,,
+15.0,;Movie,,,1992.0,"In the heart of the nation's capital, in a courthouse of the U.S. government, one man will stop at nothing to keep his honor, and one will stop at nothing to find the truth.",A Few Good Men
+16.0,;Person,1962.0,Tom Cruise,,,
+17.0,;Person,1937.0,Jack Nicholson,,,
+18.0,;Person,1962.0,Demi Moore,,,
+19.0,;Person,1958.0,Kevin Bacon,,,
+20.0,;Person,1966.0,Kiefer Sutherland,,,
+21.0,;Person,1971.0,Noah Wyle,,,
+22.0,;Person,1968.0,Cuba Gooding Jr.,,,
+23.0,;Person,1957.0,Kevin Pollak,,,
+24.0,;Person,1943.0,J.T. Walsh,,,
+25.0,;Person,1967.0,James Marshall,,,
+26.0,;Person,1948.0,Christopher Guest,,,
+27.0,;Person,1947.0,Rob Reiner,,,
+28.0,;Person,1961.0,Aaron Sorkin,,,
+29.0,;Movie,,,1986.0,"I feel the need, the need for speed.",Top Gun
+30.0,;Person,1957.0,Kelly McGillis,,,
+31.0,;Person,1959.0,Val Kilmer,,,
+32.0,;Person,1962.0,Anthony Edwards,,,
+33.0,;Person,1933.0,Tom Skerritt,,,
+34.0,;Person,1961.0,Meg Ryan,,,
+35.0,;Person,1944.0,Tony Scott,,,
+36.0,;Person,1941.0,Jim Cash,,,
+37.0,;Movie,,,2000.0,The rest of his life begins now.,Jerry Maguire
+38.0,;Person,1969.0,Renee Zellweger,,,
+39.0,;Person,1962.0,Kelly Preston,,,
+40.0,;Person,1974.0,Jerry O'Connell,,,
+41.0,;Person,1970.0,Jay Mohr,,,
+42.0,;Person,1961.0,Bonnie Hunt,,,
+43.0,;Person,1971.0,Regina King,,,
+44.0,;Person,1996.0,Jonathan Lipnicki,,,
+45.0,;Person,1957.0,Cameron Crowe,,,
+46.0,;Movie,,,1986.0,"For some, it's the last real taste of innocence, and the first real taste of life. But for everyone, it's the time that memories are made of.",Stand By Me
+47.0,;Person,1970.0,River Phoenix,,,
+48.0,;Person,1971.0,Corey Feldman,,,
+49.0,;Person,1972.0,Wil Wheaton,,,
+50.0,;Person,1966.0,John Cusack,,,
+51.0,;Person,1942.0,Marshall Bell,,,
+52.0,;Movie,,,1997.0,A comedy from the heart that goes for the throat.,As Good as It Gets
+53.0,;Person,1963.0,Helen Hunt,,,
+54.0,;Person,1963.0,Greg Kinnear,,,
+55.0,;Person,1940.0,James L. Brooks,,,
+56.0,;Movie,,,1998.0,After life there is more. The end is just the beginning.,What Dreams May Come
+57.0,;Person,1960.0,Annabella Sciorra,,,
+58.0,;Person,1929.0,Max von Sydow,,,
+59.0,;Person,1942.0,Werner Herzog,,,
+60.0,;Person,1951.0,Robin Williams,,,
+61.0,;Person,1956.0,Vincent Ward,,,
+62.0,;Movie,,,1999.0,First loves last. Forever.,Snow Falling on Cedars
+63.0,;Person,1970.0,Ethan Hawke,,,
+64.0,;Person,1971.0,Rick Yune,,,
+65.0,;Person,1940.0,James Cromwell,,,
+66.0,;Person,1953.0,Scott Hicks,,,
+67.0,;Movie,,,1998.0,At odds in life... in love on-line.,You've Got Mail
+68.0,;Person,1968.0,Parker Posey,,,
+69.0,;Person,1973.0,Dave Chappelle,,,
+70.0,;Person,1967.0,Steve Zahn,,,
+71.0,;Person,1956.0,Tom Hanks,,,
+72.0,;Person,1941.0,Nora Ephron,,,
+73.0,;Movie,,,1993.0,"What if someone you never met, someone you never saw, someone you never knew was the only someone for you?",Sleepless in Seattle
+74.0,;Person,1956.0,Rita Wilson,,,
+75.0,;Person,1953.0,Bill Pullman,,,
+76.0,;Person,1949.0,Victor Garber,,,
+77.0,;Person,1962.0,Rosie O'Donnell,,,
+78.0,;Movie,,,1990.0,"A story of love, lava and burning desire.",Joe Versus the Volcano
+79.0,;Person,1950.0,John Patrick Stanley,,,
+80.0,;Person,1956.0,Nathan Lane,,,
+81.0,;Movie,,,1998.0,Can two friends sleep together and still love each other in the morning?,When Harry Met Sally
+82.0,;Person,1948.0,Billy Crystal,,,
+83.0,;Person,1956.0,Carrie Fisher,,,
+84.0,;Person,1949.0,Bruno Kirby,,,
+85.0,;Movie,,,1996.0,In every life there comes a time when that thing you dream becomes that thing you do,That Thing You Do
+86.0,;Person,1977.0,Liv Tyler,,,
+87.0,;Movie,,,2000.0,"Pain heals, Chicks dig scars... Glory lasts forever",The Replacements
+88.0,;Person,1970.0,Brooke Langton,,,
+89.0,;Person,1930.0,Gene Hackman,,,
+90.0,;Person,1968.0,Orlando Jones,,,
+91.0,;Person,1950.0,Howard Deutch,,,
+92.0,;Movie,,,2006.0,Based on the extraordinary true story of one man's fight for freedom,RescueDawn
+93.0,;Person,1974.0,Christian Bale,,,
+94.0,;Person,1954.0,Zach Grenier,,,
+95.0,;Movie,,,1996.0,Come as you are,The Birdcage
+96.0,;Person,1931.0,Mike Nichols,,,
+97.0,;Movie,,,1992.0,"It's a hell of a thing, killing a man",Unforgiven
+98.0,;Person,1930.0,Richard Harris,,,
+99.0,;Person,1930.0,Clint Eastwood,,,
+100.0,;Movie,,,1995.0,The hottest data on earth. In the coolest head in town,Johnny Mnemonic
+101.0,;Person,1947.0,Takeshi Kitano,,,
+102.0,;Person,1968.0,Dina Meyer,,,
+103.0,;Person,1958.0,Ice-T,,,
+104.0,;Person,1953.0,Robert Longo,,,
+105.0,;Movie,,,2012.0,Everything is connected,Cloud Atlas
+106.0,;Person,1966.0,Halle Berry,,,
+107.0,;Person,1949.0,Jim Broadbent,,,
+108.0,;Person,1965.0,Tom Tykwer,,,
+109.0,;Person,1969.0,David Mitchell,,,
+110.0,;Person,1961.0,Stefan Arndt,,,
+111.0,;Movie,,,2006.0,Break The Codes,The Da Vinci Code
+112.0,;Person,1939.0,Ian McKellen,,,
+113.0,;Person,1976.0,Audrey Tautou,,,
+114.0,;Person,1971.0,Paul Bettany,,,
+115.0,;Person,1954.0,Ron Howard,,,
+116.0,;Movie,,,2006.0,Freedom! Forever!,V for Vendetta
+117.0,;Person,1981.0,Natalie Portman,,,
+118.0,;Person,1946.0,Stephen Rea,,,
+119.0,;Person,1940.0,John Hurt,,,
+120.0,;Person,1967.0,Ben Miles,,,
+121.0,;Movie,,,2008.0,Speed has no limits,Speed Racer
+122.0,;Person,1985.0,Emile Hirsch,,,
+123.0,;Person,1960.0,John Goodman,,,
+124.0,;Person,1946.0,Susan Sarandon,,,
+125.0,;Person,1966.0,Matthew Fox,,,
+126.0,;Person,1980.0,Christina Ricci,,,
+127.0,;Person,1982.0,Rain,,,
+128.0,;Movie,,,2009.0,Prepare to enter a secret world of assassins,Ninja Assassin
+129.0,;Person,,Naomie Harris,,,
+130.0,;Movie,,,1999.0,Walk a mile you'll never forget.,The Green Mile
+131.0,;Person,1957.0,Michael Clarke Duncan,,,
+132.0,;Person,1953.0,David Morse,,,
+133.0,;Person,1968.0,Sam Rockwell,,,
+134.0,;Person,1955.0,Gary Sinise,,,
+135.0,;Person,1959.0,Patricia Clarkson,,,
+136.0,;Person,1959.0,Frank Darabont,,,
+137.0,;Movie,,,2008.0,400 million people were waiting for the truth.,Frost/Nixon
+138.0,;Person,1938.0,Frank Langella,,,
+139.0,;Person,1969.0,Michael Sheen,,,
+140.0,;Person,1960.0,Oliver Platt,,,
+141.0,;Movie,,,1992.0,He didn't want law. He wanted justice.,Hoffa
+142.0,;Person,1944.0,Danny DeVito,,,
+143.0,;Person,1965.0,John C. Reilly,,,
+144.0,;Movie,,,1995.0,"Houston, we have a problem.",Apollo 13
+145.0,;Person,1950.0,Ed Harris,,,
+146.0,;Person,1955.0,Bill Paxton,,,
+147.0,;Movie,,,1996.0,Don't Breathe. Don't Look Back.,Twister
+148.0,;Person,1967.0,Philip Seymour Hoffman,,,
+149.0,;Person,1943.0,Jan de Bont,,,
+150.0,;Movie,,,2000.0,"At the edge of the world, his journey begins.",Cast Away
+151.0,;Person,1951.0,Robert Zemeckis,,,
+152.0,;Movie,,,1975.0,"If he's crazy, what does that make you?",One Flew Over the Cuckoo's Nest
+153.0,;Person,1932.0,Milos Forman,,,
+154.0,;Movie,,,2003.0,,Something's Gotta Give
+155.0,;Person,1946.0,Diane Keaton,,,
+156.0,;Person,1949.0,Nancy Meyers,,,
+157.0,;Movie,,,1999.0,One robot's 200 year journey to become an ordinary man.,Bicentennial Man
+158.0,;Person,1958.0,Chris Columbus,,,
+159.0,;Movie,,,2007.0,A stiff drink. A little mascara. A lot of nerve. Who said they couldn't bring down the Soviet empire.,Charlie Wilson's War
+160.0,;Person,1967.0,Julia Roberts,,,
+161.0,;Movie,,,2004.0,This Holiday Season... Believe,The Polar Express
+162.0,;Movie,,,1992.0,Once in a lifetime you get a chance to do something different.,A League of Their Own
+163.0,;Person,1954.0,Madonna,,,
+164.0,;Person,1956.0,Geena Davis,,,
+165.0,;Person,1963.0,Lori Petty,,,
+166.0,;Person,1943.0,Penny Marshall,,,
+167.0,;Person,,Paul Blythe,,,
+168.0,;Person,,Angela Scope,,,
+169.0,;Person,,Jessica Thompson,,,
+170.0,;Person,,James Thompson,,,
