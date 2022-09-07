@@ -1,0 +1,25 @@
+
+
+CREATE TABLE categories
+   (
+   category_id         INT,
+   category_name       TEXT,
+   description         TEXT
+   );
+
+
+CREATE TABLE products
+   (
+   product_id          INT,
+   product_name        TEXT,
+   supplier_id         INT,
+   category_id         INT,
+   quantity_per_unit   TEXT,
+   unit_price          FLOAT,
+   units_in_stock      INT,
+   units_on_order      INT,
+   reorder_level       INT,
+   discontinued        INT
+   );
+
+
