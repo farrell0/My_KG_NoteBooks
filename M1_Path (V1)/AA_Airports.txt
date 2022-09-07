@@ -1,0 +1,5 @@
+airport_code|airport_name
+MKE|Milwaukee
+ORD|Chicago O-Hare
+SJC|San Jose
+DEN|Denver

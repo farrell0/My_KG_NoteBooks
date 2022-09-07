@@ -1,0 +1,7 @@
+
+
+KATANA_DEFAULT_LABEL=airports
+ID:ID(airports)|airport_name:STRING
+AA_Airports.txt
+
+
