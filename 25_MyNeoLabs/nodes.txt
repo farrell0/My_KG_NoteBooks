@@ -1,0 +1,1540 @@
+[(0, n.internal_id                   0
+n.labels                 [Person]
+n.born                     1967.0
+n.id                          2.0
+n.label                    Person
+n.name           Carrie-Anne Moss
+n.type                       node
+n.tagline                     NaN
+n.title                       NaN
+Name: 0, dtype: object), (1, n.internal_id                  1
+n.labels                [Person]
+n.born                    1975.0
+n.id                        12.0
+n.label                   Person
+n.name           Charlize Theron
+n.type                      node
+n.tagline                    NaN
+n.title                      NaN
+Name: 1, dtype: object), (2, n.internal_id            2
+n.labels          [Person]
+n.born              1940.0
+n.id                  13.0
+n.label             Person
+n.name           Al Pacino
+n.type                node
+n.tagline              NaN
+n.title                NaN
+Name: 2, dtype: object), (3, n.internal_id             3
+n.labels           [Person]
+n.born               1962.0
+n.id                   16.0
+n.label              Person
+n.name           Tom Cruise
+n.type                 node
+n.tagline               NaN
+n.title                 NaN
+Name: 3, dtype: object), (4, n.internal_id                    4
+n.labels                  [Person]
+n.born                      1966.0
+n.id                          20.0
+n.label                     Person
+n.name           Kiefer Sutherland
+n.type                        node
+n.tagline                      NaN
+n.title                        NaN
+Name: 4, dtype: object), (5, n.internal_id                   5
+n.labels                 [Person]
+n.born                     1968.0
+n.id                         22.0
+n.label                    Person
+n.name           Cuba Gooding Jr.
+n.type                       node
+n.tagline                     NaN
+n.title                       NaN
+Name: 5, dtype: object), (6, n.internal_id             6
+n.labels           [Person]
+n.born               1944.0
+n.id                   35.0
+n.label              Person
+n.name           Tony Scott
+n.type                 node
+n.tagline               NaN
+n.title                 NaN
+Name: 6, dtype: object), (7, n.internal_id                  7
+n.labels                [Person]
+n.born                    1969.0
+n.id                        38.0
+n.label                   Person
+n.name           Renee Zellweger
+n.type                      node
+n.tagline                    NaN
+n.title                      NaN
+Name: 7, dtype: object), (8, n.internal_id                                           53
+n.labels                                           [Movie]
+n.born                                                 NaN
+n.id                                                  78.0
+n.label                                              Movie
+n.name                                                 NaN
+n.type                                                node
+n.tagline        A story of love, lava and burning desire.
+n.title                             Joe Versus the Volcano
+Name: 8, dtype: object), (9, n.internal_id                                                   54
+n.labels                                                   [Movie]
+n.born                                                         NaN
+n.id                                                          92.0
+n.label                                                      Movie
+n.name                                                         NaN
+n.type                                                        node
+n.tagline        Based on the extraordinary true story of one m...
+n.title                                                 RescueDawn
+Name: 9, dtype: object), (10, n.internal_id                 55
+n.labels                 [Movie]
+n.born                       NaN
+n.id                        95.0
+n.label                    Movie
+n.name                       NaN
+n.type                      node
+n.tagline        Come as you are
+n.title             The Birdcage
+Name: 10, dtype: object), (11, n.internal_id                                                   56
+n.labels                                                   [Movie]
+n.born                                                         NaN
+n.id                                                         100.0
+n.label                                                      Movie
+n.name                                                         NaN
+n.type                                                        node
+n.tagline        The hottest data on earth. In the coolest head...
+n.title                                            Johnny Mnemonic
+Name: 11, dtype: object), (12, n.internal_id                                        57
+n.labels                                        [Movie]
+n.born                                              NaN
+n.id                                              141.0
+n.label                                           Movie
+n.name                                              NaN
+n.type                                             node
+n.tagline        He didn't want law. He wanted justice.
+n.title                                           Hoffa
+Name: 12, dtype: object), (13, n.internal_id                                 58
+n.labels                                 [Movie]
+n.born                                       NaN
+n.id                                       147.0
+n.label                                    Movie
+n.name                                       NaN
+n.type                                      node
+n.tagline        Don't Breathe. Don't Look Back.
+n.title                                  Twister
+Name: 13, dtype: object), (14, n.internal_id                                                   59
+n.labels                                                   [Movie]
+n.born                                                         NaN
+n.id                                                         157.0
+n.label                                                      Movie
+n.name                                                         NaN
+n.type                                                        node
+n.tagline        One robot's 200 year journey to become an ordi...
+n.title                                           Bicentennial Man
+Name: 14, dtype: object), (15, n.internal_id            16
+n.labels           [Person]
+n.born               1967.0
+n.id                   70.0
+n.label              Person
+n.name           Steve Zahn
+n.type                 node
+n.tagline               NaN
+n.title                 NaN
+Name: 15, dtype: object), (16, n.internal_id           17
+n.labels          [Person]
+n.born              1956.0
+n.id                  71.0
+n.label             Person
+n.name           Tom Hanks
+n.type                node
+n.tagline              NaN
+n.title                NaN
+Name: 16, dtype: object), (17, n.internal_id             18
+n.labels            [Person]
+n.born                1941.0
+n.id                    72.0
+n.label               Person
+n.name           Nora Ephron
+n.type                  node
+n.tagline                NaN
+n.title                  NaN
+Name: 17, dtype: object), (18, n.internal_id               19
+n.labels              [Person]
+n.born                  1949.0
+n.id                      76.0
+n.label                 Person
+n.name           Victor Garber
+n.type                    node
+n.tagline                  NaN
+n.title                    NaN
+Name: 18, dtype: object), (19, n.internal_id               20
+n.labels              [Person]
+n.born                  1956.0
+n.id                      83.0
+n.label                 Person
+n.name           Carrie Fisher
+n.type                    node
+n.tagline                  NaN
+n.title                    NaN
+Name: 19, dtype: object), (20, n.internal_id           21
+n.labels          [Person]
+n.born              1977.0
+n.id                  86.0
+n.label             Person
+n.name           Liv Tyler
+n.type                node
+n.tagline              NaN
+n.title                NaN
+Name: 20, dtype: object), (21, n.internal_id                22
+n.labels               [Person]
+n.born                   1970.0
+n.id                       88.0
+n.label                  Person
+n.name           Brooke Langton
+n.type                     node
+n.tagline                   NaN
+n.title                     NaN
+Name: 21, dtype: object), (22, n.internal_id               23
+n.labels              [Person]
+n.born                  1968.0
+n.id                      90.0
+n.label                 Person
+n.name           Orlando Jones
+n.type                    node
+n.tagline                  NaN
+n.title                    NaN
+Name: 22, dtype: object), (23, n.internal_id                46
+n.labels               [Person]
+n.born                   1943.0
+n.id                      166.0
+n.label                  Person
+n.name           Penny Marshall
+n.type                     node
+n.tagline                   NaN
+n.title                     NaN
+Name: 23, dtype: object), (24, n.internal_id              47
+n.labels             [Person]
+n.born                    0.0
+n.id                    168.0
+n.label                Person
+n.name           Angela Scope
+n.type                   node
+n.tagline                 NaN
+n.title                   NaN
+Name: 24, dtype: object), (25, n.internal_id                48
+n.labels               [Person]
+n.born                      0.0
+n.id                      170.0
+n.label                  Person
+n.name           James Thompson
+n.type                     node
+n.tagline                   NaN
+n.title                     NaN
+Name: 25, dtype: object), (26, n.internal_id                           49
+n.labels                           [Movie]
+n.born                                 NaN
+n.id                                   0.0
+n.label                              Movie
+n.name                                 NaN
+n.type                                node
+n.tagline        Welcome to the Real World
+n.title                         The Matrix
+Name: 26, dtype: object), (27, n.internal_id                     50
+n.labels                     [Movie]
+n.born                           NaN
+n.id                             9.0
+n.label                        Movie
+n.name                           NaN
+n.type                          node
+n.tagline             Free your mind
+n.title          The Matrix Reloaded
+Name: 27, dtype: object), (28, n.internal_id                                                   51
+n.labels                                                   [Movie]
+n.born                                                         NaN
+n.id                                                          46.0
+n.label                                                      Movie
+n.name                                                         NaN
+n.type                                                        node
+n.tagline        For some, it's the last real taste of innocenc...
+n.title                                                Stand By Me
+Name: 28, dtype: object), (29, n.internal_id                                     52
+n.labels                                     [Movie]
+n.born                                           NaN
+n.id                                            67.0
+n.label                                        Movie
+n.name                                           NaN
+n.type                                          node
+n.tagline        At odds in life... in love on-line.
+n.title                              You've Got Mail
+Name: 29, dtype: object), (30, n.internal_id             32
+n.labels            [Person]
+n.born                1966.0
+n.id                   106.0
+n.label               Person
+n.name           Halle Berry
+n.type                  node
+n.tagline                NaN
+n.title                  NaN
+Name: 30, dtype: object), (31, n.internal_id               33
+n.labels              [Person]
+n.born                  1976.0
+n.id                     113.0
+n.label                 Person
+n.name           Audrey Tautou
+n.type                    node
+n.tagline                  NaN
+n.title                    NaN
+Name: 31, dtype: object), (32, n.internal_id                 34
+n.labels                [Person]
+n.born                    1981.0
+n.id                       117.0
+n.label                   Person
+n.name           Natalie Portman
+n.type                      node
+n.tagline                    NaN
+n.title                      NaN
+Name: 32, dtype: object), (33, n.internal_id           35
+n.labels          [Person]
+n.born              1940.0
+n.id                 119.0
+n.label             Person
+n.name           John Hurt
+n.type                node
+n.tagline              NaN
+n.title                NaN
+Name: 33, dtype: object), (34, n.internal_id              36
+n.labels             [Person]
+n.born                 1985.0
+n.id                    122.0
+n.label                Person
+n.name           Emile Hirsch
+n.type                   node
+n.tagline                 NaN
+n.title                   NaN
+Name: 34, dtype: object), (35, n.internal_id              37
+n.labels             [Person]
+n.born                 1960.0
+n.id                    123.0
+n.label                Person
+n.name           John Goodman
+n.type                   node
+n.tagline                 NaN
+n.title                   NaN
+Name: 35, dtype: object), (36, n.internal_id          38
+n.labels         [Person]
+n.born             1982.0
+n.id                127.0
+n.label            Person
+n.name               Rain
+n.type               node
+n.tagline             NaN
+n.title               NaN
+Name: 36, dtype: object), (37, n.internal_id                  8
+n.labels                [Person]
+n.born                    1974.0
+n.id                        40.0
+n.label                   Person
+n.name           Jerry O'Connell
+n.type                      node
+n.tagline                    NaN
+n.title                      NaN
+Name: 37, dtype: object), (38, n.internal_id                    9
+n.labels                  [Person]
+n.born                      1996.0
+n.id                          44.0
+n.label                     Person
+n.name           Jonathan Lipnicki
+n.type                        node
+n.tagline                      NaN
+n.title                        NaN
+Name: 38, dtype: object), (39, n.internal_id             10
+n.labels            [Person]
+n.born                1966.0
+n.id                    50.0
+n.label               Person
+n.name           John Cusack
+n.type                  node
+n.tagline                NaN
+n.title                  NaN
+Name: 39, dtype: object), (40, n.internal_id            11
+n.labels           [Person]
+n.born               1963.0
+n.id                   53.0
+n.label              Person
+n.name           Helen Hunt
+n.type                 node
+n.tagline               NaN
+n.title                 NaN
+Name: 40, dtype: object), (41, n.internal_id               12
+n.labels              [Person]
+n.born                  1929.0
+n.id                      58.0
+n.label                 Person
+n.name           Max von Sydow
+n.type                    node
+n.tagline                  NaN
+n.title                    NaN
+Name: 41, dtype: object), (42, n.internal_id           13
+n.labels          [Person]
+n.born              1971.0
+n.id                  64.0
+n.label             Person
+n.name           Rick Yune
+n.type                node
+n.tagline              NaN
+n.title                NaN
+Name: 42, dtype: object), (43, n.internal_id                14
+n.labels               [Person]
+n.born                   1940.0
+n.id                       65.0
+n.label                  Person
+n.name           James Cromwell
+n.type                     node
+n.tagline                   NaN
+n.title                     NaN
+Name: 43, dtype: object), (44, n.internal_id              15
+n.labels             [Person]
+n.born                 1968.0
+n.id                     68.0
+n.label                Person
+n.name           Parker Posey
+n.type                   node
+n.tagline                 NaN
+n.title                   NaN
+Name: 44, dtype: object), (45, n.internal_id               24
+n.labels              [Person]
+n.born                  1950.0
+n.id                      91.0
+n.label                 Person
+n.name           Howard Deutch
+n.type                    node
+n.tagline                  NaN
+n.title                    NaN
+Name: 45, dtype: object), (46, n.internal_id                25
+n.labels               [Person]
+n.born                   1974.0
+n.id                       93.0
+n.label                  Person
+n.name           Christian Bale
+n.type                     node
+n.tagline                   NaN
+n.title                     NaN
+Name: 46, dtype: object), (47, n.internal_id              26
+n.labels             [Person]
+n.born                 1954.0
+n.id                     94.0
+n.label                Person
+n.name           Zach Grenier
+n.type                   node
+n.tagline                 NaN
+n.title                   NaN
+Name: 47, dtype: object), (48, n.internal_id              27
+n.labels             [Person]
+n.born                 1931.0
+n.id                     96.0
+n.label                Person
+n.name           Mike Nichols
+n.type                   node
+n.tagline                 NaN
+n.title                   NaN
+Name: 48, dtype: object), (49, n.internal_id                28
+n.labels               [Person]
+n.born                   1930.0
+n.id                       98.0
+n.label                  Person
+n.name           Richard Harris
+n.type                     node
+n.tagline                   NaN
+n.title                     NaN
+Name: 49, dtype: object), (50, n.internal_id                29
+n.labels               [Person]
+n.born                   1930.0
+n.id                       99.0
+n.label                  Person
+n.name           Clint Eastwood
+n.type                     node
+n.tagline                   NaN
+n.title                     NaN
+Name: 50, dtype: object), (51, n.internal_id          30
+n.labels         [Person]
+n.born             1958.0
+n.id                103.0
+n.label            Person
+n.name              Ice-T
+n.type               node
+n.tagline             NaN
+n.title               NaN
+Name: 51, dtype: object), (52, n.internal_id              31
+n.labels             [Person]
+n.born                 1953.0
+n.id                    104.0
+n.label                Person
+n.name           Robert Longo
+n.type                   node
+n.tagline                 NaN
+n.title                   NaN
+Name: 52, dtype: object), (53, n.internal_id              39
+n.labels             [Person]
+n.born                 1968.0
+n.id                    133.0
+n.label                Person
+n.name           Sam Rockwell
+n.type                   node
+n.tagline                 NaN
+n.title                   NaN
+Name: 53, dtype: object), (54, n.internal_id                40
+n.labels               [Person]
+n.born                   1959.0
+n.id                      136.0
+n.label                  Person
+n.name           Frank Darabont
+n.type                     node
+n.tagline                   NaN
+n.title                     NaN
+Name: 54, dtype: object), (55, n.internal_id              41
+n.labels             [Person]
+n.born                 1960.0
+n.id                    140.0
+n.label                Person
+n.name           Oliver Platt
+n.type                   node
+n.tagline                 NaN
+n.title                   NaN
+Name: 55, dtype: object), (56, n.internal_id                        42
+n.labels                       [Person]
+n.born                           1967.0
+n.id                              148.0
+n.label                          Person
+n.name           Philip Seymour Hoffman
+n.type                             node
+n.tagline                           NaN
+n.title                             NaN
+Name: 56, dtype: object), (57, n.internal_id             43
+n.labels            [Person]
+n.born                1943.0
+n.id                   149.0
+n.label               Person
+n.name           Jan de Bont
+n.type                  node
+n.tagline                NaN
+n.title                  NaN
+Name: 57, dtype: object), (58, n.internal_id              44
+n.labels             [Person]
+n.born                 1932.0
+n.id                    153.0
+n.label                Person
+n.name           Milos Forman
+n.type                   node
+n.tagline                 NaN
+n.title                   NaN
+Name: 58, dtype: object), (59, n.internal_id            45
+n.labels           [Person]
+n.born               1963.0
+n.id                  165.0
+n.label              Person
+n.name           Lori Petty
+n.type                 node
+n.tagline               NaN
+n.title                 NaN
+Name: 59, dtype: object), (60, n.internal_id    281474976710680
+n.labels                [Person]
+n.born                    1948.0
+n.id                        82.0
+n.label                   Person
+n.name             Billy Crystal
+n.type                      node
+n.tagline                    NaN
+n.title                      NaN
+Name: 60, dtype: object), (61, n.internal_id    281474976710681
+n.labels                [Person]
+n.born                    1947.0
+n.id                       101.0
+n.label                   Person
+n.name            Takeshi Kitano
+n.type                      node
+n.tagline                    NaN
+n.title                      NaN
+Name: 61, dtype: object), (62, n.internal_id    281474976710682
+n.labels                [Person]
+n.born                    1968.0
+n.id                       102.0
+n.label                   Person
+n.name                Dina Meyer
+n.type                      node
+n.tagline                    NaN
+n.title                      NaN
+Name: 62, dtype: object), (63, n.internal_id    281474976710683
+n.labels                [Person]
+n.born                    1949.0
+n.id                       107.0
+n.label                   Person
+n.name             Jim Broadbent
+n.type                      node
+n.tagline                    NaN
+n.title                      NaN
+Name: 63, dtype: object), (64, n.internal_id    281474976710684
+n.labels                [Person]
+n.born                    1965.0
+n.id                       108.0
+n.label                   Person
+n.name                Tom Tykwer
+n.type                      node
+n.tagline                    NaN
+n.title                      NaN
+Name: 64, dtype: object), (65, n.internal_id    281474976710685
+n.labels                [Person]
+n.born                    1961.0
+n.id                       110.0
+n.label                   Person
+n.name              Stefan Arndt
+n.type                      node
+n.tagline                    NaN
+n.title                      NaN
+Name: 65, dtype: object), (66, n.internal_id    281474976710686
+n.labels                [Person]
+n.born                    1939.0
+n.id                       112.0
+n.label                   Person
+n.name              Ian McKellen
+n.type                      node
+n.tagline                    NaN
+n.title                      NaN
+Name: 66, dtype: object), (67, n.internal_id    281474976710694
+n.labels                [Person]
+n.born                    1951.0
+n.id                       151.0
+n.label                   Person
+n.name           Robert Zemeckis
+n.type                      node
+n.tagline                    NaN
+n.title                      NaN
+Name: 67, dtype: object), (68, n.internal_id    281474976710695
+n.labels                [Person]
+n.born                    1958.0
+n.id                       158.0
+n.label                   Person
+n.name            Chris Columbus
+n.type                      node
+n.tagline                    NaN
+n.title                      NaN
+Name: 68, dtype: object), (69, n.internal_id    281474976710696
+n.labels                [Person]
+n.born                       0.0
+n.id                       167.0
+n.label                   Person
+n.name               Paul Blythe
+n.type                      node
+n.tagline                    NaN
+n.title                      NaN
+Name: 69, dtype: object), (70, n.internal_id                               281474976710697
+n.labels                                            [Movie]
+n.born                                                  NaN
+n.id                                                   10.0
+n.label                                               Movie
+n.name                                                  NaN
+n.type                                                 node
+n.tagline        Everything that has a beginning has an end
+n.title                              The Matrix Revolutions
+Name: 70, dtype: object), (71, n.internal_id              281474976710698
+n.labels                           [Movie]
+n.born                                 NaN
+n.id                                  11.0
+n.label                              Movie
+n.name                                 NaN
+n.type                                node
+n.tagline        Evil has its winning ways
+n.title               The Devil's Advocate
+Name: 71, dtype: object), (72, n.internal_id                                      281474976710699
+n.labels                                                   [Movie]
+n.born                                                         NaN
+n.id                                                          15.0
+n.label                                                      Movie
+n.name                                                         NaN
+n.type                                                        node
+n.tagline        In the heart of the nation's capital, in a cou...
+n.title                                             A Few Good Men
+Name: 72, dtype: object), (73, n.internal_id                                      281474976710700
+n.labels                                                   [Movie]
+n.born                                                         NaN
+n.id                                                          52.0
+n.label                                                      Movie
+n.name                                                         NaN
+n.type                                                        node
+n.tagline        A comedy from the heart that goes for the throat.
+n.title                                         As Good as It Gets
+Name: 73, dtype: object), (74, n.internal_id                                 281474976710708
+n.labels                                              [Movie]
+n.born                                                    NaN
+n.id                                                    128.0
+n.label                                                 Movie
+n.name                                                    NaN
+n.type                                                   node
+n.tagline        Prepare to enter a secret world of assassins
+n.title                                        Ninja Assassin
+Name: 74, dtype: object), (75, n.internal_id                                   281474976710709
+n.labels                                                [Movie]
+n.born                                                      NaN
+n.id                                                      137.0
+n.label                                                   Movie
+n.name                                                      NaN
+n.type                                                     node
+n.tagline        400 million people were waiting for the truth.
+n.title                                             Frost/Nixon
+Name: 75, dtype: object), (76, n.internal_id                281474976710710
+n.labels                             [Movie]
+n.born                                   NaN
+n.id                                   144.0
+n.label                                Movie
+n.name                                   NaN
+n.type                                  node
+n.tagline        Houston, we have a problem.
+n.title                            Apollo 13
+Name: 76, dtype: object), (77, n.internal_id                                  281474976710711
+n.labels                                               [Movie]
+n.born                                                     NaN
+n.id                                                     150.0
+n.label                                                  Movie
+n.name                                                     NaN
+n.type                                                    node
+n.tagline        At the edge of the world, his journey begins.
+n.title                                              Cast Away
+Name: 77, dtype: object), (78, n.internal_id                            281474976710712
+n.labels                                         [Movie]
+n.born                                               NaN
+n.id                                               152.0
+n.label                                            Movie
+n.name                                               NaN
+n.type                                              node
+n.tagline        If he's crazy, what does that make you?
+n.title                  One Flew Over the Cuckoo's Nest
+Name: 78, dtype: object), (79, n.internal_id                   281474976710713
+n.labels                                [Movie]
+n.born                                      NaN
+n.id                                      161.0
+n.label                                   Movie
+n.name                                      NaN
+n.type                                     node
+n.tagline        This Holiday Season... Believe
+n.title                       The Polar Express
+Name: 79, dtype: object), (80, n.internal_id                                      281474976710714
+n.labels                                                   [Movie]
+n.born                                                         NaN
+n.id                                                         162.0
+n.label                                                      Movie
+n.name                                                         NaN
+n.type                                                        node
+n.tagline        Once in a lifetime you get a chance to do some...
+n.title                                      A League of Their Own
+Name: 80, dtype: object), (81, n.internal_id    281474976710687
+n.labels                [Person]
+n.born                    1971.0
+n.id                       114.0
+n.label                   Person
+n.name              Paul Bettany
+n.type                      node
+n.tagline                    NaN
+n.title                      NaN
+Name: 81, dtype: object), (82, n.internal_id    281474976710688
+n.labels                [Person]
+n.born                    1946.0
+n.id                       118.0
+n.label                   Person
+n.name               Stephen Rea
+n.type                      node
+n.tagline                    NaN
+n.title                      NaN
+Name: 82, dtype: object), (83, n.internal_id    281474976710689
+n.labels                [Person]
+n.born                    1967.0
+n.id                       120.0
+n.label                   Person
+n.name                 Ben Miles
+n.type                      node
+n.tagline                    NaN
+n.title                      NaN
+Name: 83, dtype: object), (84, n.internal_id    281474976710690
+n.labels                [Person]
+n.born                    1946.0
+n.id                       124.0
+n.label                   Person
+n.name            Susan Sarandon
+n.type                      node
+n.tagline                    NaN
+n.title                      NaN
+Name: 84, dtype: object), (85, n.internal_id    281474976710691
+n.labels                [Person]
+n.born                       0.0
+n.id                       129.0
+n.label                   Person
+n.name             Naomie Harris
+n.type                      node
+n.tagline                    NaN
+n.title                      NaN
+Name: 85, dtype: object), (86, n.internal_id    281474976710692
+n.labels                [Person]
+n.born                    1938.0
+n.id                       138.0
+n.label                   Person
+n.name            Frank Langella
+n.type                      node
+n.tagline                    NaN
+n.title                      NaN
+Name: 86, dtype: object), (87, n.internal_id    281474976710693
+n.labels                [Person]
+n.born                    1965.0
+n.id                       143.0
+n.label                   Person
+n.name            John C. Reilly
+n.type                      node
+n.tagline                    NaN
+n.title                      NaN
+Name: 87, dtype: object), (88, n.internal_id                                      281474976710701
+n.labels                                                   [Movie]
+n.born                                                         NaN
+n.id                                                          56.0
+n.label                                                      Movie
+n.name                                                         NaN
+n.type                                                        node
+n.tagline        After life there is more. The end is just the ...
+n.title                                       What Dreams May Come
+Name: 88, dtype: object), (89, n.internal_id                                      281474976710702
+n.labels                                                   [Movie]
+n.born                                                         NaN
+n.id                                                          81.0
+n.label                                                      Movie
+n.name                                                         NaN
+n.type                                                        node
+n.tagline        Can two friends sleep together and still love ...
+n.title                                       When Harry Met Sally
+Name: 89, dtype: object), (90, n.internal_id                                      281474976710703
+n.labels                                                   [Movie]
+n.born                                                         NaN
+n.id                                                          85.0
+n.label                                                      Movie
+n.name                                                         NaN
+n.type                                                        node
+n.tagline        In every life there comes a time when that thi...
+n.title                                          That Thing You Do
+Name: 90, dtype: object), (91, n.internal_id                                      281474976710704
+n.labels                                                   [Movie]
+n.born                                                         NaN
+n.id                                                          87.0
+n.label                                                      Movie
+n.name                                                         NaN
+n.type                                                        node
+n.tagline        Pain heals, Chicks dig scars... Glory lasts fo...
+n.title                                           The Replacements
+Name: 91, dtype: object), (92, n.internal_id                          281474976710705
+n.labels                                       [Movie]
+n.born                                             NaN
+n.id                                              97.0
+n.label                                          Movie
+n.name                                             NaN
+n.type                                            node
+n.tagline        It's a hell of a thing, killing a man
+n.title                                     Unforgiven
+Name: 92, dtype: object), (93, n.internal_id      281474976710706
+n.labels                   [Movie]
+n.born                         NaN
+n.id                         111.0
+n.label                      Movie
+n.name                         NaN
+n.type                        node
+n.tagline          Break The Codes
+n.title          The Da Vinci Code
+Name: 93, dtype: object), (94, n.internal_id        281474976710707
+n.labels                     [Movie]
+n.born                           NaN
+n.id                           121.0
+n.label                        Movie
+n.name                           NaN
+n.type                          node
+n.tagline        Speed has no limits
+n.title                  Speed Racer
+Name: 94, dtype: object), (95, n.internal_id    281474976710672
+n.labels                [Person]
+n.born                    1940.0
+n.id                        55.0
+n.label                   Person
+n.name           James L. Brooks
+n.type                      node
+n.tagline                    NaN
+n.title                      NaN
+Name: 95, dtype: object), (96, n.internal_id      281474976710673
+n.labels                  [Person]
+n.born                      1960.0
+n.id                          57.0
+n.label                     Person
+n.name           Annabella Sciorra
+n.type                        node
+n.tagline                      NaN
+n.title                        NaN
+Name: 96, dtype: object), (97, n.internal_id    281474976710674
+n.labels                [Person]
+n.born                    1942.0
+n.id                        59.0
+n.label                   Person
+n.name             Werner Herzog
+n.type                      node
+n.tagline                    NaN
+n.title                      NaN
+Name: 97, dtype: object), (98, n.internal_id    281474976710675
+n.labels                [Person]
+n.born                    1956.0
+n.id                        61.0
+n.label                   Person
+n.name              Vincent Ward
+n.type                      node
+n.tagline                    NaN
+n.title                      NaN
+Name: 98, dtype: object), (99, n.internal_id    281474976710676
+n.labels                [Person]
+n.born                    1970.0
+n.id                        63.0
+n.label                   Person
+n.name               Ethan Hawke
+n.type                      node
+n.tagline                    NaN
+n.title                      NaN
+Name: 99, dtype: object), (100, n.internal_id    281474976710677
+n.labels                [Person]
+n.born                    1973.0
+n.id                        69.0
+n.label                   Person
+n.name            Dave Chappelle
+n.type                      node
+n.tagline                    NaN
+n.title                      NaN
+Name: 100, dtype: object), (101, n.internal_id    281474976710678
+n.labels                [Person]
+n.born                    1956.0
+n.id                        74.0
+n.label                   Person
+n.name               Rita Wilson
+n.type                      node
+n.tagline                    NaN
+n.title                      NaN
+Name: 101, dtype: object), (102, n.internal_id    281474976710679
+n.labels                [Person]
+n.born                    1962.0
+n.id                        77.0
+n.label                   Person
+n.name           Rosie O'Donnell
+n.type                      node
+n.tagline                    NaN
+n.title                      NaN
+Name: 102, dtype: object), (103, n.internal_id    281474976710664
+n.labels                [Person]
+n.born                    1962.0
+n.id                        32.0
+n.label                   Person
+n.name           Anthony Edwards
+n.type                      node
+n.tagline                    NaN
+n.title                      NaN
+Name: 103, dtype: object), (104, n.internal_id    281474976710665
+n.labels                [Person]
+n.born                    1941.0
+n.id                        36.0
+n.label                   Person
+n.name                  Jim Cash
+n.type                      node
+n.tagline                    NaN
+n.title                      NaN
+Name: 104, dtype: object), (105, n.internal_id    281474976710666
+n.labels                [Person]
+n.born                    1970.0
+n.id                        41.0
+n.label                   Person
+n.name                  Jay Mohr
+n.type                      node
+n.tagline                    NaN
+n.title                      NaN
+Name: 105, dtype: object), (106, n.internal_id    281474976710667
+n.labels                [Person]
+n.born                    1961.0
+n.id                        42.0
+n.label                   Person
+n.name               Bonnie Hunt
+n.type                      node
+n.tagline                    NaN
+n.title                      NaN
+Name: 106, dtype: object), (107, n.internal_id    281474976710668
+n.labels                [Person]
+n.born                    1971.0
+n.id                        43.0
+n.label                   Person
+n.name               Regina King
+n.type                      node
+n.tagline                    NaN
+n.title                      NaN
+Name: 107, dtype: object), (108, n.internal_id    281474976710669
+n.labels                [Person]
+n.born                    1970.0
+n.id                        47.0
+n.label                   Person
+n.name             River Phoenix
+n.type                      node
+n.tagline                    NaN
+n.title                      NaN
+Name: 108, dtype: object), (109, n.internal_id    281474976710670
+n.labels                [Person]
+n.born                    1971.0
+n.id                        48.0
+n.label                   Person
+n.name             Corey Feldman
+n.type                      node
+n.tagline                    NaN
+n.title                      NaN
+Name: 109, dtype: object), (110, n.internal_id    281474976710671
+n.labels                [Person]
+n.born                    1963.0
+n.id                        54.0
+n.label                   Person
+n.name              Greg Kinnear
+n.type                      node
+n.tagline                    NaN
+n.title                      NaN
+Name: 110, dtype: object), (111, n.internal_id    281474976710656
+n.labels                [Person]
+n.born                    1964.0
+n.id                         1.0
+n.label                   Person
+n.name              Keanu Reeves
+n.type                      node
+n.tagline                    NaN
+n.title                      NaN
+Name: 111, dtype: object), (112, n.internal_id       281474976710657
+n.labels                   [Person]
+n.born                       1961.0
+n.id                            3.0
+n.label                      Person
+n.name           Laurence Fishburne
+n.type                         node
+n.tagline                       NaN
+n.title                         NaN
+Name: 112, dtype: object), (113, n.internal_id    281474976710658
+n.labels                [Person]
+n.born                    1978.0
+n.id                         8.0
+n.label                   Person
+n.name               Emil Eifrem
+n.type                      node
+n.tagline                    NaN
+n.title                      NaN
+Name: 113, dtype: object), (114, n.internal_id    281474976710659
+n.labels                [Person]
+n.born                    1937.0
+n.id                        17.0
+n.label                   Person
+n.name            Jack Nicholson
+n.type                      node
+n.tagline                    NaN
+n.title                      NaN
+Name: 114, dtype: object), (115, n.internal_id    281474976710660
+n.labels                [Person]
+n.born                    1962.0
+n.id                        18.0
+n.label                   Person
+n.name                Demi Moore
+n.type                      node
+n.tagline                    NaN
+n.title                      NaN
+Name: 115, dtype: object), (116, n.internal_id    281474976710661
+n.labels                [Person]
+n.born                    1971.0
+n.id                        21.0
+n.label                   Person
+n.name                 Noah Wyle
+n.type                      node
+n.tagline                    NaN
+n.title                      NaN
+Name: 116, dtype: object), (117, n.internal_id      281474976710662
+n.labels                  [Person]
+n.born                      1948.0
+n.id                          26.0
+n.label                     Person
+n.name           Christopher Guest
+n.type                        node
+n.tagline                      NaN
+n.title                        NaN
+Name: 117, dtype: object), (118, n.internal_id    281474976710663
+n.labels                [Person]
+n.born                    1961.0
+n.id                        28.0
+n.label                   Person
+n.name              Aaron Sorkin
+n.type                      node
+n.tagline                    NaN
+n.title                      NaN
+Name: 118, dtype: object), (119, n.internal_id    562949953421346
+n.labels                [Person]
+n.born                    1944.0
+n.id                       142.0
+n.label                   Person
+n.name              Danny DeVito
+n.type                      node
+n.tagline                    NaN
+n.title                      NaN
+Name: 119, dtype: object), (120, n.internal_id    562949953421347
+n.labels                [Person]
+n.born                    1950.0
+n.id                       145.0
+n.label                   Person
+n.name                 Ed Harris
+n.type                      node
+n.tagline                    NaN
+n.title                      NaN
+Name: 120, dtype: object), (121, n.internal_id    562949953421348
+n.labels                [Person]
+n.born                    1955.0
+n.id                       146.0
+n.label                   Person
+n.name               Bill Paxton
+n.type                      node
+n.tagline                    NaN
+n.title                      NaN
+Name: 121, dtype: object), (122, n.internal_id    562949953421349
+n.labels                [Person]
+n.born                    1946.0
+n.id                       155.0
+n.label                   Person
+n.name              Diane Keaton
+n.type                      node
+n.tagline                    NaN
+n.title                      NaN
+Name: 122, dtype: object), (123, n.internal_id    562949953421350
+n.labels                [Person]
+n.born                    1949.0
+n.id                       156.0
+n.label                   Person
+n.name              Nancy Meyers
+n.type                      node
+n.tagline                    NaN
+n.title                      NaN
+Name: 123, dtype: object), (124, n.internal_id    562949953421351
+n.labels                [Person]
+n.born                    1967.0
+n.id                       160.0
+n.label                   Person
+n.name             Julia Roberts
+n.type                      node
+n.tagline                    NaN
+n.title                      NaN
+Name: 124, dtype: object), (125, n.internal_id         562949953421333
+n.labels                     [Person]
+n.born                         1950.0
+n.id                             79.0
+n.label                        Person
+n.name           John Patrick Stanley
+n.type                           node
+n.tagline                         NaN
+n.title                           NaN
+Name: 125, dtype: object), (126, n.internal_id    562949953421334
+n.labels                [Person]
+n.born                    1956.0
+n.id                        80.0
+n.label                   Person
+n.name               Nathan Lane
+n.type                      node
+n.tagline                    NaN
+n.title                      NaN
+Name: 126, dtype: object), (127, n.internal_id    562949953421335
+n.labels                [Person]
+n.born                    1949.0
+n.id                        84.0
+n.label                   Person
+n.name               Bruno Kirby
+n.type                      node
+n.tagline                    NaN
+n.title                      NaN
+Name: 127, dtype: object), (128, n.internal_id    562949953421336
+n.labels                [Person]
+n.born                    1930.0
+n.id                        89.0
+n.label                   Person
+n.name              Gene Hackman
+n.type                      node
+n.tagline                    NaN
+n.title                      NaN
+Name: 128, dtype: object), (129, n.internal_id    562949953421337
+n.labels                [Person]
+n.born                    1969.0
+n.id                       109.0
+n.label                   Person
+n.name            David Mitchell
+n.type                      node
+n.tagline                    NaN
+n.title                      NaN
+Name: 129, dtype: object), (130, n.internal_id    562949953421338
+n.labels                [Person]
+n.born                    1954.0
+n.id                       115.0
+n.label                   Person
+n.name                Ron Howard
+n.type                      node
+n.tagline                    NaN
+n.title                      NaN
+Name: 130, dtype: object), (131, n.internal_id    562949953421339
+n.labels                [Person]
+n.born                    1966.0
+n.id                       125.0
+n.label                   Person
+n.name               Matthew Fox
+n.type                      node
+n.tagline                    NaN
+n.title                      NaN
+Name: 131, dtype: object), (132, n.internal_id                                      562949953421358
+n.labels                                                   [Movie]
+n.born                                                         NaN
+n.id                                                          73.0
+n.label                                                      Movie
+n.name                                                         NaN
+n.type                                                        node
+n.tagline        What if someone you never met, someone you nev...
+n.title                                       Sleepless in Seattle
+Name: 132, dtype: object), (133, n.internal_id            562949953421359
+n.labels                         [Movie]
+n.born                               NaN
+n.id                               105.0
+n.label                            Movie
+n.name                               NaN
+n.type                              node
+n.tagline        Everything is connected
+n.title                      Cloud Atlas
+Name: 133, dtype: object), (134, n.internal_id      562949953421360
+n.labels                   [Movie]
+n.born                         NaN
+n.id                         116.0
+n.label                      Movie
+n.name                         NaN
+n.type                        node
+n.tagline        Freedom! Forever!
+n.title             V for Vendetta
+Name: 134, dtype: object), (135, n.internal_id                     562949953421361
+n.labels                                  [Movie]
+n.born                                        NaN
+n.id                                        130.0
+n.label                                     Movie
+n.name                                        NaN
+n.type                                       node
+n.tagline        Walk a mile you'll never forget.
+n.title                            The Green Mile
+Name: 135, dtype: object), (136, n.internal_id           562949953421362
+n.labels                        [Movie]
+n.born                              NaN
+n.id                              154.0
+n.label                           Movie
+n.name                              NaN
+n.type                             node
+n.tagline                           NaN
+n.title          Something's Gotta Give
+Name: 136, dtype: object), (137, n.internal_id                                      562949953421363
+n.labels                                                   [Movie]
+n.born                                                         NaN
+n.id                                                         159.0
+n.label                                                      Movie
+n.name                                                         NaN
+n.type                                                        node
+n.tagline        A stiff drink. A little mascara. A lot of nerv...
+n.title                                       Charlie Wilson's War
+Name: 137, dtype: object), (138, n.internal_id    562949953421352
+n.labels                [Person]
+n.born                    1954.0
+n.id                       163.0
+n.label                   Person
+n.name                   Madonna
+n.type                      node
+n.tagline                    NaN
+n.title                      NaN
+Name: 138, dtype: object), (139, n.internal_id    562949953421353
+n.labels                [Person]
+n.born                    1956.0
+n.id                       164.0
+n.label                   Person
+n.name               Geena Davis
+n.type                      node
+n.tagline                    NaN
+n.title                      NaN
+Name: 139, dtype: object), (140, n.internal_id     562949953421354
+n.labels                 [Person]
+n.born                        0.0
+n.id                        169.0
+n.label                    Person
+n.name           Jessica Thompson
+n.type                       node
+n.tagline                     NaN
+n.title                       NaN
+Name: 140, dtype: object), (141, n.internal_id                         562949953421355
+n.labels                                      [Movie]
+n.born                                            NaN
+n.id                                             29.0
+n.label                                         Movie
+n.name                                            NaN
+n.type                                           node
+n.tagline        I feel the need, the need for speed.
+n.title                                       Top Gun
+Name: 141, dtype: object), (142, n.internal_id                     562949953421356
+n.labels                                  [Movie]
+n.born                                        NaN
+n.id                                         37.0
+n.label                                     Movie
+n.name                                        NaN
+n.type                                       node
+n.tagline        The rest of his life begins now.
+n.title                             Jerry Maguire
+Name: 142, dtype: object), (143, n.internal_id               562949953421357
+n.labels                            [Movie]
+n.born                                  NaN
+n.id                                   62.0
+n.label                               Movie
+n.name                                  NaN
+n.type                                 node
+n.tagline        First loves last. Forever.
+n.title              Snow Falling on Cedars
+Name: 143, dtype: object), (144, n.internal_id    562949953421340
+n.labels                [Person]
+n.born                    1980.0
+n.id                       126.0
+n.label                   Person
+n.name           Christina Ricci
+n.type                      node
+n.tagline                    NaN
+n.title                      NaN
+Name: 144, dtype: object), (145, n.internal_id          562949953421341
+n.labels                      [Person]
+n.born                          1957.0
+n.id                             131.0
+n.label                         Person
+n.name           Michael Clarke Duncan
+n.type                            node
+n.tagline                          NaN
+n.title                            NaN
+Name: 145, dtype: object), (146, n.internal_id    562949953421342
+n.labels                [Person]
+n.born                    1953.0
+n.id                       132.0
+n.label                   Person
+n.name               David Morse
+n.type                      node
+n.tagline                    NaN
+n.title                      NaN
+Name: 146, dtype: object), (147, n.internal_id    562949953421343
+n.labels                [Person]
+n.born                    1955.0
+n.id                       134.0
+n.label                   Person
+n.name               Gary Sinise
+n.type                      node
+n.tagline                    NaN
+n.title                      NaN
+Name: 147, dtype: object), (148, n.internal_id      562949953421344
+n.labels                  [Person]
+n.born                      1959.0
+n.id                         135.0
+n.label                     Person
+n.name           Patricia Clarkson
+n.type                        node
+n.tagline                      NaN
+n.title                        NaN
+Name: 148, dtype: object), (149, n.internal_id    562949953421345
+n.labels                [Person]
+n.born                    1969.0
+n.id                       139.0
+n.label                   Person
+n.name             Michael Sheen
+n.type                      node
+n.tagline                    NaN
+n.title                      NaN
+Name: 149, dtype: object), (150, n.internal_id    562949953421326
+n.labels                [Person]
+n.born                    1962.0
+n.id                        39.0
+n.label                   Person
+n.name             Kelly Preston
+n.type                      node
+n.tagline                    NaN
+n.title                      NaN
+Name: 150, dtype: object), (151, n.internal_id    562949953421327
+n.labels                [Person]
+n.born                    1957.0
+n.id                        45.0
+n.label                   Person
+n.name             Cameron Crowe
+n.type                      node
+n.tagline                    NaN
+n.title                      NaN
+Name: 151, dtype: object), (152, n.internal_id    562949953421328
+n.labels                [Person]
+n.born                    1972.0
+n.id                        49.0
+n.label                   Person
+n.name               Wil Wheaton
+n.type                      node
+n.tagline                    NaN
+n.title                      NaN
+Name: 152, dtype: object), (153, n.internal_id    562949953421329
+n.labels                [Person]
+n.born                    1942.0
+n.id                        51.0
+n.label                   Person
+n.name             Marshall Bell
+n.type                      node
+n.tagline                    NaN
+n.title                      NaN
+Name: 153, dtype: object), (154, n.internal_id    562949953421330
+n.labels                [Person]
+n.born                    1951.0
+n.id                        60.0
+n.label                   Person
+n.name            Robin Williams
+n.type                      node
+n.tagline                    NaN
+n.title                      NaN
+Name: 154, dtype: object), (155, n.internal_id    562949953421331
+n.labels                [Person]
+n.born                    1953.0
+n.id                        66.0
+n.label                   Person
+n.name               Scott Hicks
+n.type                      node
+n.tagline                    NaN
+n.title                      NaN
+Name: 155, dtype: object), (156, n.internal_id    562949953421332
+n.labels                [Person]
+n.born                    1953.0
+n.id                        75.0
+n.label                   Person
+n.name              Bill Pullman
+n.type                      node
+n.tagline                    NaN
+n.title                      NaN
+Name: 156, dtype: object), (157, n.internal_id    562949953421312
+n.labels                [Person]
+n.born                    1960.0
+n.id                         4.0
+n.label                   Person
+n.name              Hugo Weaving
+n.type                      node
+n.tagline                    NaN
+n.title                      NaN
+Name: 157, dtype: object), (158, n.internal_id    562949953421313
+n.labels                [Person]
+n.born                    1967.0
+n.id                         5.0
+n.label                   Person
+n.name           Lilly Wachowski
+n.type                      node
+n.tagline                    NaN
+n.title                      NaN
+Name: 158, dtype: object), (159, n.internal_id    562949953421314
+n.labels                [Person]
+n.born                    1965.0
+n.id                         6.0
+n.label                   Person
+n.name            Lana Wachowski
+n.type                      node
+n.tagline                    NaN
+n.title                      NaN
+Name: 159, dtype: object), (160, n.internal_id    562949953421315
+n.labels                [Person]
+n.born                    1952.0
+n.id                         7.0
+n.label                   Person
+n.name               Joel Silver
+n.type                      node
+n.tagline                    NaN
+n.title                      NaN
+Name: 160, dtype: object), (161, n.internal_id    562949953421316
+n.labels                [Person]
+n.born                    1944.0
+n.id                        14.0
+n.label                   Person
+n.name           Taylor Hackford
+n.type                      node
+n.tagline                    NaN
+n.title                      NaN
+Name: 161, dtype: object), (162, n.internal_id    562949953421317
+n.labels                [Person]
+n.born                    1958.0
+n.id                        19.0
+n.label                   Person
+n.name               Kevin Bacon
+n.type                      node
+n.tagline                    NaN
+n.title                      NaN
+Name: 162, dtype: object), (163, n.internal_id    562949953421318
+n.labels                [Person]
+n.born                    1957.0
+n.id                        23.0
+n.label                   Person
+n.name              Kevin Pollak
+n.type                      node
+n.tagline                    NaN
+n.title                      NaN
+Name: 163, dtype: object), (164, n.internal_id    562949953421319
+n.labels                [Person]
+n.born                    1943.0
+n.id                        24.0
+n.label                   Person
+n.name                J.T. Walsh
+n.type                      node
+n.tagline                    NaN
+n.title                      NaN
+Name: 164, dtype: object), (165, n.internal_id    562949953421320
+n.labels                [Person]
+n.born                    1967.0
+n.id                        25.0
+n.label                   Person
+n.name            James Marshall
+n.type                      node
+n.tagline                    NaN
+n.title                      NaN
+Name: 165, dtype: object), (166, n.internal_id    562949953421321
+n.labels                [Person]
+n.born                    1947.0
+n.id                        27.0
+n.label                   Person
+n.name                Rob Reiner
+n.type                      node
+n.tagline                    NaN
+n.title                      NaN
+Name: 166, dtype: object), (167, n.internal_id    562949953421322
+n.labels                [Person]
+n.born                    1957.0
+n.id                        30.0
+n.label                   Person
+n.name            Kelly McGillis
+n.type                      node
+n.tagline                    NaN
+n.title                      NaN
+Name: 167, dtype: object), (168, n.internal_id    562949953421323
+n.labels                [Person]
+n.born                    1959.0
+n.id                        31.0
+n.label                   Person
+n.name                Val Kilmer
+n.type                      node
+n.tagline                    NaN
+n.title                      NaN
+Name: 168, dtype: object), (169, n.internal_id    562949953421324
+n.labels                [Person]
+n.born                    1933.0
+n.id                        33.0
+n.label                   Person
+n.name              Tom Skerritt
+n.type                      node
+n.tagline                    NaN
+n.title                      NaN
+Name: 169, dtype: object), (170, n.internal_id    562949953421325
+n.labels                [Person]
+n.born                    1961.0
+n.id                        34.0
+n.label                   Person
+n.name                  Meg Ryan
+n.type                      node
+n.tagline                    NaN
+n.title                      NaN
+Name: 170, dtype: object)]
