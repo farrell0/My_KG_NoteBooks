@@ -15,8 +15,8 @@ my_graph, *_ = my_client.get_database(name=DB_NAME).find_graphs_by_name(GRAPH_NA
 print(my_graph)
 
 
-my_graph.num_nodes()
-my_graph.num_edges()
+print(my_graph.num_nodes())
+print(my_graph.num_edges())
 
 
 ############################################################################
