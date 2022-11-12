@@ -20,3 +20,26 @@ print(my_graph.num_edges())
 
 
 ############################################################################
+
+l_rows = 5
+
+l_query  = """
+   MATCH (n) 
+   RETURN n.ol1 AS col1, n.col2 AS col2
+   LIMIT {0}
+   """.format(l_rows)
+
+dd_result2 = my_graph.query(l_query)
+
+
+l_cntr = 0
+   #
+for l_each in dd_result2.itertuples():
+   l_cntr += 1  
+      #
+   if (l_cntr < 10):
+      print(l_each)
+
+
+
+
