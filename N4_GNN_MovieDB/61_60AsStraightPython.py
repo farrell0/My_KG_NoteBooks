@@ -1,6 +1,10 @@
 
+from katana import remote
+from katana.remote import import_data
 
+my_client = remote.Client()
 
+print(my_client)
 
 
 DB_NAME         = "my_db"
@@ -14,3 +18,5 @@ print(my_graph)
 display("Number of Graph Nodes: %d" % (my_graph.num_nodes()))
 display("Number of Graph Edges: %s" % (my_graph.num_edges()))
 
+
+############################################################################
