@@ -21,7 +21,7 @@ print(my_graph.num_edges())
 
 ############################################################################
 
-l_rows = 5
+l_rows = 40000
 
 l_query  = """
    MATCH (n) 
@@ -31,7 +31,7 @@ l_query  = """
 
 dd_result2 = my_graph.query(l_query)
 
-
+print("")
 l_cntr = 0
    #
 for l_each in dd_result2.itertuples():
