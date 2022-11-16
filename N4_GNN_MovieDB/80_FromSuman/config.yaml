@@ -1,0 +1,18 @@
+project:
+  project_id: katana-clusters-beta
+  location: us-central-1
+  api_endpoint: us-central1-aiplatform.googleapis.com
+registry:
+  experiment: elliptic-downstream-ml-2
+  staging_bucket: gs://katana-clusters-beta/google-cloud-aiplatform-staging
+model:
+  model_display_name: elliptic_gnn_embed
+  target_property_name: target
+  pipeline_uri: db1f15507b7343f9b04b39e08e83a9a1
+databases:
+  dataset: fsi_elliptic
+  account_features: account_features
+  embeddings: elliptic_embeddings_
+  account_mapping: account_mapping_
+  ml_baseline: auto_ml_baseline_training_
+  ml_enhanced: auto_ml_enhanced_gnn_training_
