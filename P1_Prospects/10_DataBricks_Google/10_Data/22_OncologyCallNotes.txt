@@ -193,7 +193,7 @@ PROCEDURE: With an intravenous infusing and under suitable premedication, the pa
 Under loupe magnification, the lesion was excised with 2 mm margins, oriented with sutures and submitted for frozen section pathology. The report was "basal cell carcinoma with all margins free of tumor." Hemostasis was controlled with the Bovie. Excised lesion diameter was 1.2 cm. The defect was closed by elevating a left laterally based rotation flap utilizing the glabellar skin. The flap was elevated with a scalpel and Bovie, rotated into the defect without tension, ***** to the defect with scissors and inset in layer with interrupted 5-0 Vicryl for the dermis and running 5-0 Prolene for the skin. Donor site was closed in V-Y fashion with similar suture technique.
 
 The wounds were dressed with bacitracin ointment. The patient was returned to the recovery room in satisfactory condition. She tolerated the procedure satisfactorily, and then no complications. Blood loss was essentially nil."
-4008|Hematology - Oncology|BCCa Excision - Cheek|Excision of basal cell carcinoma. Closure complex, open wound. Bilateral capsulectomies. Bilateral explantation and removal of ruptured silicone gel implants|"PREOPERATIVE DIAGNOSES
+4009|Hematology - Oncology|BCCa Excision - Cheek|Excision of basal cell carcinoma. Closure complex, open wound. Bilateral capsulectomies. Bilateral explantation and removal of ruptured silicone gel implants|"PREOPERATIVE DIAGNOSES
 1. Basal cell carcinoma, right cheek.
 2. Basal cell carcinoma, left cheek.
 3. Bilateral ruptured silicone gel implants.
@@ -264,7 +264,7 @@ None.
 
 DISPOSITION
 To recovery room."
-4009|Hematology - Oncology|BCCa Excision - Lower Lid|Excision of large basal cell carcinoma, right lower lid, and repaired with used dorsal conjunctival flap in the upper lid and a large preauricular skin graft.|"PREOPERATIVE DIAGNOSIS: Extremely large basal cell carcinoma, right lower lid.
+4010|Hematology - Oncology|BCCa Excision - Lower Lid|Excision of large basal cell carcinoma, right lower lid, and repaired with used dorsal conjunctival flap in the upper lid and a large preauricular skin graft.|"PREOPERATIVE DIAGNOSIS: Extremely large basal cell carcinoma, right lower lid.
 
 POSTOPERATIVE DIAGNOSIS: Extremely large basal cell carcinoma, right lower lid.
 
@@ -277,7 +277,7 @@ The incision was carried inferiorly, and using a Steven scissors the normal skin
 The defect in the skin was measured and an appropriate large preauricular graft was excised from the right preauricular region. The defect was closed with interrupted 5-0 Prolene sutures, and the preauricular graft was sutured in place with multiple interrupted 6-0 silk sutures. The upper border of the graft was attached to the upper lid after incision was made in the gray line with a Superblade, and the superior portion of the skin graft was sutured to the upper lid through the anterior lamella created by the razor blade incision.
 
 Cryotherapy was then used to treat the nasal and temporal margins of the area of excision because of positive margins, and following this an antibiotic steroid ointment was instilled and a light pressure dressing was applied. The patient tolerated the procedure well and was sent to recovery room in good condition."
-4010|Hematology - Oncology|BCCa Excision - Nasal Tip|Excision of nasal tip basal carcinoma, previous positive biopsy.|"PREOPERATIVE DIAGNOSIS: Basal cell carcinoma, nasal tip, previous positive biopsy.
+4011|Hematology - Oncology|BCCa Excision - Nasal Tip|Excision of nasal tip basal carcinoma, previous positive biopsy.|"PREOPERATIVE DIAGNOSIS: Basal cell carcinoma, nasal tip, previous positive biopsy.
 
 POSTOPERATIVE DIAGNOSIS: Basal cell carcinoma, nasal tip, previous positive biopsy.
 
@@ -294,7 +294,7 @@ Closure consisted of undermining circumferentially. Advancement closure with dog
 The patient is discharged on minocycline and Darvocet-N 100.
 
 NOTE: The 2.6 mm loupe magnification was utilized throughout the procedure. No complications noted with excellent and all clear margins at the termination. An advancement closure technique was utilized."
-4011|Hematology - Oncology|Biopsy - Axillary Lymph Node|Right axillary adenopathy, thrombocytopenia, and hepatosplenomegaly. Right axillary lymph node biopsy.|"PREOPERATIVE DIAGNOSES:
+4012|Hematology - Oncology|Biopsy - Axillary Lymph Node|Right axillary adenopathy, thrombocytopenia, and hepatosplenomegaly. Right axillary lymph node biopsy.|"PREOPERATIVE DIAGNOSES:
 1. Right axillary adenopathy.
 2. Thrombocytopenia.
 3. Hepatosplenomegaly.
@@ -317,7 +317,7 @@ BRIEF HISTORY: The patient is a 37-year-old male who presented to ABCD General H
 INTRAOPERATIVE FINDINGS: The patient was found to have a large right axillary lymphadenopathy, one of the lymph node was sent down as a fresh specimen.
 
 PROCEDURE: After informed written consent, risks and benefits of this procedure were explained to the patient. The patient was brought to the operating suite, prepped and draped in a normal sterile fashion. Multiple lymph nodes were palpated in the right axilla, however, the most inferior node was to be removed. First, the skin was anesthetized with 1% lidocaine solution. Next, using a #15 blade scalpel, an incision was made approximately 4 cm in length transversally in the inferior axilla. Next, using electro Bovie cautery, maintaining hemostasis, dissection was carried down to the lymph node. The lymph node was then completely excised using electro Bovie cautery as well as hemostats to maintain hemostasis and then lymph node was sent to specimen fresh to the lab. Several hemostats were used, suture ligated with #3-0 Vicryl suture and hemostasis was maintained. Next the deep dermal layers were approximated with #3-0 Vicryl suture. After the wound has been copiously irrigated, the skin was closed with running subcuticular #4-0 undyed Vicryl suture and the pathology is pending. The patient did tolerated the procedure well. Steri-Strips and sterile dressings were applied and the patient was transferred to the Recovery in stable condition."
-4012|Hematology - Oncology|Biopsy - Cervical Lymph Node|Excisional biopsy of right cervical lymph node.|"PREOPERATIVE DIAGNOSIS: Cervical lymphadenopathy.
+4013|Hematology - Oncology|Biopsy - Cervical Lymph Node|Excisional biopsy of right cervical lymph node.|"PREOPERATIVE DIAGNOSIS: Cervical lymphadenopathy.
 
 POSTOPERATIVE DIAGNOSIS: Cervical lymphadenopathy.
 
