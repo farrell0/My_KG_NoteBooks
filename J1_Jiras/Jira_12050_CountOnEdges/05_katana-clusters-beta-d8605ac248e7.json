@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "katana-clusters-beta",
+  "private_key_id": "d8605ac248e7a8d0ab0ba391d9381a36ae4a1435",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDAC4zGmJjK+L63\ng59zhPmWv7icAw0VROhcj+q5slt4mLtrbL0oRDw0ADIg2zmmbDpQCcPJHxP2kV7H\nqqRRdGsWp7LhZXqwpFFfh148aQ6yvYPJLWedHNn+a8MhgUDBWLKAmhXTwfro1v1J\nrdXSCviqVrD/pHZYNpXPH9j1toTcpIPFkEP4y5ZrAUO+mR4tCn5eCI01Bkvc4XAG\nMQqJBYe91w2b95SaDzfm42YO2JDgHi/+eM4zO9NqXN1DwgDpZ4JySC78DsYW58/V\nKbJ2Dh94w0Rmu/RbnvFlj3qNvUgnQAvQGpGCeNQfvNrvIkbC7IZTepXjGhr8qEU3\nSKnQ5DlxAgMBAAECggEACGO4x6g87IkHU98FJTfG64X+m5oqhSZYfEqxN2GKS29o\nqJ28ebjZZHApwHOzRgjuVzbF/dBEv/3DxTc4LHLIhtnWn7AeNv9GqsSwIjV4teg/\njJdWMm/jOhEdGiaaXJfyXFne4DxWKLvTntdgQufFyzM0UkauANaJnt3GTZ2mmjjm\nMeSSX7iP+UBH/nVpFvC8+RKmHWLbl+9BGSzw65xo3i+GfbSs3yAyxQzdm/t0+lG0\nDlMuK1sNvYGValYri13EMvh3S95HANaHNbFBCA7qCl4Ow6AnnHxVZAwmXHiBmbBl\nE7RcYtPts3bbaPoFDELti5QM1qM6BeruxBV1MQk0zQKBgQDyQIcMzoMrQEY+oiJj\nqsYu/wAfHE3Lc8LZl2QUlFuZYHCtEeCSBEKpQ+YXikAbF/Va6xr7P8fNI3UjuTAP\nAJWBs5jamjb715SRrxlzoM5qCFY6sIk5DtIj40InVhdmZ6Nw79Xc/dLtL9J6AWdN\nGEwSpx57OmdYcF3kOAkonN+p+wKBgQDK8ZvVw6Nh+UKkp2GTwpKllff16to2qRDn\nZ+l54qlaDwkk95xHXUgNDLZuAZgbIiQmLI+VvfZLywi5/tlPZDAEysk8kUWa74SY\ntUR9Tq58uUqwrlY1ebEvHjJI4QPaOFMgGRkmr7gBozxLqY5xjJW9N8vtWkYmJTJx\niaUlmKpagwKBgAc9xIuudJ9LWY4vvIVsKmZnOvKzHuQw/qcQbm5rDN3l0xhpS2Qx\n+mgi3nLfsBDfQ3dHRdQy0N8h6zN5KqWYJ9/rpWsLZw9aH1fHeyRIr0LeIu24LzHk\nboWiGm0glqx59pm+oY7si2yJnGoHNrZIPqXkFvYqBcLQAQ58WlG7drgXAoGAJX9A\nyN1t+bNBggS/Pbrst5WfDBwJl6HjUq5bcD7WBaLTkLYDdRgiMO8RYf//Z7wGK9t9\n6DACKvznrt4MruOXD7ucNQmub7Mjr8eGURTRno/p4f1ERnsmpssQhXC18oMHsN2S\nTRiYigzsHhrFC+vq2txNXJyaa3/h8yJ4lhrAFxsCgYEA1PuZc1ULPppMR0PUSOtW\nnFC3q5k6gNAjIgytgiccvcK396Q3fL2wSN+jzZvPZzfxN32QD7o7hdT0ld22tWQw\neEaeQELJ+g5UYwh59DHAU9Y86vRT8P/ej5Jyo/cv5P0cRRWub1i2r2oU/1NuI2xA\nzDFyuAEYcUtfGLU4SBNW5rs=\n-----END PRIVATE KEY-----\n",
+  "client_email": "kamesh-nlp-eval@katana-clusters-beta.iam.gserviceaccount.com",
+  "client_id": "111767370998110934595",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/kamesh-nlp-eval%40katana-clusters-beta.iam.gserviceaccount.com"
+}
