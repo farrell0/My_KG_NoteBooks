@@ -1,0 +1,41 @@
+id|medical_specialty|LABEL
+MS-0| Bariatrics|MedicalSpecialty
+MS-1| Ophthalmology|MedicalSpecialty
+MS-2| Sleep Medicine|MedicalSpecialty
+MS-3| Endocrinology|MedicalSpecialty
+MS-4| Orthopedic|MedicalSpecialty
+MS-5| Office Notes|MedicalSpecialty
+MS-6| Diets and Nutritions|MedicalSpecialty
+MS-7| IME-QME-Work Comp etc.|MedicalSpecialty
+MS-8| Rheumatology|MedicalSpecialty
+MS-9| General Medicine|MedicalSpecialty
+MS-10| Pain Management|MedicalSpecialty
+MS-11| Cosmetic / Plastic Surgery|MedicalSpecialty
+MS-12| SOAP / Chart / Progress Notes|MedicalSpecialty
+MS-13| Neurosurgery|MedicalSpecialty
+MS-14| Obstetrics / Gynecology|MedicalSpecialty
+MS-15| Dermatology|MedicalSpecialty
+MS-16| Cardiovascular / Pulmonary|MedicalSpecialty
+MS-17| Emergency Room Reports|MedicalSpecialty
+MS-18| Dentistry|MedicalSpecialty
+MS-19| Psychiatry / Psychology|MedicalSpecialty
+MS-20| Consult - History and Phy.|MedicalSpecialty
+MS-21| Pediatrics - Neonatal|MedicalSpecialty
+MS-22| Letters|MedicalSpecialty
+MS-23| Radiology|MedicalSpecialty
+MS-24| Physical Medicine - Rehab|MedicalSpecialty
+MS-25| Nephrology|MedicalSpecialty
+MS-26| Podiatry|MedicalSpecialty
+MS-27| Hematology - Oncology|MedicalSpecialty
+MS-28| Allergy / Immunology|MedicalSpecialty
+MS-29| Urology|MedicalSpecialty
+MS-30| Speech - Language|MedicalSpecialty
+MS-31| ENT - Otolaryngology|MedicalSpecialty
+MS-32| Autopsy|MedicalSpecialty
+MS-33| Chiropractic|MedicalSpecialty
+MS-34| Neurology|MedicalSpecialty
+MS-35| Surgery|MedicalSpecialty
+MS-36| Lab Medicine - Pathology|MedicalSpecialty
+MS-37| Discharge Summary|MedicalSpecialty
+MS-38| Gastroenterology|MedicalSpecialty
+MS-39| Hospice - Palliative Care|MedicalSpecialty
