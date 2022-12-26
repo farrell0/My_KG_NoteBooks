@@ -1,4 +1,4 @@
-id|entityId|LABEL|preferredTerm
+id|entity_id|LABEL|preferred_term
 UMLS/C0004096|UMLS/C0004096|UmlsEntity|Asthma
 UMLS/C0013103|UMLS/C0013103|UmlsEntity|Drainage procedure
 UMLS/C0013227|UMLS/C0013227|UmlsEntity|Pharmaceutical Preparations
