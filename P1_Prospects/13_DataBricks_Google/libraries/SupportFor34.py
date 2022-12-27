@@ -307,6 +307,8 @@ def f_enrich(i_arg1):
     
    import json
 
+   global l_uniqkey
+
 
    l_token = f_get_token_int()
 
