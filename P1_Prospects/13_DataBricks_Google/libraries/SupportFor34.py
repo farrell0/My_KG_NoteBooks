@@ -221,12 +221,8 @@ def f_ready_for_graph_int(i_arg1, i_arg2):
    df_EntityToVocabularyEdge_N    = pd.DataFrame.from_records(l_EntityToVocabularyEdge_N  ).drop_duplicates()
    df_EntityToVocabularyEdge_S    = pd.DataFrame.from_records(l_EntityToVocabularyEdge_S  ).drop_duplicates()
     
-   return  df_UmlsEntityNodes,
-      df_UmlsVocabularyNodes,
-      df_PatientVisitToEntityEdge_N,
-      df_PatientVisitToEntityEdge_S,
-      df_EntityToVocabularyEdge_N,
-      df_EntityToVocabularyEdge_S
+    
+   return  df_UmlsEntityNodes, df_UmlsVocabularyNodes, df_PatientVisitToEntityEdge_N, df_PatientVisitToEntityEdge_S, df_EntityToVocabularyEdge_N, df_EntityToVocabularyEdge_S
         
         
 #  # #############################################################
@@ -323,7 +319,7 @@ def f_enrich(i_arg1):
         
    l_uniqkey += 1
       #
-   l_df1, l_df2, l_fg3, l_df4, l_df5, l_df6 = f_ready_for_graph_int(l_data_asjson, "PV-" + str(l_uniqkey)):
+   l_df1, l_df2, l_fg3, l_df4, l_df5, l_df6 = f_ready_for_graph_int(l_data_asjson, "PV-" + str(l_uniqkey))
 
         
    return l_data_asjson
