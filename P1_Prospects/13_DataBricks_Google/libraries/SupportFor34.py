@@ -107,7 +107,7 @@ def f_get_token():
    return l_token
      
     
-def f_enrrich_int(i_arg1):
+def f_enrrich_int(i_arg1, i_arg2):
     
    import requests
    from requests.structures import CaseInsensitiveDict
@@ -119,7 +119,7 @@ def f_enrrich_int(i_arg1):
    
    l_headers = CaseInsensitiveDict()
       #
-   l_headers["Authorization"] = "Bearer " + l_token
+   l_headers["Authorization"] = "Bearer " + i_arg2
    l_headers["Content-Type"]  = "application/json"
        
     
@@ -130,25 +130,9 @@ def f_enrrich_int(i_arg1):
       }}
       """.format(i_arg1)
          #
-   l_resp = requests.post(l_url, headers = l_headers, data = l_data)
+   l_response = requests.post(l_url, headers = l_headers, data = l_data)
       #
-   return l_resp
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+   return l_response
 
     
 #  # #############################################################
@@ -159,7 +143,7 @@ def f_enrich():
    l_token = f_get_token()
 
    try:
-      l_response    = f_enrich_int(l_each.transcription)
+      l_response    = f_enrich_int(l_each.transcription, l_token)
       l_data_asjson = json.loads(l_response.content) 
    except:
       l_data_asjson = None
