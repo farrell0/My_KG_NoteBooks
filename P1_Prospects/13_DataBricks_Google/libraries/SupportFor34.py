@@ -230,6 +230,9 @@ def f_ready_for_graph_int(i_arg1):
       df_EntityToVocabularyEdge_S
         
         
+#  # #############################################################
+
+
 def f_insert_into_graph(i_arg1, i_arg2, i_arg3, i_arg4, i_arg5, i_arg6, i_arg7, i_arg8):
     
    from katana.remote import import_data
@@ -255,12 +258,9 @@ def f_insert_into_graph(i_arg1, i_arg2, i_arg3, i_arg4, i_arg5, i_arg6, i_arg7, 
          id_space              = "UmlsVocabulary",  
          label                 = "UmlsVocabulary",  
          ) 
-      df_importer.insert()
-    
 
    #  Just edges
    #
-   with import_data.DataFrameImporter(my_graph) as df_importer:   
       df_importer.edges_dataframe(
          i_arg5, 
          source_id_space       = "PatientVisit", 
@@ -294,10 +294,12 @@ def f_insert_into_graph(i_arg1, i_arg2, i_arg3, i_arg4, i_arg5, i_arg6, i_arg7, 
          type                  = "ALSO_CODED_AS"
          )
 
-      df_importer.node_id_property_name("id")
+      #  df_importer.node_id_property_name("id")
+        
       df_importer.insert()
         
         
+#  # #############################################################
 #  # #############################################################
 
 
