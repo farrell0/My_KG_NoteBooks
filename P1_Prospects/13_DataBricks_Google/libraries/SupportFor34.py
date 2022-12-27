@@ -140,6 +140,8 @@ def f_enrrich_int(i_arg1, i_arg2):
 
 def f_enrich(i_arg1):
     
+   import json
+
    l_token = f_get_token()
 
    try:
