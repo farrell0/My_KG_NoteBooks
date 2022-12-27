@@ -105,6 +105,20 @@ def f_get_token():
    return
      
     
+def f_enrrich_int(i_arg1):
+    
+   import requests
+   from requests.structures import CaseInsensitiveDict
+      #
+   import json
+
+
+
+
+
+
+
+    
 #  # #############################################################
 
 
@@ -119,6 +133,36 @@ def f_enrich():
       l_data_asjson = None
         
    rerturn l_data_asjson
+
+
+
+
+
+
+
+    
+#  Function, because we will loop on this below-
+#
+def f_enrich(i_arg1):
+    
+   url = "https://healthcare.googleapis.com/v1/projects/katana-clusters-beta/locations/us-central1/services/nlp:analyzeEntities"
+   
+   l_headers = CaseInsensitiveDict()
+      #
+   l_headers["Authorization"] = "Bearer " + l_token
+   l_headers["Content-Type"]  = "application/json"
+       
+    
+   l_data = """
+      {{
+      'nlpService':'projects/katana-clusters-beta/locations/us-central1/services/nlp',
+      'documentContent':'{0}'
+      }}
+      """.format(i_arg1)
+         #
+   l_resp = requests.post(url, headers = l_headers, data = l_data)
+      #
+   return l_resp
 
 
 
