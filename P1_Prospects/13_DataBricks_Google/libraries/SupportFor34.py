@@ -7,7 +7,7 @@
 #  # #############################################################
 
 
-def f_init1():
+def f_display():
     
    import pandas as pd
    from tabulate import tabulate
@@ -26,7 +26,7 @@ def f_init1():
 #  # #############################################################
 
 
-def f_init2():
+def f_connect():
     
    from katana import remote
 
@@ -55,9 +55,9 @@ def f_init2():
 
 def f_init():
     
-   f_init1()
+   f_display()
 
-   my_client, my_graph = f_init2()
+   my_client, my_graph = f_connect()
 
     
    return (my_client, my_graph)
@@ -89,7 +89,7 @@ def f_init():
 #           gcloud auth application-default print-access-token
 
 
-def f_get_token():
+def f_get_token_int():
     
    import google.auth
    import google.auth.transport.requests
@@ -143,7 +143,7 @@ def f_enrich(i_arg1):
    import json
 
 
-   l_token = f_get_token()
+   l_token = f_get_token_int()
 
    try:
       l_response    = f_enrich_int(i_arg1, l_token)
