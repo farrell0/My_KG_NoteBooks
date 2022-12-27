@@ -4,6 +4,7 @@
 
 
 #  # #############################################################
+#  # #############################################################
 
 
 def f_init1():
@@ -49,6 +50,7 @@ def f_init2():
 
 
 #  # #############################################################
+#  # #############################################################
 
 
 def f_init():
@@ -59,6 +61,61 @@ def f_init():
 
     
    return (my_client, my_graph)
+
+
+#  # #############################################################
+#  # #############################################################
+
+
+def f_get_token():
+    
+   import google.auth
+   import google.auth.transport.requests
+   from google.oauth2 import service_account
+
+
+#  This token times out often; you must rerun this block from time to time
+#
+def f_get_token():
+   l_credentials = service_account.Credentials.from_service_account_file(
+      "/home/jovyan/work/My_KG_NoteBooks/P1_Prospects/13_DataBricks_Google/10_Data/05_katana-clusters-beta-d8605ac248e7.json",
+      scopes=['https://www.googleapis.com/auth/cloud-platform'])
+   l_auth_req = google.auth.transport.requests.Request()
+   l_credentials.refresh(l_auth_req)
+      #
+   return l_credentials.token
+     
+    
+l_token = f_get_token()
+
+    
+print("")
+print("Token: " + l_token[0:120] + " ...")
+print("")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#  # #############################################################
+
+
 
 
 
