@@ -19,3 +19,11 @@ def f_init():
       #
    DB_NAME         = "my_db"
    GRAPH_NAME      = "my_graph"
+      #
+   return (DB_NAME, GRAPH_NAME, NUM_PARTIONS)
+
+
+
+
+
+
