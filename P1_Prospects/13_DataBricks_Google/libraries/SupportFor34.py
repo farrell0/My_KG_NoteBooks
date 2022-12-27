@@ -185,8 +185,8 @@ def f_ready_for_graph_int(i_arg1, i_arg2):
             #  We make all Edges to be bi-directional. As a heterogeneous relationship,
             #  we need two arrays.
             #
-            l_recd2a = { "start_id": str(l_each.id)           , "end_id":   str(l_entity["entityId"]), "TYPE": "VISIT_CONTAINS" }
-            l_recd2b = { "start_id": str(l_entity["entityId"]), "end_id":   str(l_each.id)           , "TYPE": "VISIT_CONTAINS" }
+            l_recd2a = { "start_id": i_arg2                   , "end_id": str(l_entity["entityId"]), "TYPE": "VISIT_CONTAINS" }
+            l_recd2b = { "start_id": str(l_entity["entityId"]), "end_id": i_arg2                   , "TYPE": "VISIT_CONTAINS" }
                #
             l_PatientVisitToEntityEdge_N.append(l_recd2a)
             l_PatientVisitToEntityEdge_S.append(l_recd2b)
