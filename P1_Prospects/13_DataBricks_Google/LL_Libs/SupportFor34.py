@@ -4,7 +4,7 @@ import pandas as pd
 from tabulate import tabulate
 
 
-def f_init()
+def f_init():
 
 
    pd.set_option("display.width", 480)
