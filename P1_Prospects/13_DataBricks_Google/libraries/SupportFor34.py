@@ -107,7 +107,7 @@ def f_get_token():
    return l_token
      
     
-def f_enrrich_int(i_arg1, i_arg2):
+def f_enrich_int(i_arg1, i_arg2):
     
    import requests
    from requests.structures import CaseInsensitiveDict
@@ -145,14 +145,13 @@ def f_enrich(i_arg1):
 
    l_token = f_get_token()
 
-   # try:
-   l_response    = f_enrich_int(i_arg1, l_token)
-   # l_data_asjson = json.loads(l_response.content) 
-   # except:
-   #    l_data_asjson = None
+   try:
+      l_response    = f_enrich_int(i_arg1, l_token)
+      l_data_asjson = json.loads(l_response.content) 
+   except:
+      l_data_asjson = None
         
-   # return l_data_asjson
-   return l_response
+   return l_data_asjson
 
 
 
