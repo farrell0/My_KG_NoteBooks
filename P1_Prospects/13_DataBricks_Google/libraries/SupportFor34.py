@@ -326,7 +326,7 @@ def f_enrich(i_arg1):
         
    l_uniqkey += 1
       #
-   l_df1, l_df2, l_fg3, l_df4, l_df5, l_df6 = f_ready_for_graph_int(l_data_asjson, "PV-" + str(l_uniqkey))
+   l_df1, l_df2, l_fg3, l_df4, l_df5, l_df6, l_df7 = f_ready_for_graph_int(l_data_asjson, "PV-" + str(l_uniqkey))
 
         
    return l_data_asjson
