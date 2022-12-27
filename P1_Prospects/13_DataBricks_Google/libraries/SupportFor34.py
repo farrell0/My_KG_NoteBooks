@@ -9,7 +9,7 @@
 
 #  Display options
 #
-def f_display():
+def f_display_int():
     
    import pandas as pd
    from tabulate import tabulate
@@ -30,7 +30,7 @@ def f_display():
 
 #  Connect to the KG server
 #
-def f_connect():
+def f_connect_int():
     
    from katana import remote
 
@@ -59,9 +59,9 @@ def f_connect():
 
 def f_init():
     
-   f_display()
+   f_display_int()
 
-   my_client, my_graph = f_connect()
+   my_client, my_graph = f_connect_int()
 
     
    return (my_client, my_graph)
