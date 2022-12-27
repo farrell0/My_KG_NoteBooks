@@ -4,7 +4,10 @@ import pandas as pd
 from tabulate import tabulate
 
 
-def f_init():
+# #############################################################
+
+
+def f_init1():
 
 
    pd.set_option("display.width", 480)
@@ -14,16 +17,18 @@ def f_init():
    from IPython.display import display, HTML
    display(HTML(""))
 
-
-   NUM_PARTITIONS  = 3
-      #
-   DB_NAME         = "my_db"
-   GRAPH_NAME      = "my_graph"
-      #
    return 
 
 
+def f_init():
+    
+   f_init1()
 
+
+# #############################################################
+
+
+f_init()
 
 
 
