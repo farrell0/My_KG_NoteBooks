@@ -53,9 +53,11 @@ def f_init():
 #  f_init1()
 
 #  my_client, my_graph = f_init2()
+
+   sss = 34
     
     
-   return  (1)
+   return  (sss)
 
 
 
