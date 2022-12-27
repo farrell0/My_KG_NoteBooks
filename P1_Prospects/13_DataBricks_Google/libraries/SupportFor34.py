@@ -221,8 +221,7 @@ def f_ready_for_graph_int(i_arg1, i_arg2):
    df_EntityToVocabularyEdge_N    = pd.DataFrame.from_records(l_EntityToVocabularyEdge_N  ).drop_duplicates()
    df_EntityToVocabularyEdge_S    = pd.DataFrame.from_records(l_EntityToVocabularyEdge_S  ).drop_duplicates()
     
-   return 
-      df_UmlsEntityNodes,
+   return  df_UmlsEntityNodes,
       df_UmlsVocabularyNodes,
       df_PatientVisitToEntityEdge_N,
       df_PatientVisitToEntityEdge_S,
