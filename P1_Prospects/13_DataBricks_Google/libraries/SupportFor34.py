@@ -67,6 +67,28 @@ def f_init():
 #  # #############################################################
 
 
+#  Google has a Web service to convert text into usable UMLS codes. See,
+#        https://cloud.google.com/healthcare-api/docs/how-tos/nlp
+#
+#  In this cell, we begin to invoke this service on the text from the
+#  cell above.
+
+#  See also,
+#     https://stackoverflow.com/questions/53472429/how-to-get-a-gcp-bearer-token-programmatically-with-python
+
+#  Google:
+#
+#     .  We had to create an Auth Token, which produced a JSON file.
+#        (Instruction in Url above.)
+#
+#     .  Our JSON file is at,
+#              export GOOGLE_APPLICATION_CREDENTIALS="/mnt/hgfs/My.20/MyShare_1/46 Topics 2022/91 KG, All Prospects/13 KG, DataBricks, Google/10_Data/05_katana-clusters-beta-d8605ac248e7.json"
+#              export GOOGLE_APPLICATION_CREDENTIALS="/home/jovyan/work/My_KG_NoteBooks/P1_Prospects/13_DataBricks_Google/10_Data/05_katana-clusters-beta-d8605ac248e7.json"
+#
+#     .  To extract the Auth Token, set the above, then run
+#           gcloud auth application-default print-access-token
+
+
 def f_get_token():
     
    import google.auth
