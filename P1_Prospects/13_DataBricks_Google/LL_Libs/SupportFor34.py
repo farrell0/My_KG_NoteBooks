@@ -1,24 +1,12 @@
 
 
-import pandas as pd
-from tabulate import tabulate
-   #
-from katana import remote
-
-
-# #############################################################
-
-
-NUM_PARTITIONS  = 3
-   #
-DB_NAME         = "my_db"
-GRAPH_NAME      = "my_graph"
-
-
 # #############################################################
 
 
 def f_init1():
+    
+   import pandas as pd
+   from tabulate import tabulate
 
 
    pd.set_option("display.width", 480)
@@ -35,6 +23,15 @@ def f_init1():
 
 
 def f_init2():
+    
+   from katana import remote
+
+
+   NUM_PARTITIONS  = 3
+      #
+   DB_NAME         = "my_db"
+   GRAPH_NAME      = "my_graph"
+   
     
    #  Get a client handle
    #
@@ -53,12 +50,12 @@ def f_init2():
 
 def f_init():
     
-   f_init1()
+#  f_init1()
 
-   my_client, my_graph = f_init2()
+#  my_client, my_graph = f_init2()
     
     
-   return  1
+   return  (1)
 
 
 
