@@ -2,6 +2,8 @@
 
 import pandas as pd
 from tabulate import tabulate
+   #
+from katana import remote
 
 
 # #############################################################
@@ -20,9 +22,23 @@ def f_init1():
    return 
 
 
-def f_init():
+# #############################################################
+
+
+def f_init2():
     
+    
+    
+   reutn
+
+
+
+
+
+
+def f_init():
    f_init1()
+   f_init2()
 
 
 # #############################################################
