@@ -148,23 +148,8 @@ def f_ready_for_graph_int(i_arg1, i_arg2):
    import pandas as pd
 
 
-   pd_PatientVisit = {
-      "id"              : i_arg2, 
-      "description"     : 
-      "description"     : 
-      "description"     : 
-      "description"     : 
-      "description"     : 
-      "description"     : 
-                      
-                      
-                      
-      #     id,description,medical_specialty,sample_name,transcription,keywords
-
-
-
-
-
+   df_PatientVisit = pd_DataFrame( { "id": i_arg2, "transcription": i_arg1 } )
+      #                  
    l_UmlsEntityNodes             = []
    l_UmlsVocabularyNodes         = []
       #
