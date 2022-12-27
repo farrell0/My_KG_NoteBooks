@@ -140,6 +140,7 @@ def f_enrich_int(i_arg1, i_arg2):
 
     
 #  # #############################################################
+#  # #############################################################
 
 
 def f_ready_for_graph_int(i_arg1):
@@ -277,7 +278,7 @@ def f_insert_into_graph(i_arg1, i_arg2, i_arg3, i_arg4, i_arg5, i_arg6, i_arg7, 
          type                  = "VISIT_CONTAINS"
          )
       df_importer.edges_dataframe(
-         df_EntityToVocabularyEdge_N, 
+         i_arg7, 
          source_id_space       = "UmlsEntity", 
          destination_id_space  = "UmlsVocabulary",   
          source_column         = "start_id",
@@ -285,7 +286,7 @@ def f_insert_into_graph(i_arg1, i_arg2, i_arg3, i_arg4, i_arg5, i_arg6, i_arg7, 
          type                  = "ALSO_CODED_AS"
          )
       df_importer.edges_dataframe(
-         df_EntityToVocabularyEdge_S, 
+         i_arg8, 
          source_id_space       = "UmlsVocabulary", 
          destination_id_space  = "UmlsEntity",   
          source_column         = "start_id",
@@ -293,66 +294,10 @@ def f_insert_into_graph(i_arg1, i_arg2, i_arg3, i_arg4, i_arg5, i_arg6, i_arg7, 
          type                  = "ALSO_CODED_AS"
          )
 
-      df_importer.edges_dataframe(
-         df_PatientVisitToMedicalSpecialtyEdge_N, 
-         source_id_space       = "PatientVisit", 
-         destination_id_space  = "MedicalSpecialty",   
-         source_column         = "start_id",
-         destination_column    = "end_id",
-         type                  = "IS_OF_SPECIALTY"
-         )
-      df_importer.edges_dataframe(
-         df_PatientVisitToMedicalSpecialtyEdge_S, 
-         source_id_space       = "MedicalSpecialty", 
-         destination_id_space  = "PatientVisit",   
-         source_column         = "start_id",
-         destination_column    = "end_id",
-         type                  = "IS_OF_SPECIALTY"
-         )
-   
-      df_importer.edges_dataframe(
-         df_PatientVisitToKeywordEdge_N, 
-         source_id_space       = "PatientVisit", 
-         destination_id_space  = "Keyword",   
-         source_column         = "start_id",
-         destination_column    = "end_id",
-         type                  = "IS_OF_KEYWORD"
-         )
-      df_importer.edges_dataframe(
-         df_PatientVisitToKeywordEdge_S, 
-         source_id_space       = "Keyword", 
-         destination_id_space  = "PatientVisit",   
-         source_column         = "start_id",
-         destination_column    = "end_id",
-         type                  = "IS_OF_KEYWORD"
-         )
-       
       df_importer.node_id_property_name("id")
       df_importer.insert()
         
         
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 #  # #############################################################
 
 
@@ -371,18 +316,3 @@ def f_enrich(i_arg1):
       l_data_asjson = None
         
    return l_data_asjson
-
-
-#  # #############################################################
-#  # #############################################################
-
-
-
-
-
-
-
-
-
-    
-    
