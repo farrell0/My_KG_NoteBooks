@@ -144,6 +144,8 @@ def f_enrich_int(i_arg1, i_arg2):
 
 def f_add_to_graph(i_arg1, i_arg2):
     
+   from katana.remote import import_data
+
     
    l_UmlsEntityNodes             = []
    l_UmlsVocabularyNodes         = []
@@ -227,46 +229,42 @@ def f_add_to_graph(i_arg1, i_arg2):
 
    #  Insert this into our graph ..
    #
-    
-    
-    
-    from katana.remote import import_data
 
 
-#  Just nodes
-#
-with import_data.DataFrameImporter(my_graph) as df_importer:   
-   df_importer.nodes_dataframe(
-      df_PatientVisitNode,
-      id_column             = "id",
-      id_space              = "PatientVisit",  
-      label                 = "PatientVisit",  
-      ) 
-   df_importer.nodes_dataframe(
-      df_MedicalSpecialtyNode,
-      id_column             = "id",
-      id_space              = "MedicalSpecialty",  
-      label                 = "MedicalSpecialty",  
-      ) 
-   df_importer.nodes_dataframe(
-      df_KeywordNode,
-      id_column             = "id",
-      id_space              = "Keyword",  
-      label                 = "Keyword",  
-      ) 
-   df_importer.nodes_dataframe(
-      df_UmlsEntityNode,
-      id_column             = "id",
-      id_space              = "UmlsEntity",  
-      label                 = "UmlsEntity",  
-      ) 
-   df_importer.nodes_dataframe(
-      df_UmlsVocabularyNode,
-      id_column             = "id",
-      id_space              = "UmlsVocabulary",  
-      label                 = "UmlsVocabulary",  
-      ) 
-   df_importer.insert()
+   #  Just nodes
+   #
+   with import_data.DataFrameImporter(i_arg2) as df_importer:   
+      df_importer.nodes_dataframe(
+         df_PatientVisitNode,
+         id_column             = "id",
+         id_space              = "PatientVisit",  
+         label                 = "PatientVisit",  
+         ) 
+      df_importer.nodes_dataframe(
+         df_MedicalSpecialtyNode,
+         id_column             = "id",
+         id_space              = "MedicalSpecialty",  
+         label                 = "MedicalSpecialty",  
+         ) 
+      df_importer.nodes_dataframe(
+         df_KeywordNode,
+         id_column             = "id",
+         id_space              = "Keyword",  
+         label                 = "Keyword",  
+         ) 
+      df_importer.nodes_dataframe(
+         df_UmlsEntityNode,
+         id_column             = "id",
+         id_space              = "UmlsEntity",  
+         label                 = "UmlsEntity",  
+         ) 
+      df_importer.nodes_dataframe(
+         df_UmlsVocabularyNode,
+         id_column             = "id",
+         id_space              = "UmlsVocabulary",  
+         label                 = "UmlsVocabulary",  
+         ) 
+      df_importer.insert()
     
 
 #  Just edges
