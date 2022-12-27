@@ -58,7 +58,7 @@ def f_init():
    my_client, my_graph = f_init2()
     
     
-   return 
+   return  1
 
 
 
