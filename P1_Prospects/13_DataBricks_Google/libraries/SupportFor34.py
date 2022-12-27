@@ -101,8 +101,10 @@ def f_get_token():
          #
    l_auth_req = google.auth.transport.requests.Request()
    l_credentials.refresh(l_auth_req)
+      #
+   l_token = l_credentials.token
  
-   return
+   return l_token
      
     
 def f_enrrich_int(i_arg1):
@@ -113,39 +115,7 @@ def f_enrrich_int(i_arg1):
    import json
 
 
-
-
-
-
-
-    
-#  # #############################################################
-
-
-def f_enrich():
-    
-   f_get_token()
-
-   try:
-      l_response    = f_enrich(l_each.transcription)
-      l_data_asjson = json.loads(l_response.content) 
-   except:
-      l_data_asjson = None
-        
-   rerturn l_data_asjson
-
-
-
-
-
-
-
-    
-#  Function, because we will loop on this below-
-#
-def f_enrich(i_arg1):
-    
-   url = "https://healthcare.googleapis.com/v1/projects/katana-clusters-beta/locations/us-central1/services/nlp:analyzeEntities"
+   l_url = "https://healthcare.googleapis.com/v1/projects/katana-clusters-beta/locations/us-central1/services/nlp:analyzeEntities"
    
    l_headers = CaseInsensitiveDict()
       #
@@ -160,7 +130,7 @@ def f_enrich(i_arg1):
       }}
       """.format(i_arg1)
          #
-   l_resp = requests.post(url, headers = l_headers, data = l_data)
+   l_resp = requests.post(l_url, headers = l_headers, data = l_data)
       #
    return l_resp
 
@@ -173,3 +143,34 @@ def f_enrich(i_arg1):
 
 
 
+
+
+
+
+
+
+
+    
+#  # #############################################################
+
+
+def f_enrich():
+    
+   l_token = f_get_token()
+
+   try:
+      l_response    = f_enrich_int(l_each.transcription)
+      l_data_asjson = json.loads(l_response.content) 
+   except:
+      l_data_asjson = None
+        
+   rerturn l_data_asjson
+
+
+
+
+
+
+
+    
+    
