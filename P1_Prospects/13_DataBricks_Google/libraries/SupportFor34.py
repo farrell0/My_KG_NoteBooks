@@ -148,7 +148,7 @@ def f_enrich():
    except:
       l_data_asjson = None
         
-   rerturn l_data_asjson
+   return l_data_asjson
 
 
 
