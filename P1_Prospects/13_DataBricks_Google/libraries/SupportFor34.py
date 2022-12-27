@@ -142,17 +142,17 @@ def f_enrich(i_arg1):
     
    import json
 
-   l_token = f_get_token()
-    
-   print(l_token)
 
-   try:
-      l_response    = f_enrich_int(i_arg1, l_token)
-      l_data_asjson = json.loads(l_response.content) 
-   except:
-      l_data_asjson = None
+   l_token = f_get_token()
+
+   # try:
+   l_response    = f_enrich_int(i_arg1, l_token)
+   # l_data_asjson = json.loads(l_response.content) 
+   # except:
+   #    l_data_asjson = None
         
-   return l_data_asjson
+   # return l_data_asjson
+   return l_response
 
 
 
