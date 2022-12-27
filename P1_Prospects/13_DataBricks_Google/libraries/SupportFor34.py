@@ -7,6 +7,8 @@
 #  # #############################################################
 
 
+#  Display options
+#
 def f_display():
     
    import pandas as pd
@@ -26,6 +28,8 @@ def f_display():
 #  # #############################################################
 
 
+#  Connect to the KG server
+#
 def f_connect():
     
    from katana import remote
@@ -152,6 +156,12 @@ def f_enrich(i_arg1):
       l_data_asjson = None
         
    return l_data_asjson
+
+
+#  # #############################################################
+#  # #############################################################
+
+
 
 
 
