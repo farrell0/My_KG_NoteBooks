@@ -145,12 +145,13 @@ def f_enrich_int(i_arg1, i_arg2):
 def f_add_to_graph(i_arg1):
     
     
-    
-    
-    
-    
-    
-    
+   l_UmlsEntityNodes             = []
+   l_UmlsVocabularyNodes         = []
+      #
+   l_PatientVisitToEntityEdge_N  = []
+   l_PatientVisitToEntityEdge_S  = []
+   l_EntityToVocabularyEdge_N    = []
+   l_EntityToVocabularyEdge_S    = []
     
     
    #  "entities" should be a root level key to this dictionary
@@ -159,66 +160,59 @@ def f_add_to_graph(i_arg1):
       #
       #  Loop thru these
       #
-      for l_entity in l_each_asdict["entities"]:
+      for l_entity in i_arg1["entities"]:
             
-            l_cntr += 1
+         if ("entityId" in l_entity):
+            #
+            #  Build a dictionary that we will append to an array
+            #
+            l_recd1 = { "id": l_entity["entityId"], "entity_id" : l_entity["entityId"], "LABEL": "UmlsEntity" }
+            #
+            #  If this key is present, add it to the dictionary
+            #
+            if ("preferredTerm" in l_entity):
                #
-            if (l_cntr % 100000 == 0):
-               print("")
-               print("Processed so far: %d" % (l_cntr))
-            else:
-               if (l_cntr % 1000 == 0):
-                  print(".", end = "")
-            
-            if ("entityId" in l_entity):
+               #  We have an additional key, add to the record and add to our array
                #
-               #  Build a dictionary that we will append to an array
-               #
-               l_recd1 = { "id": l_entity["entityId"], "entity_id" : l_entity["entityId"], "LABEL": "UmlsEntity" }
-               #
-               #  If this key is present, add it to the dictionary
-               #
-               if ("preferredTerm" in l_entity):
+               l_recd1.update( {"preferred_term": l_entity["preferredTerm"]} )
                   #
-                  #  We have an additional key, add to the record and add to our array
+            l_UmlsEntityNodes.append(l_recd1)
+            #
+            #  Above was our list of Nodes of LABEL "UmlsEntity"
+            #  
+            #  Here we make our Edge list from;  PatientVisit --> UmlsEntity
+            #
+            #  We make all Edges to be bi-directional. As a heterogeneous relationship,
+            #  we need two arrays.
+            #
+            l_recd2a = { "start_id": str(l_each.id)           , "end_id":   str(l_entity["entityId"]), "TYPE": "VISIT_CONTAINS" }
+            l_recd2b = { "start_id": str(l_entity["entityId"]), "end_id":   str(l_each.id)           , "TYPE": "VISIT_CONTAINS" }
+               #
+            l_PatientVisitToEntityEdge_N.append(l_recd2a)
+            l_PatientVisitToEntityEdge_S.append(l_recd2b)
+            #
+            #  We are done with UmlsEntity and its Edge to PatientVisit
+            #
+            #  Also in "entities" is another array, "vocabularyCodes"
+            #
+            if ("vocabularyCodes" in l_entity):
+               for l_vocab in l_entity["vocabularyCodes"]:
                   #
-                  l_recd1.update( {"preferred_term": l_entity["preferredTerm"]} )
-                     #
-               l_UmlsEntityNodes.append(l_recd1)
-               #
-               #  Above was our list of Nodes of LABEL "UmlsEntity"
-               #  
-               #  Here we make our Edge list from;  PatientVisit --> UmlsEntity
-               #
-               #  We make all Edges to be bi-directional. As a heterogeneous relationship,
-               #  we need two arrays.
-               #
-               l_recd2a = { "start_id": str(l_each.id)           , "end_id":   str(l_entity["entityId"]), "TYPE": "VISIT_CONTAINS" }
-               l_recd2b = { "start_id": str(l_entity["entityId"]), "end_id":   str(l_each.id)           , "TYPE": "VISIT_CONTAINS" }
+                  #  Add to our set of Vocabulary Nodes
                   #
-               l_PatientVisitToEntityEdge_N.append(l_recd2a)
-               l_PatientVisitToEntityEdge_S.append(l_recd2b)
-               #
-               #  We are done with UmlsEntity and its Edge to PatientVisit
-               #
-               #  Also in "entities" is another array, "vocabularyCodes"
-               #
-               if ("vocabularyCodes" in l_entity):
-                  for l_vocab in l_entity["vocabularyCodes"]:
+                  l_recd3 = { "id": l_vocab, "vocabularyCode": l_vocab, "LABEL": "UmlsVocabulary" }
                      #
-                     #  Add to our set of Vocabulary Nodes
+                  l_UmlsVocabularyNodes.append(l_recd3)
+                  #
+                  #  And create the Edge from UmlsEntity --> UmlsVocabulary
+                  #
+                  l_recd4a = { "start_id": str(l_entity["entityId"]), "end_id": str(l_vocab             ), "TYPE": "ALSO_CODED_AS" }
+                  l_recd4b = { "start_id": str(l_vocab             ), "end_id": str(l_entity["entityId"]), "TYPE": "ALSO_CODED_AS" }
                      #
-                     l_recd3 = { "id": l_vocab, "vocabularyCode": l_vocab, "LABEL": "UmlsVocabulary" }
-                        #
-                     l_UmlsVocabularyNodes.append(l_recd3)
-                     #
-                     #  And create the Edge from UmlsEntity --> UmlsVocabulary
-                     #
-                     l_recd4a = { "start_id": str(l_entity["entityId"]), "end_id": str(l_vocab             ), "TYPE": "ALSO_CODED_AS" }
-                     l_recd4b = { "start_id": str(l_vocab             ), "end_id": str(l_entity["entityId"]), "TYPE": "ALSO_CODED_AS" }
-                        #
-                     l_EntityToVocabularyEdge_N.append(l_recd4a)
-                     l_EntityToVocabularyEdge_S.append(l_recd4b)
+                  l_EntityToVocabularyEdge_N.append(l_recd4a)
+                  l_EntityToVocabularyEdge_S.append(l_recd4b)
+                    
+        
 
 
 
