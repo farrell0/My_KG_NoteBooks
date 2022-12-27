@@ -143,7 +143,7 @@ def f_enrich_int(i_arg1, i_arg2):
 #  # #############################################################
 
 
-def f_ready_for_graph_int(i_arg1):
+def f_ready_for_graph_int(i_arg1, i_arg2):
     
    l_UmlsEntityNodes             = []
    l_UmlsVocabularyNodes         = []
@@ -237,9 +237,11 @@ def f_insert_into_graph(i_arg1, i_arg2, i_arg3, i_arg4, i_arg5, i_arg6, i_arg7, 
     
    from katana.remote import import_data
 
-   #  Just nodes
-   #
+
    with import_data.DataFrameImporter(i_arg1) as df_importer:   
+        
+      #  Just nodes
+      #
       df_importer.nodes_dataframe(
          i_arg2,
          id_column             = "id",
@@ -259,8 +261,8 @@ def f_insert_into_graph(i_arg1, i_arg2, i_arg3, i_arg4, i_arg5, i_arg6, i_arg7, 
          label                 = "UmlsVocabulary",  
          ) 
 
-   #  Just edges
-   #
+      #  Just edges
+      #
       df_importer.edges_dataframe(
          i_arg5, 
          source_id_space       = "PatientVisit", 
@@ -303,6 +305,8 @@ def f_insert_into_graph(i_arg1, i_arg2, i_arg3, i_arg4, i_arg5, i_arg6, i_arg7, 
 #  # #############################################################
 
 
+l_uniqkey = 8000
+
 
 def f_enrich(i_arg1):
     
@@ -316,5 +320,11 @@ def f_enrich(i_arg1):
       l_data_asjson = json.loads(l_response.content) 
    except:
       l_data_asjson = None
+        
+        
+   l_uniqkey += 1
+      #
+   l_df1, l_df2, l_fg3, l_df4, l_df5, l_df6 = f_ready_for_graph_int(l_data_asjson, "PV-" + str(l_uniqkey)):
+
         
    return l_data_asjson
