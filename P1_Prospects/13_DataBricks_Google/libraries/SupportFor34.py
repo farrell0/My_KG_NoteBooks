@@ -142,7 +142,7 @@ def f_enrich_int(i_arg1, i_arg2):
 #  # #############################################################
 
 
-def f_add_to_graph(i_arg1):
+def f_add_to_graph(i_arg1, i_arg2):
     
     
    l_UmlsEntityNodes             = []
@@ -212,6 +212,136 @@ def f_add_to_graph(i_arg1):
                   l_EntityToVocabularyEdge_N.append(l_recd4a)
                   l_EntityToVocabularyEdge_S.append(l_recd4b)
                     
+                    
+   df_UmlsEntityNodes             = pd.DataFrame.from_records(l_UmlsEntityNodes           ).drop_duplicates()
+   df_UmlsVocabularyNodes         = pd.DataFrame.from_records(l_UmlsVocabularyNodes       ).drop_duplicates()
+      #
+   df_PatientVisitToEntityEdge_N  = pd.DataFrame.from_records(l_PatientVisitToEntityEdge_N).drop_duplicates()
+   df_PatientVisitToEntityEdge_S  = pd.DataFrame.from_records(l_PatientVisitToEntityEdge_S).drop_duplicates()
+   df_EntityToVocabularyEdge_N    = pd.DataFrame.from_records(l_EntityToVocabularyEdge_N  ).drop_duplicates()
+   df_EntityToVocabularyEdge_S    = pd.DataFrame.from_records(l_EntityToVocabularyEdge_S  ).drop_duplicates()
+    
+
+      ###
+        
+
+   #  Insert this into our graph ..
+   #
+    
+    
+    
+    from katana.remote import import_data
+
+
+#  Just nodes
+#
+with import_data.DataFrameImporter(my_graph) as df_importer:   
+   df_importer.nodes_dataframe(
+      df_PatientVisitNode,
+      id_column             = "id",
+      id_space              = "PatientVisit",  
+      label                 = "PatientVisit",  
+      ) 
+   df_importer.nodes_dataframe(
+      df_MedicalSpecialtyNode,
+      id_column             = "id",
+      id_space              = "MedicalSpecialty",  
+      label                 = "MedicalSpecialty",  
+      ) 
+   df_importer.nodes_dataframe(
+      df_KeywordNode,
+      id_column             = "id",
+      id_space              = "Keyword",  
+      label                 = "Keyword",  
+      ) 
+   df_importer.nodes_dataframe(
+      df_UmlsEntityNode,
+      id_column             = "id",
+      id_space              = "UmlsEntity",  
+      label                 = "UmlsEntity",  
+      ) 
+   df_importer.nodes_dataframe(
+      df_UmlsVocabularyNode,
+      id_column             = "id",
+      id_space              = "UmlsVocabulary",  
+      label                 = "UmlsVocabulary",  
+      ) 
+   df_importer.insert()
+    
+
+#  Just edges
+#
+with import_data.DataFrameImporter(my_graph) as df_importer:   
+   df_importer.edges_dataframe(
+      df_PatientVisitToEntityEdge_N, 
+      source_id_space       = "PatientVisit", 
+      destination_id_space  = "UmlsEntity",   
+      source_column         = "start_id",
+      destination_column    = "end_id",
+      type                  = "VISIT_CONTAINS"
+      )
+   df_importer.edges_dataframe(
+      df_PatientVisitToEntityEdge_S, 
+      source_id_space       = "UmlsEntity", 
+      destination_id_space  = "PatientVisit",   
+      source_column         = "start_id",
+      destination_column    = "end_id",
+      type                  = "VISIT_CONTAINS"
+      )
+   df_importer.edges_dataframe(
+      df_EntityToVocabularyEdge_N, 
+      source_id_space       = "UmlsEntity", 
+      destination_id_space  = "UmlsVocabulary",   
+      source_column         = "start_id",
+      destination_column    = "end_id",
+      type                  = "ALSO_CODED_AS"
+      )
+   df_importer.edges_dataframe(
+      df_EntityToVocabularyEdge_S, 
+      source_id_space       = "UmlsVocabulary", 
+      destination_id_space  = "UmlsEntity",   
+      source_column         = "start_id",
+      destination_column    = "end_id",
+      type                  = "ALSO_CODED_AS"
+      )
+
+   df_importer.edges_dataframe(
+      df_PatientVisitToMedicalSpecialtyEdge_N, 
+      source_id_space       = "PatientVisit", 
+      destination_id_space  = "MedicalSpecialty",   
+      source_column         = "start_id",
+      destination_column    = "end_id",
+      type                  = "IS_OF_SPECIALTY"
+      )
+   df_importer.edges_dataframe(
+      df_PatientVisitToMedicalSpecialtyEdge_S, 
+      source_id_space       = "MedicalSpecialty", 
+      destination_id_space  = "PatientVisit",   
+      source_column         = "start_id",
+      destination_column    = "end_id",
+      type                  = "IS_OF_SPECIALTY"
+      )
+
+   df_importer.edges_dataframe(
+      df_PatientVisitToKeywordEdge_N, 
+      source_id_space       = "PatientVisit", 
+      destination_id_space  = "Keyword",   
+      source_column         = "start_id",
+      destination_column    = "end_id",
+      type                  = "IS_OF_KEYWORD"
+      )
+   df_importer.edges_dataframe(
+      df_PatientVisitToKeywordEdge_S, 
+      source_id_space       = "Keyword", 
+      destination_id_space  = "PatientVisit",   
+      source_column         = "start_id",
+      destination_column    = "end_id",
+      type                  = "IS_OF_KEYWORD"
+      )
+    
+   df_importer.node_id_property_name("id")
+   df_importer.insert()
+        
         
 
 
