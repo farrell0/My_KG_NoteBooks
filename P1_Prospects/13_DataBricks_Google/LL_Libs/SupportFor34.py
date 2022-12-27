@@ -36,9 +36,16 @@ def f_init1():
 
 def f_init2():
     
+   #  Get a client handle
+   #
+   my_client = remote.Client()
+   
+   #  Connect to graph
+   #
+   my_graph, *_ = my_client.get_database(name=DB_NAME).find_graphs_by_name(GRAPH_NAME)
+       
     
-    
-   return
+   return my_client, my_graph
 
 
 # #############################################################
@@ -46,7 +53,7 @@ def f_init2():
 
 def f_init():
    f_init1()
-   f_init2()
+   my_clientf_init2()
     
    return 
 
