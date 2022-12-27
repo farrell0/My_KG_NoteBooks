@@ -63,3 +63,6 @@ def f_init():
 
 
 
+def bbb():
+    
+   return 34
