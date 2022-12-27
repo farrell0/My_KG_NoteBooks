@@ -9,6 +9,15 @@ from katana import remote
 # #############################################################
 
 
+NUM_PARTITIONS  = 3
+   #
+DB_NAME         = "my_db"
+GRAPH_NAME      = "my_graph"
+
+
+# #############################################################
+
+
 def f_init1():
 
 
@@ -29,22 +38,20 @@ def f_init2():
     
     
     
-   reutn
-
-
-
-
-
-
-def f_init():
-   f_init1()
-   f_init2()
+   return
 
 
 # #############################################################
 
 
-f_init()
+def f_init():
+   f_init1()
+   f_init2()
+    
+   return 
+
+
+
 
 
 
