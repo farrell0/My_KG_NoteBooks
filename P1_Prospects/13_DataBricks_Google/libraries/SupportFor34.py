@@ -146,6 +146,17 @@ def f_enrich_int(i_arg1, i_arg2):
 def f_ready_for_graph_int(i_arg1, i_arg2):
     
    import pandas as pd
+   import numpy as np
+
+   np_patientvisit = np.array([
+      [i_arg2,
+          #
+      ], dtype="str")
+   
+   pd_airports = pd.DataFrame(np_airports, columns = ["airport_code", "airport_name", "state_code", "LABEL"])
+   
+
+
 
 
    l_UmlsEntityNodes             = []
