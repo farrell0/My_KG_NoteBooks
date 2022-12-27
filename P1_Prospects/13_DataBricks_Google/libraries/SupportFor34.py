@@ -110,7 +110,15 @@ def f_get_token():
 
 def f_enrich():
     
-   pass
+   f_get_token()
+
+   try:
+      l_response    = f_enrich(l_each.transcription)
+      l_data_asjson = json.loads(l_response.content) 
+   except:
+      l_data_asjson = None
+        
+   rerturn l_data_asjson
 
 
 
