@@ -142,9 +142,8 @@ def f_enrich_int(i_arg1, i_arg2):
 #  # #############################################################
 
 
-def f_add_to_graph(i_arg1, i_arg2):
+def f_ready_for_graph_int(i_arg1):
     
-   from katana.remote import import_data
 
     
    l_UmlsEntityNodes             = []
@@ -223,6 +222,12 @@ def f_add_to_graph(i_arg1, i_arg2):
    df_EntityToVocabularyEdge_N    = pd.DataFrame.from_records(l_EntityToVocabularyEdge_N  ).drop_duplicates()
    df_EntityToVocabularyEdge_S    = pd.DataFrame.from_records(l_EntityToVocabularyEdge_S  ).drop_duplicates()
     
+    
+    
+    
+    
+    
+    
 
       ###
         
@@ -230,6 +235,7 @@ def f_add_to_graph(i_arg1, i_arg2):
    #  Insert this into our graph ..
    #
 
+   from katana.remote import import_data
 
    #  Just nodes
    #
