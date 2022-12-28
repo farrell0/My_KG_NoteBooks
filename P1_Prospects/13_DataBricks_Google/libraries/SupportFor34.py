@@ -313,7 +313,7 @@ from random import randint
 l_uniqkey = randint(8000,8999)
 
 
-def f_enrich(i_arg1):
+def f_enrich(i_arg1, i_arg2):
     
    import json
       #
@@ -334,7 +334,7 @@ def f_enrich(i_arg1):
       #
    l_df1, l_df2, l_fg3, l_df4, l_df5, l_df6, l_df7 = f_ready_for_graph_int(l_data_asjson, l_uniqid)
       #
-   f_ready_for_graph_int(my_graph, l_df1, l_df2, l_fg3, l_df4, l_df5, l_df6, l_df7)
+   f_insert_into_graph(i_arg2, l_df1, l_df2, l_fg3, l_df4, l_df5, l_df6, l_df7)
 
         
    return l_data_asjson, l_uniqid
