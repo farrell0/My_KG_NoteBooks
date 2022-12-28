@@ -148,7 +148,7 @@ def f_ready_for_graph_int(i_arg1, i_arg2):
    import pandas as pd
 
 
-   df_PatientVisit = pd.DataFrame( { "id": i_arg2, "transcription": i_arg1 } )
+   df_PatientVisit = pd.DataFrame( { "id": i_arg2, "transcription": i_arg1, "LABEL": "PatientVisit"} )
       #                  
    l_UmlsEntityNodes             = []
    l_UmlsVocabularyNodes         = []
@@ -248,18 +248,18 @@ def f_insert_into_graph(i_arg1, i_arg2, i_arg3, i_arg4, i_arg5, i_arg6, i_arg7, 
          id_space              = "PatientVisit",  
          label                 = "PatientVisit",  
          ) 
-      df_importer.nodes_dataframe(
-         i_arg3,
-         id_column             = "id",
-         id_space              = "UmlsEntity",  
-         label                 = "UmlsEntity",  
-         ) 
-      df_importer.nodes_dataframe(
-         i_arg4,
-         id_column             = "id",
-         id_space              = "UmlsVocabulary",  
-         label                 = "UmlsVocabulary",  
-         ) 
+#     df_importer.nodes_dataframe(
+#        i_arg3,
+#        id_column             = "id",
+#        id_space              = "UmlsEntity",  
+#        label                 = "UmlsEntity",  
+#        ) 
+#     df_importer.nodes_dataframe(
+#        i_arg4,
+#        id_column             = "id",
+#        id_space              = "UmlsVocabulary",  
+#        label                 = "UmlsVocabulary",  
+#        ) 
 
 #     #  Just edges
 #     #
