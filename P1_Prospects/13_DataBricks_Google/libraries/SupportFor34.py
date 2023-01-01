@@ -271,14 +271,6 @@ def f_insert_into_graph(i_arg1, i_arg2, i_arg3, i_arg4, i_arg5, i_arg6, i_arg7, 
     
    from katana.remote import import_data
 
-
-   
-    
-    
-    
-    
-    
-
    with import_data.DataFrameImporter(i_arg1) as df_importer:   
         
       #  Just nodes
