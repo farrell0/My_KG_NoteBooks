@@ -157,10 +157,10 @@ def f_ready_for_graph_int(i_arg1, i_arg2):
    ], columns = ["id", "transcription", "LABEL"])
       #
    l_UmlsEntityNodes             = [
-      {"id": "XX_1001", "entity_id": "XX_1001", "LABEL": "UmlsEntity"},
-      {"id": "XX_1002", "entity_id": "XX_1002", "LABEL": "UmlsEntity"},
-      {"id": "XX_1003", "entity_id": "XX_1003", "LABEL": "UmlsEntity"},
-      {"id": "XX_1004", "entity_id": "XX_1004", "LABEL": "UmlsEntity"},
+      {"id": "XX-1001", "entity_id": "XX-1001", "LABEL": "UmlsEntity"},
+      {"id": "XX-1002", "entity_id": "XX-1002", "LABEL": "UmlsEntity"},
+      {"id": "XX-1003", "entity_id": "XX-1003", "LABEL": "UmlsEntity"},
+      {"id": "XX-1004", "entity_id": "XX-1004", "LABEL": "UmlsEntity"},
       ]
    l_UmlsVocabularyNodes         = [
       {"id": "XX-1001", "LABEL": "UmlsVocabulary"},
@@ -217,7 +217,7 @@ def f_ready_for_graph_int(i_arg1, i_arg2):
                #
                l_recd1.update( {"preferred_term": l_entity["preferredTerm"]} )
                   #
-            l_UmlsEntityNodes.append(l_recd1)
+#           l_UmlsEntityNodes.append(l_recd1)
             #
             #  Above was our list of Nodes of LABEL "UmlsEntity"
             #  
