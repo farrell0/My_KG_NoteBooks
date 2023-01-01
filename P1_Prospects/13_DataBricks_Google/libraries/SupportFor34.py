@@ -283,18 +283,18 @@ def f_insert_into_graph(i_arg1, i_arg2, i_arg3, i_arg4, i_arg5, i_arg6, i_arg7, 
          id_space              = "PatientVisit",  
          label                 = "PatientVisit",  
          ) 
-      df_importer.nodes_dataframe(
-         i_arg3,
-         id_column             = "id",
-         id_space              = "UmlsEntity",  
-         label                 = "UmlsEntity",  
-         ) 
-      df_importer.nodes_dataframe(
-         i_arg4,
-         id_column             = "id",
-         id_space              = "UmlsVocabulary",  
-         label                 = "UmlsVocabulary",  
-         ) 
+#     df_importer.nodes_dataframe(
+#        i_arg3,
+#        id_column             = "id",
+#        id_space              = "UmlsEntity",  
+#        label                 = "UmlsEntity",  
+#        ) 
+#     df_importer.nodes_dataframe(
+#        i_arg4,
+#        id_column             = "id",
+#        id_space              = "UmlsVocabulary",  
+#        label                 = "UmlsVocabulary",  
+#        ) 
 
       #  Just edges
       #
