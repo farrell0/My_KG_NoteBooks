@@ -155,9 +155,15 @@ def f_ready_for_graph_int(i_arg1, i_arg2):
       { "id": "PV-1003", "transcription": None  , "LABEL": "PatientVisit"},
       )
          #                  
-   l_UmlsEntityNodes             = []
-   l_UmlsVocabularyNodes         = []
-      #
+   l_UmlsEntityNodes             = [
+      {"id": "UE-1001", "entity_id": "UE-1001", "LABEL": "UmlsEntity"},
+      {"id": "UE-1002", "entity_id": "UE-1002", "LABEL": "UmlsEntity"},
+      {"id": "UE-1003", "entity_id": "UE-1003", "LABEL": "UmlsEntity"},
+      {"id": "UE-1004", "entity_id": "UE-1004", "LABEL": "UmlsEntity"},
+      ]
+   l_UmlsVocabularyNodes         = [
+      ]
+         #
    l_PatientVisitToEntityEdge_N  = []
    l_PatientVisitToEntityEdge_S  = []
    l_EntityToVocabularyEdge_N    = []
