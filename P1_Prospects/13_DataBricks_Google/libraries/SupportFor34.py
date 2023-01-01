@@ -150,10 +150,10 @@ def f_ready_for_graph_int(i_arg1, i_arg2):
    print(i_arg1)
     
    df_PatientVisit = pd.DataFrame([
-      [ i_arg2   , str(i_arg1), "PatientVisit"],
-      [ "XX-1001", "XX-1001"  , "PatientVisit"],
-      [ "XX-1002", "XX-1002"  , "PatientVisit"],
-      [ "XX-1003", "XX-1003"  , "PatientVisit"],
+      [ i_arg2   , i_arg1              , "PatientVisit"],
+      [ "XX-1001", {"x-col": "XX-1001"}, "PatientVisit"],
+      [ "XX-1002", {"x-col": "XX-1002"}, "PatientVisit"],
+      [ "XX-1003", {"x-col": "XX-1003"}, "PatientVisit"],
          #
    ], columns = ["id", "transcription", "LABEL"])
       #
