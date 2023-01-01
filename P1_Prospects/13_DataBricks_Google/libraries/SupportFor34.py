@@ -207,7 +207,7 @@ def f_ready_for_graph_int(i_arg1, i_arg2):
             #
             #  Build a dictionary that we will append to an array
             #
-            l_recd1 = { "id": l_entity["entityId"], "entity_id" : l_entity["entityId"], "LABEL": "UmlsEntity" }
+            l_recd1 = { "id": str(l_entity["entityId"]), "entity_id" : str(l_entity["entityId"]), "LABEL": "UmlsEntity" }
             #
             #  If this key is present, add it to the dictionary
             #
@@ -215,9 +215,9 @@ def f_ready_for_graph_int(i_arg1, i_arg2):
                #
                #  We have an additional key, add to the record and add to our array
                #
-               l_recd1.update( {"preferred_term": l_entity["preferredTerm"]} )
+               l_recd1.update( {"preferred_term": str(l_entity["preferredTerm"])} )
                   #
-#           l_UmlsEntityNodes.append(l_recd1)
+            l_UmlsEntityNodes.append(l_recd1)
             #
             #  Above was our list of Nodes of LABEL "UmlsEntity"
             #  
