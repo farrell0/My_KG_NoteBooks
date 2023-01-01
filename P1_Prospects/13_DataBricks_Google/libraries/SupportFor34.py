@@ -215,7 +215,7 @@ def f_ready_for_graph_int(i_arg1, i_arg2):
                #
                #  We have an additional key, add to the record and add to our array
                #
-               l_recd1.update( {"preferred_term": l_entity["preferredTerm"]} )                 #  MMM
+               l_recd1.update( {"preferred_term": l_entity["preferredTerm"]} )                 #  Watch this: was getting 'double' values in here some how
                   #
             l_UmlsEntityNodes.append(l_recd1)
             #
@@ -289,12 +289,12 @@ def f_insert_into_graph(i_arg1, i_arg2, i_arg3, i_arg4, i_arg5, i_arg6, i_arg7, 
          id_space              = "UmlsEntity",  
          label                 = "UmlsEntity",  
          ) 
-#     df_importer.nodes_dataframe(
-#        i_arg4,
-#        id_column             = "id",
-#        id_space              = "UmlsVocabulary",  
-#        label                 = "UmlsVocabulary",  
-#        ) 
+      df_importer.nodes_dataframe(
+         i_arg4,
+         id_column             = "id",
+         id_space              = "UmlsVocabulary",  
+         label                 = "UmlsVocabulary",  
+         ) 
 
       #  Just edges
       #
