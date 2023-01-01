@@ -297,38 +297,38 @@ def f_insert_into_graph(i_arg1, i_arg2, i_arg3, i_arg4, i_arg5, i_arg6, i_arg7, 
 
       #  Just edges
       #
-      df_importer.edges_dataframe(
-         i_arg5, 
-         source_id_space       = "PatientVisit", 
-         destination_id_space  = "UmlsEntity",   
-         source_column         = "start_id",
-         destination_column    = "end_id",
-         type                  = "VISIT_CONTAINS"
-         )
-      df_importer.edges_dataframe(
-         i_arg6, 
-         source_id_space       = "UmlsEntity", 
-         destination_id_space  = "PatientVisit",   
-         source_column         = "start_id",
-         destination_column    = "end_id",
-         type                  = "VISIT_CONTAINS"
-         )
-      df_importer.edges_dataframe(
-         i_arg7, 
-         source_id_space       = "UmlsEntity", 
-         destination_id_space  = "UmlsVocabulary",   
-         source_column         = "start_id",
-         destination_column    = "end_id",
-         type                  = "ALSO_CODED_AS"
-         )
-      df_importer.edges_dataframe(
-         i_arg8, 
-         source_id_space       = "UmlsVocabulary", 
-         destination_id_space  = "UmlsEntity",   
-         source_column         = "start_id",
-         destination_column    = "end_id",
-         type                  = "ALSO_CODED_AS"
-         )
+#     df_importer.edges_dataframe(
+#        i_arg5, 
+#        source_id_space       = "PatientVisit", 
+#        destination_id_space  = "UmlsEntity",   
+#        source_column         = "start_id",
+#        destination_column    = "end_id",
+#        type                  = "VISIT_CONTAINS"
+#        )
+#     df_importer.edges_dataframe(
+#        i_arg6, 
+#        source_id_space       = "UmlsEntity", 
+#        destination_id_space  = "PatientVisit",   
+#        source_column         = "start_id",
+#        destination_column    = "end_id",
+#        type                  = "VISIT_CONTAINS"
+#        )
+#     df_importer.edges_dataframe(
+#        i_arg7, 
+#        source_id_space       = "UmlsEntity", 
+#        destination_id_space  = "UmlsVocabulary",   
+#        source_column         = "start_id",
+#        destination_column    = "end_id",
+#        type                  = "ALSO_CODED_AS"
+#        )
+#     df_importer.edges_dataframe(
+#        i_arg8, 
+#        source_id_space       = "UmlsVocabulary", 
+#        destination_id_space  = "UmlsEntity",   
+#        source_column         = "start_id",
+#        destination_column    = "end_id",
+#        type                  = "ALSO_CODED_AS"
+#        )
 
       df_importer.insert()
     
@@ -366,7 +366,7 @@ def f_enrich(i_arg1, i_arg2):
       #
    l_df1, l_df2, l_fg3, l_df4, l_df5, l_df6, l_df7 = f_ready_for_graph_int(l_data_asjson, l_uniqid)
       #
-#  f_insert_into_graph(i_arg2, l_df1, l_df2, l_fg3, l_df4, l_df5, l_df6, l_df7)
+   f_insert_into_graph(i_arg2, l_df1, l_df2, l_fg3, l_df4, l_df5, l_df6, l_df7)
 
         
    return l_data_asjson, l_uniqid
