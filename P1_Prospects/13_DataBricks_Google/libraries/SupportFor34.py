@@ -168,6 +168,7 @@ def f_ready_for_graph_int(i_arg1, i_arg2):
       ]
          #
    l_PatientVisitToEntityEdge_N  = [
+      {"start_id": "UE-1004", "end_id": "UE-1004", "TYPE": "VISIT_CONTAINS"},
       ]
    l_PatientVisitToEntityEdge_S  = [
       ]
