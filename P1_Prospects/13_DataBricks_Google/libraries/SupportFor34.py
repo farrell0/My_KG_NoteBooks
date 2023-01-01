@@ -154,7 +154,6 @@ def f_ready_for_graph_int(i_arg1, i_arg2):
       { "id": "PV-1002", "transcription": None  , "LABEL": "PatientVisit"},
       { "id": "PV-1003", "transcription": None  , "LABEL": "PatientVisit"},
       )
-         #                  
    l_UmlsEntityNodes             = [
       {"id": "UE-1001", "entity_id": "UE-1001", "LABEL": "UmlsEntity"},
       {"id": "UE-1002", "entity_id": "UE-1002", "LABEL": "UmlsEntity"},
@@ -162,12 +161,20 @@ def f_ready_for_graph_int(i_arg1, i_arg2):
       {"id": "UE-1004", "entity_id": "UE-1004", "LABEL": "UmlsEntity"},
       ]
    l_UmlsVocabularyNodes         = [
+      {"id": "UV-1001", "LABEL": "UmlsVocabulary"},
+      {"id": "UV-1002", "LABEL": "UmlsVocabulary"},
+      {"id": "UV-1003", "LABEL": "UmlsVocabulary"},
+      {"id": "UV-1004", "LABEL": "UmlsVocabulary"},
       ]
          #
-   l_PatientVisitToEntityEdge_N  = []
-   l_PatientVisitToEntityEdge_S  = []
-   l_EntityToVocabularyEdge_N    = []
-   l_EntityToVocabularyEdge_S    = []
+   l_PatientVisitToEntityEdge_N  = [
+      ]
+   l_PatientVisitToEntityEdge_S  = [
+      ]
+   l_EntityToVocabularyEdge_N    = [
+      ]
+   l_EntityToVocabularyEdge_S    = [
+      ]
     
     
    #  "entities" should be a root level key to this dictionary
