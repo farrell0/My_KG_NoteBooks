@@ -150,31 +150,46 @@ def f_ready_for_graph_int(i_arg1, i_arg2):
 
    df_PatientVisit = pd.DataFrame(
       { "id": i_arg2   , "transcription": i_arg1, "LABEL": "PatientVisit"},
-      { "id": "PV-1001", "transcription": None  , "LABEL": "PatientVisit"},
-      { "id": "PV-1002", "transcription": None  , "LABEL": "PatientVisit"},
-      { "id": "PV-1003", "transcription": None  , "LABEL": "PatientVisit"},
+      { "id": "XX-1001", "transcription": None  , "LABEL": "PatientVisit"},
+      { "id": "XX-1002", "transcription": None  , "LABEL": "PatientVisit"},
+      { "id": "XX-1003", "transcription": None  , "LABEL": "PatientVisit"},
       )
    l_UmlsEntityNodes             = [
-      {"id": "UE-1001", "entity_id": "UE-1001", "LABEL": "UmlsEntity"},
-      {"id": "UE-1002", "entity_id": "UE-1002", "LABEL": "UmlsEntity"},
-      {"id": "UE-1003", "entity_id": "UE-1003", "LABEL": "UmlsEntity"},
-      {"id": "UE-1004", "entity_id": "UE-1004", "LABEL": "UmlsEntity"},
+      {"id": "XX-1001", "entity_id": "XX-1001", "LABEL": "UmlsEntity"},
+      {"id": "XX-1002", "entity_id": "XX-1002", "LABEL": "UmlsEntity"},
+      {"id": "XX-1003", "entity_id": "XX-1003", "LABEL": "UmlsEntity"},
+      {"id": "XX-1004", "entity_id": "XX-1004", "LABEL": "UmlsEntity"},
       ]
    l_UmlsVocabularyNodes         = [
-      {"id": "UV-1001", "LABEL": "UmlsVocabulary"},
-      {"id": "UV-1002", "LABEL": "UmlsVocabulary"},
-      {"id": "UV-1003", "LABEL": "UmlsVocabulary"},
-      {"id": "UV-1004", "LABEL": "UmlsVocabulary"},
+      {"id": "XX-1001", "LABEL": "UmlsVocabulary"},
+      {"id": "XX-1002", "LABEL": "UmlsVocabulary"},
+      {"id": "XX-1003", "LABEL": "UmlsVocabulary"},
+      {"id": "XX-1004", "LABEL": "UmlsVocabulary"},
       ]
          #
    l_PatientVisitToEntityEdge_N  = [
-      {"start_id": "UE-1004", "end_id": "UE-1004", "TYPE": "VISIT_CONTAINS"},
+      {"start_id": "XX-1001", "end_id": "XX-1004", "TYPE": "VISIT_CONTAINS"},
+      {"start_id": "XX-1002", "end_id": "XX-1003", "TYPE": "VISIT_CONTAINS"},
+      {"start_id": "XX-1003", "end_id": "XX-1002", "TYPE": "VISIT_CONTAINS"},
+      {"start_id": "XX-1004", "end_id": "XX-1001", "TYPE": "VISIT_CONTAINS"},
       ]
    l_PatientVisitToEntityEdge_S  = [
+      {"start_id": "XX-1001", "end_id": "XX-1004", "TYPE": "VISIT_CONTAINS"},
+      {"start_id": "XX-1002", "end_id": "XX-1003", "TYPE": "VISIT_CONTAINS"},
+      {"start_id": "XX-1003", "end_id": "XX-1002", "TYPE": "VISIT_CONTAINS"},
+      {"start_id": "XX-1004", "end_id": "XX-1001", "TYPE": "VISIT_CONTAINS"},
       ]
    l_EntityToVocabularyEdge_N    = [
+      {"start_id": "XX-1001", "end_id": "XX-1004", "TYPE": "VISIT_CONTAINS"},
+      {"start_id": "XX-1002", "end_id": "XX-1003", "TYPE": "VISIT_CONTAINS"},
+      {"start_id": "XX-1003", "end_id": "XX-1002", "TYPE": "VISIT_CONTAINS"},
+      {"start_id": "XX-1004", "end_id": "XX-1001", "TYPE": "VISIT_CONTAINS"},
       ]
    l_EntityToVocabularyEdge_S    = [
+      {"start_id": "XX-1001", "end_id": "XX-1004", "TYPE": "VISIT_CONTAINS"},
+      {"start_id": "XX-1002", "end_id": "XX-1003", "TYPE": "VISIT_CONTAINS"},
+      {"start_id": "XX-1003", "end_id": "XX-1002", "TYPE": "VISIT_CONTAINS"},
+      {"start_id": "XX-1004", "end_id": "XX-1001", "TYPE": "VISIT_CONTAINS"},
       ]
     
     
