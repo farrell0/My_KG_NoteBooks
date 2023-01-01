@@ -147,6 +147,8 @@ def f_ready_for_graph_int(i_arg1, i_arg2):
     
    import pandas as pd
 
+   print(i_arg1)
+    
    df_PatientVisit = pd.DataFrame([
 #     [ i_arg2   , i_arg1   , "PatientVisit"],
       [ i_arg2   , "XX-1000", "PatientVisit"],
