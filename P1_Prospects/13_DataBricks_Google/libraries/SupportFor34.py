@@ -149,10 +149,10 @@ def f_ready_for_graph_int(i_arg1, i_arg2):
 
 
    df_PatientVisit = pd.DataFrame(
-      { "id": i_arg2, "transcription": i_arg1, "LABEL": "PatientVisit"},
-      { "id": i_arg2, "transcription": i_arg1, "LABEL": "PatientVisit"},
-      { "id": i_arg2, "transcription": i_arg1, "LABEL": "PatientVisit"},
-      { "id": i_arg2, "transcription": i_arg1, "LABEL": "PatientVisit"},
+      { "id": i_arg2   , "transcription": i_arg1, "LABEL": "PatientVisit"},
+      { "id": "PV-1001", "transcription": None  , "LABEL": "PatientVisit"},
+      { "id": "PV-1002", "transcription": None  , "LABEL": "PatientVisit"},
+      { "id": "PV-1003", "transcription": None  , "LABEL": "PatientVisit"},
       )
          #                  
    l_UmlsEntityNodes             = []
