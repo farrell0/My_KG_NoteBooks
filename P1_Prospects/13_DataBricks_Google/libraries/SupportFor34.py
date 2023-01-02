@@ -217,7 +217,7 @@ def f_ready_for_graph_int(i_arg1, i_arg2):
                #
                l_recd1.update( {"preferred_term": str(l_entity["preferredTerm"])} )
             else:
-               l_recd1.update( {"preferred_term": None                          } )
+               l_recd1.update( {"preferred_term": "None"                        } )
                   #
             l_UmlsEntityNodes.append(l_recd1)
             #
