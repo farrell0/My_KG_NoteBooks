@@ -211,14 +211,14 @@ def f_ready_for_graph_int(i_arg1, i_arg2):
             #
             #  If this key is present, add it to the dictionary
             #
-            if ("preferredTerm" in l_entity):
-               #
-               #  We have an additional key, add to the record and add to our array
-               #
-               l_recd1.update( {"preferred_term": str(l_entity["preferredTerm"])} )
-            else:
-               l_recd1.update( {"preferred_term": "None"                        } )
-                  #
+#           if ("preferredTerm" in l_entity):
+#              #
+#              #  We have an additional key, add to the record and add to our array
+#              #
+#              l_recd1.update( {"preferred_term": str(l_entity["preferredTerm"])} )
+#           else:
+#              l_recd1.update( {"preferred_term": "None"                        } )
+#                 #
             l_UmlsEntityNodes.append(l_recd1)
             #
             #  Above was our list of Nodes of LABEL "UmlsEntity"
