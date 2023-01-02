@@ -215,7 +215,7 @@ def f_ready_for_graph_int(i_arg1, i_arg2):
                #
                #  We have an additional key, add to the record and add to our array
                #
-               l_recd1.update( {"preferred_term": l_entity["preferredTerm"]} )                 #  Watch this: was getting 'double' values in here some how
+               l_recd1.update( {"preferred_term": l_entity["preferredTerm"]} )
                   #
             l_UmlsEntityNodes.append(l_recd1)
             #
