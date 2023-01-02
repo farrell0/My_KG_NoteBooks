@@ -1,41 +1,41 @@
 id|medical_specialty|LABEL
-MS-0|Pain Management|MedicalSpecialty
-MS-1|Ophthalmology|MedicalSpecialty
-MS-2|Radiology|MedicalSpecialty
-MS-3|ENT - Otolaryngology|MedicalSpecialty
-MS-4|Dentistry|MedicalSpecialty
-MS-5|Pediatrics - Neonatal|MedicalSpecialty
-MS-6|Neurosurgery|MedicalSpecialty
-MS-7|Gastroenterology|MedicalSpecialty
-MS-8|Rheumatology|MedicalSpecialty
-MS-9|Consult - History and Phy.|MedicalSpecialty
-MS-10|Obstetrics / Gynecology|MedicalSpecialty
-MS-11|Lab Medicine - Pathology|MedicalSpecialty
-MS-12|Chiropractic|MedicalSpecialty
-MS-13|Hematology - Oncology|MedicalSpecialty
-MS-14|Diets and Nutritions|MedicalSpecialty
-MS-15|General Medicine|MedicalSpecialty
-MS-16|Urology|MedicalSpecialty
-MS-17|Cosmetic / Plastic Surgery|MedicalSpecialty
-MS-18|Orthopedic|MedicalSpecialty
-MS-19|Nephrology|MedicalSpecialty
-MS-20|Autopsy|MedicalSpecialty
-MS-21|Podiatry|MedicalSpecialty
-MS-22|Emergency Room Reports|MedicalSpecialty
-MS-23|Allergy / Immunology|MedicalSpecialty
-MS-24|Hospice - Palliative Care|MedicalSpecialty
-MS-25|Physical Medicine - Rehab|MedicalSpecialty
-MS-26|Office Notes|MedicalSpecialty
-MS-27|Psychiatry / Psychology|MedicalSpecialty
-MS-28|Discharge Summary|MedicalSpecialty
-MS-29|IME-QME-Work Comp etc.|MedicalSpecialty
-MS-30|Cardiovascular / Pulmonary|MedicalSpecialty
-MS-31|Letters|MedicalSpecialty
-MS-32|Endocrinology|MedicalSpecialty
-MS-33|Bariatrics|MedicalSpecialty
+MS-0|Emergency Room Reports|MedicalSpecialty
+MS-1|IME-QME-Work Comp etc.|MedicalSpecialty
+MS-2|SOAP / Chart / Progress Notes|MedicalSpecialty
+MS-3|Office Notes|MedicalSpecialty
+MS-4|Urology|MedicalSpecialty
+MS-5|Bariatrics|MedicalSpecialty
+MS-6|Gastroenterology|MedicalSpecialty
+MS-7|Dermatology|MedicalSpecialty
+MS-8|Dentistry|MedicalSpecialty
+MS-9|Pediatrics - Neonatal|MedicalSpecialty
+MS-10|Letters|MedicalSpecialty
+MS-11|Neurosurgery|MedicalSpecialty
+MS-12|Hospice - Palliative Care|MedicalSpecialty
+MS-13|Orthopedic|MedicalSpecialty
+MS-14|Nephrology|MedicalSpecialty
+MS-15|Lab Medicine - Pathology|MedicalSpecialty
+MS-16|Speech - Language|MedicalSpecialty
+MS-17|Consult - History and Phy.|MedicalSpecialty
+MS-18|Psychiatry / Psychology|MedicalSpecialty
+MS-19|Obstetrics / Gynecology|MedicalSpecialty
+MS-20|Sleep Medicine|MedicalSpecialty
+MS-21|Neurology|MedicalSpecialty
+MS-22|Allergy / Immunology|MedicalSpecialty
+MS-23|Podiatry|MedicalSpecialty
+MS-24|Physical Medicine - Rehab|MedicalSpecialty
+MS-25|Endocrinology|MedicalSpecialty
+MS-26|Cardiovascular / Pulmonary|MedicalSpecialty
+MS-27|Ophthalmology|MedicalSpecialty
+MS-28|Diets and Nutritions|MedicalSpecialty
+MS-29|General Medicine|MedicalSpecialty
+MS-30|Cosmetic / Plastic Surgery|MedicalSpecialty
+MS-31|ENT - Otolaryngology|MedicalSpecialty
+MS-32|Radiology|MedicalSpecialty
+MS-33|Rheumatology|MedicalSpecialty
 MS-34|Surgery|MedicalSpecialty
-MS-35|Dermatology|MedicalSpecialty
-MS-36|Speech - Language|MedicalSpecialty
-MS-37|Neurology|MedicalSpecialty
-MS-38|Sleep Medicine|MedicalSpecialty
-MS-39|SOAP / Chart / Progress Notes|MedicalSpecialty
+MS-35|Hematology - Oncology|MedicalSpecialty
+MS-36|Pain Management|MedicalSpecialty
+MS-37|Discharge Summary|MedicalSpecialty
+MS-38|Chiropractic|MedicalSpecialty
+MS-39|Autopsy|MedicalSpecialty
