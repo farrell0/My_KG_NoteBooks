@@ -211,14 +211,14 @@ def f_ready_for_graph_int(i_arg1, i_arg2):
             #
             #  If this key is present, add it to the dictionary
             #
-#           if ("preferredTerm" in l_entity):
-#              #
-#              #  We have an additional key, add to the record and add to our array
-#              #
-#              l_recd1.update( {"preferred_term": str(l_entity["preferredTerm"])} )
-#           else:
-#              l_recd1.update( {"preferred_term": "None"                        } )
-#                 #
+            if ("preferredTerm" in l_entity):
+               #
+               #  We have an additional key, add to the record and add to our array
+               #
+               l_recd1.update( {"preferred_term": str(l_entity["preferredTerm"])} )
+            else:
+               l_recd1.update( {"preferred_term": "None"                        } )
+                  #
             l_UmlsEntityNodes.append(l_recd1)
             #
             #  Above was our list of Nodes of LABEL "UmlsEntity"
@@ -243,7 +243,8 @@ def f_ready_for_graph_int(i_arg1, i_arg2):
                   #
                   #  Add to our set of Vocabulary Nodes
                   #
-                  l_recd3 = { "id": l_vocab, "vocabularyCode": l_vocab, "LABEL": "UmlsVocabulary" }
+                  #  l_recd3 = { "id": l_vocab, "vocabulary_code": l_vocab, "LABEL": "UmlsVocabulary" }
+                  l_recd3 = { "id": l_vocab, "vocabulary_code": "MMM", "LABEL": "UmlsVocabulary" }
                      #
                   l_UmlsVocabularyNodes.append(l_recd3)
                   #
