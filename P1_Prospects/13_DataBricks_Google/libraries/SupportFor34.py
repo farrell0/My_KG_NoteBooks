@@ -227,7 +227,9 @@ def f_ready_for_graph_int(i_arg1, i_arg2):
          'mentionId': '2',
          'type': 'ANATOMICAL_STRUCTURE',
          'text': {'content': 'ear', 'beginOffset': 15},
-         'linkedEntities': [{'entityId': 'UMLS/C0013443'}],
+         'linkedEntities': [
+            {'entityId': 'UMLS/C0013443'}
+            ],
      'confidence': 0.9025713205337524}],
      'entities': [{'entityId': 'UMLS/C0013443',
      'preferredTerm': 'Ear structure',
