@@ -280,7 +280,8 @@ def f_ready_for_graph_int(i_arg1, i_arg2):
                   else:
                      l_recd1.update( {"preferred_term": "Unknown"                     } )
                         #
-                  df_UmlsEntityNodes.append(l_recd1, ignore_index = True)
+                  #  df_UmlsEntityNodes.append(l_recd1, ignore_index = True)
+                  df_UmlsEntityNodes.append(pd.DataFrl_recd1)
                   print(l_recd1)
                 
                   #
