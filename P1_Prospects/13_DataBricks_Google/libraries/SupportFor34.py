@@ -158,10 +158,10 @@ def f_ready_for_graph_int(i_arg1, i_arg2):
       ], columns = ["id", "transcription", "LABEL"])
          #
    df_UmlsEntityNodes     = pd.DataFrame([
-#     ["XX-1001", "XX-1001", "Unknown", "UmlsEntity"],
-#     ["XX-1002", "XX-1002", "Unknown", "UmlsEntity"],
-#     ["XX-1003", "XX-1003", "Unknown", "UmlsEntity"],
-#     ["XX-1004", "XX-1004", "Unknown", "UmlsEntity"],
+      ["XX-1001", "XX-1001", "Unknown", "UmlsEntity"],
+      ["XX-1002", "XX-1002", "Unknown", "UmlsEntity"],
+      ["XX-1003", "XX-1003", "Unknown", "UmlsEntity"],
+      ["XX-1004", "XX-1004", "Unknown", "UmlsEntity"],
          #
       ], columns = ["id", "entity_id", "preferred_term", "LABEL"])
          #
