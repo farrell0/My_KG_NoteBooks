@@ -258,46 +258,44 @@ def f_ready_for_graph_int(i_arg1, i_arg2):
    #  "entityMentions" should be a root level key to this dictionary
    #
 
-   if ("entityMentions" in i_arg1):
+   if ("entities" in i_arg1):
       #
       #  Loop thru these
       #
-      for l_each in i_arg1["entityMentions"]:
-         if ("linkedEntities" in l_each):
-            for l_entity in l_each["linkedEntities"]:
-               if ("entityId" in l_entity):
-                  print("AAA")
+      for l_entity in i_arg1["entities"]:
+         if ("entityId" in l_entity):
+                
+                
+            #  Build a dictionary that we will append to the DataFrame
+            #
+               l_recd1 = { "id": [l_entity["entityId"]], "entity_id" : [l_entity["entityId"]], "LABEL": ["UmlsEntity"] }
+               #
+               #  If this key is present, add it to the dictionary
+               #
+               if ("preferredTerm" in l_each):
+                  print("BBB")
                   #
-                  #  Build a dictionary that we will append to the DataFrame
+                  #  We have an additional key, add to the record 
                   #
-                  l_recd1 = { "id": [l_entity["entityId"]], "entity_id" : [l_entity["entityId"]], "LABEL": ["UmlsEntity"] }
-                  #
-                  #  If this key is present, add it to the dictionary
-                  #
-                  if ("preferredTerm" in l_each):
-                     print("BBB")
+                  l_recd1.update( {"preferred_term": [str(l_entity["preferredTerm"])]} )
+               else:
+                  print("CCC")
+                  l_recd1.update( {"preferred_term": ["Unknown"                     ]} )
                      #
-                     #  We have an additional key, add to the record 
-                     #
-                     l_recd1.update( {"preferred_term": [str(l_entity["preferredTerm"])]} )
-                  else:
-                     print("CCC")
-                     l_recd1.update( {"preferred_term": ["Unknown"                     ]} )
-                        #
-                  df_UmlsEntityNodes = df_UmlsEntityNodes.append( pd.DataFrame(l_recd1) )
-                
-                
-                
-                  #
-                  #  Above was our list of Nodes of LABEL "UmlsEntity"
-                  #  
-                  #  Here we make our Edge list from;  PatientVisit --> UmlsEntity
-                  #
-                  #  We make all Edges to be bi-directional. As a heterogeneous relationship,
-                  #  we need two arrays.
-                  #
-                  l_recd2a = { "start_id": i_arg2                   , "end_id": str(l_entity["entityId"]), "TYPE": "VISIT_CONTAINS" }
-                  l_recd2b = { "start_id": str(l_entity["entityId"]), "end_id": i_arg2                   , "TYPE": "VISIT_CONTAINS" }
+               df_UmlsEntityNodes = df_UmlsEntityNodes.append( pd.DataFrame(l_recd1) )
+             
+             
+             
+               #
+               #  Above was our list of Nodes of LABEL "UmlsEntity"
+               #  
+               #  Here we make our Edge list from;  PatientVisit --> UmlsEntity
+               #
+               #  We make all Edges to be bi-directional. As a heterogeneous relationship,
+               #  we need two arrays.
+               #
+               l_recd2a = { "start_id": i_arg2                   , "end_id": str(l_entity["entityId"]), "TYPE": "VISIT_CONTAINS" }
+               l_recd2b = { "start_id": str(l_entity["entityId"]), "end_id": i_arg2                   , "TYPE": "VISIT_CONTAINS" }
                      #
                   df_PatientVisitToEntityEdge_N.append(l_recd2a, ignore_index = True)
                   df_PatientVisitToEntityEdge_S.append(l_recd2b, ignore_index = True)
