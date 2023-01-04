@@ -264,8 +264,6 @@ def f_ready_for_graph_int(i_arg1, i_arg2):
       #
       for l_entity in i_arg1["entities"]:
          if ("entityId" in l_entity):
-                
-                
             #  Build a dictionary that we will append to the DataFrame
             #
                l_recd1 = { "id": [l_entity["entityId"]], "entity_id" : [l_entity["entityId"]], "LABEL": ["UmlsEntity"] }
@@ -286,43 +284,41 @@ def f_ready_for_graph_int(i_arg1, i_arg2):
              
              
              
-               #
-               #  Above was our list of Nodes of LABEL "UmlsEntity"
-               #  
-               #  Here we make our Edge list from;  PatientVisit --> UmlsEntity
-               #
-               #  We make all Edges to be bi-directional. As a heterogeneous relationship,
-               #  we need two arrays.
-               #
-               l_recd2a = { "start_id": i_arg2                   , "end_id": str(l_entity["entityId"]), "TYPE": "VISIT_CONTAINS" }
-               l_recd2b = { "start_id": str(l_entity["entityId"]), "end_id": i_arg2                   , "TYPE": "VISIT_CONTAINS" }
-                     #
-                  df_PatientVisitToEntityEdge_N.append(l_recd2a, ignore_index = True)
-                  df_PatientVisitToEntityEdge_S.append(l_recd2b, ignore_index = True)
-                  #
-                  #  We are done with UmlsEntity and its Edge to PatientVisit
-                  #
-                  #  Also in "entities" is another array, "vocabularyCodes"
-                  #
-                  if ("vocabularyCodes" in l_entity):
-                     for l_vocab in l_entity["vocabularyCodes"]:
-                        #
-                        #  Add to our set of Vocabulary Nodes
-                        #
-                        #  l_recd3 = { "id": l_vocab, "vocabulary_code": l_vocab, "LABEL": "UmlsVocabulary" }
-                        l_recd3 = { "id": l_vocab, "vocabulary_code": "MMM", "LABEL": "UmlsVocabulary" }
-                           #
-                        df_UmlsVocabularyNodes.append(l_recd3, ignore_index = True)
-                        #
-                        #  And create the Edge from UmlsEntity --> UmlsVocabulary
-                        #
-                        l_recd4a = { "start_id": str(l_entity["entityId"]), "end_id": str(l_vocab             ), "TYPE": "ALSO_CODED_AS" }
-                        l_recd4b = { "start_id": str(l_vocab             ), "end_id": str(l_entity["entityId"]), "TYPE": "ALSO_CODED_AS" }
-                           #
-                        df_EntityToVocabularyEdge_N.append(l_recd4a, ignore_index = True)
-                        df_EntityToVocabularyEdge_S.append(l_recd4b, ignore_index = True)
-               else:
-                  print("GGG")
+#              #
+#              #  Above was our list of Nodes of LABEL "UmlsEntity"
+#              #  
+#              #  Here we make our Edge list from;  PatientVisit --> UmlsEntity
+#              #
+#              #  We make all Edges to be bi-directional. As a heterogeneous relationship,
+#              #  we need two arrays.
+#              #
+#              l_recd2a = { "start_id": i_arg2                   , "end_id": str(l_entity["entityId"]), "TYPE": "VISIT_CONTAINS" }
+#              l_recd2b = { "start_id": str(l_entity["entityId"]), "end_id": i_arg2                   , "TYPE": "VISIT_CONTAINS" }
+#                    #
+#                 df_PatientVisitToEntityEdge_N.append(l_recd2a, ignore_index = True)
+#                 df_PatientVisitToEntityEdge_S.append(l_recd2b, ignore_index = True)
+#                 #
+#                 #  We are done with UmlsEntity and its Edge to PatientVisit
+#                 #
+#                 #  Also in "entities" is another array, "vocabularyCodes"
+#                 #
+#                 if ("vocabularyCodes" in l_entity):
+#                    for l_vocab in l_entity["vocabularyCodes"]:
+#                       #
+#                       #  Add to our set of Vocabulary Nodes
+#                       #
+#                       #  l_recd3 = { "id": l_vocab, "vocabulary_code": l_vocab, "LABEL": "UmlsVocabulary" }
+#                       l_recd3 = { "id": l_vocab, "vocabulary_code": "MMM", "LABEL": "UmlsVocabulary" }
+#                          #
+#                       df_UmlsVocabularyNodes.append(l_recd3, ignore_index = True)
+#                       #
+#                       #  And create the Edge from UmlsEntity --> UmlsVocabulary
+#                       #
+#                       l_recd4a = { "start_id": str(l_entity["entityId"]), "end_id": str(l_vocab             ), "TYPE": "ALSO_CODED_AS" }
+#                       l_recd4b = { "start_id": str(l_vocab             ), "end_id": str(l_entity["entityId"]), "TYPE": "ALSO_CODED_AS" }
+#                          #
+#                       df_EntityToVocabularyEdge_N.append(l_recd4a, ignore_index = True)
+#                       df_EntityToVocabularyEdge_S.append(l_recd4b, ignore_index = True)
                     
     
    return  df_PatientVisit, df_UmlsEntityNodes, df_UmlsVocabularyNodes, df_PatientVisitToEntityEdge_N, df_PatientVisitToEntityEdge_S, df_EntityToVocabularyEdge_N, df_EntityToVocabularyEdge_S
