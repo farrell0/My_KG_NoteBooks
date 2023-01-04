@@ -287,11 +287,11 @@ def f_ready_for_graph_int(i_arg1, i_arg2):
             #  We make all Edges to be bi-directional. As a heterogeneous relationship,
             #  we need two arrays.
             #
-            l_recd2a = { "start_id": i_arg2                   , "end_id": str(l_entity["entityId"]), "TYPE": "VISIT_CONTAINS" }
-            l_recd2b = { "start_id": str(l_entity["entityId"]), "end_id": i_arg2                   , "TYPE": "VISIT_CONTAINS" }
+            l_recd2a = { "start_id": [i_arg2                   ], "end_id": [str(l_entity["entityId"])], "TYPE": ["VISIT_CONTAINS"] }
+            l_recd2b = { "start_id": [str(l_entity["entityId"])], "end_id": [i_arg2                   ], "TYPE": ["VISIT_CONTAINS"] }
                   #
-            df_PatientVisitToEntityEdge_N.append(l_recd2a, ignore_index = True)
-            df_PatientVisitToEntityEdge_S.append(l_recd2b, ignore_index = True)
+            df_PatientVisitToEntityEdge_N = df_PatientVisitToEntityEdge_N.append(l_recd2a) ignore_index = True)
+            df_PatientVisitToEntityEdge_S = df_PatientVisitToEntityEdge_S.append(l_recd2b) ignore_index = True)
             #
             #  We are done with UmlsEntity and its Edge to PatientVisit
             #
@@ -303,7 +303,7 @@ def f_ready_for_graph_int(i_arg1, i_arg2):
                   #  Add to our set of Vocabulary Nodes
                   #
                   #  l_recd3 = { "id": l_vocab, "vocabulary_code": l_vocab, "LABEL": "UmlsVocabulary" }
-                  l_recd3 = { "id": l_vocab, "vocabulary_code": "MMM", "LABEL": "UmlsVocabulary" }
+                  l_recd3 = { "id": [l_vocab], "vocabulary_code": "MMM", "LABEL": "UmlsVocabulary" }
                      #
                   df_UmlsVocabularyNodes.append(l_recd3, ignore_index = True)
                   #
