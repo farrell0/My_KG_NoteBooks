@@ -148,123 +148,213 @@ def f_ready_for_graph_int(i_arg1, i_arg2):
    import pandas as pd
 
 
-   df_PatientVisit = pd.DataFrame([
+   df_PatientVisit        = pd.DataFrame([
       [ i_arg2   , str(i_arg1)           , "PatientVisit"],
+         #
       [ "XX-1001", "{'x-col': 'XX-1001'}", "PatientVisit"],
       [ "XX-1002", "{'x-col': 'XX-1002'}", "PatientVisit"],
       [ "XX-1003", "{'x-col': 'XX-1003'}", "PatientVisit"],
          #
-   ], columns = ["id", "transcription", "LABEL"])
-      #
-   l_UmlsEntityNodes             = [
-      {"id": "XX-1001", "entity_id": "XX-1001", "LABEL": "UmlsEntity"},
-      {"id": "XX-1002", "entity_id": "XX-1002", "LABEL": "UmlsEntity"},
-      {"id": "XX-1003", "entity_id": "XX-1003", "LABEL": "UmlsEntity"},
-      {"id": "XX-1004", "entity_id": "XX-1004", "LABEL": "UmlsEntity"},
-      ]
-   l_UmlsVocabularyNodes         = [
-      {"id": "XX-1001", "LABEL": "UmlsVocabulary"},
-      {"id": "XX-1002", "LABEL": "UmlsVocabulary"},
-      {"id": "XX-1003", "LABEL": "UmlsVocabulary"},
-      {"id": "XX-1004", "LABEL": "UmlsVocabulary"},
-      ]
+      ], columns = ["id", "transcription", "LABEL"])
          #
-   l_PatientVisitToEntityEdge_N  = [
-      {"start_id": "XX-1001", "end_id": "XX-1004", "TYPE": "VISIT_CONTAINS"},
-      {"start_id": "XX-1002", "end_id": "XX-1003", "TYPE": "VISIT_CONTAINS"},
-      {"start_id": "XX-1003", "end_id": "XX-1002", "TYPE": "VISIT_CONTAINS"},
-      {"start_id": "XX-1004", "end_id": "XX-1001", "TYPE": "VISIT_CONTAINS"},
-      ]
-   l_PatientVisitToEntityEdge_S  = [
-      {"start_id": "XX-1001", "end_id": "XX-1004", "TYPE": "VISIT_CONTAINS"},
-      {"start_id": "XX-1002", "end_id": "XX-1003", "TYPE": "VISIT_CONTAINS"},
-      {"start_id": "XX-1003", "end_id": "XX-1002", "TYPE": "VISIT_CONTAINS"},
-      {"start_id": "XX-1004", "end_id": "XX-1001", "TYPE": "VISIT_CONTAINS"},
-      ]
-   l_EntityToVocabularyEdge_N    = [
-      {"start_id": "XX-1001", "end_id": "XX-1004", "TYPE": "VISIT_CONTAINS"},
-      {"start_id": "XX-1002", "end_id": "XX-1003", "TYPE": "VISIT_CONTAINS"},
-      {"start_id": "XX-1003", "end_id": "XX-1002", "TYPE": "VISIT_CONTAINS"},
-      {"start_id": "XX-1004", "end_id": "XX-1001", "TYPE": "VISIT_CONTAINS"},
-      ]
-   l_EntityToVocabularyEdge_S    = [
-      {"start_id": "XX-1001", "end_id": "XX-1004", "TYPE": "VISIT_CONTAINS"},
-      {"start_id": "XX-1002", "end_id": "XX-1003", "TYPE": "VISIT_CONTAINS"},
-      {"start_id": "XX-1003", "end_id": "XX-1002", "TYPE": "VISIT_CONTAINS"},
-      {"start_id": "XX-1004", "end_id": "XX-1001", "TYPE": "VISIT_CONTAINS"},
-      ]
+   df_UmlsEntityNodes     = pd.DataFrame([
+      ["XX-1001", "XX-1001", "Unknown", "UmlsEntity"],
+      ["XX-1002", "XX-1002", "Unknown", "UmlsEntity"],
+      ["XX-1003", "XX-1003", "Unknown", "UmlsEntity"],
+      ["XX-1004", "XX-1004", "Unknown", "UmlsEntity"],
+         #
+      ], columns = ["id", "entity_id", "preferred_term", "LABEL"])
+         #
+   df_UmlsVocabularyNodes =  pd.DataFrame([
+      ["XX-1001", "UmlsVocabulary"],
+      ["XX-1002", "UmlsVocabulary"],
+      ["XX-1003", "UmlsVocabulary"],
+      ["XX-1004", "UmlsVocabulary"],
+         #
+      ], columns = ["id", "LABEL"])
+
+
+   df_PatientVisitToEntityEdge_N = pd.DataFrame([
+      ["XX-1001", "XX-1004", "VISIT_CONTAINS"],
+      ["XX-1002", "XX-1003", "VISIT_CONTAINS"],
+      ["XX-1003", "XX-1002", "VISIT_CONTAINS"],
+      ["XX-1004", "XX-1001", "VISIT_CONTAINS"],
+         #
+      ], columns = ["start_id", "end_id", "TYPE"])
+         #
+   df_PatientVisitToEntityEdge_S = pd.DataFrame([
+      ["XX-1001", "XX-1004", "VISIT_CONTAINS"],
+      ["XX-1002", "XX-1003", "VISIT_CONTAINS"],
+      ["XX-1003", "XX-1002", "VISIT_CONTAINS"],
+      ["XX-1004", "XX-1001", "VISIT_CONTAINS"],
+         #
+      ], columns = ["start_id", "end_id", "TYPE"])
+         #
+   df_EntityToVocabularyEdge_N   = pd.DataFrame([
+      ["XX-1001", "XX-1004", "VISIT_CONTAINS"],
+      ["XX-1002", "XX-1003", "VISIT_CONTAINS"],
+      ["XX-1003", "XX-1002", "VISIT_CONTAINS"],
+      ["XX-1004", "XX-1001", "VISIT_CONTAINS"],
+         #
+      ], columns = ["start_id", "end_id", "TYPE"])
+         #
+   df_EntityToVocabularyEdge_S   = pd.DataFrame([
+      ["XX-1001", "XX-1004", "VISIT_CONTAINS"],
+      ["XX-1002", "XX-1003", "VISIT_CONTAINS"],
+      ["XX-1003", "XX-1002", "VISIT_CONTAINS"],
+      ["XX-1004", "XX-1001", "VISIT_CONTAINS"],
+         #
+      ], columns = ["start_id", "end_id", "TYPE"])
+         
     
-    
-   #  "entities" should be a root level key to this dictionary
+   #  What we get from our test data,
    #
-   if ("entities" in i_arg1):
+   #     {'entityMentions': [{'mentionId': '1',
+   #     'type': 'PROBLEM',
+   #     'text': {'content': 'mole', 'beginOffset': 4},
+   #     'linkedEntities': [{'entityId': 'UMLS/C0027960'},
+   #     {'entityId': 'UMLS/C0027962'}],
+   #     'temporalAssessment': {'value': 'UPCOMING',
+   #     'confidence': 0.6084825992584229},
+   #     'certaintyAssessment': {'value': 'LIKELY',
+   #     'confidence': 0.057481713593006134},
+   #     'subject': {'value': 'PATIENT', 'confidence': 0.9589220881462097},
+   #     'confidence': 0.5596652626991272},
+   #     {'mentionId': '2',
+   #     'type': 'ANATOMICAL_STRUCTURE',
+   #     'text': {'content': 'ear', 'beginOffset': 15},
+   #     'linkedEntities': [{'entityId': 'UMLS/C0013443'}],
+   #     'confidence': 0.9025713205337524}],
+   #     'entities': [{'entityId': 'UMLS/C0013443',
+   #     'preferredTerm': 'Ear structure',
+   #     'vocabularyCodes': ['FMA/52780',
+   #     'FMA/77739',
+   #     'LNC/LA21929-7',
+   #     'LNC/LA22163-2',
+   #     'LNC/LP7188-8',
+   #     'LNC/MTHU001407',
+   #     'MSH/D004423',
+   #     'MTH/NOCODE',
+   #     'NCI/C12394',
+   #     'OMIM/MTHU000052']},
+   #     {'entityId': 'UMLS/C0027960',
+   #     'preferredTerm': 'Nevus',
+   #     'vocabularyCodes': ['HPO/HP:0003764',
+   #     'MEDLINEPLUS/4491',
+   #     'MEDLINEPLUS/5402',
+   #     'MSH/D009506',
+   #     'MTH/NOCODE',
+   #     'OMIM/MTHU016869']},
+   #     {'entityId': 'UMLS/C0027962',
+   #     'preferredTerm': 'Melanocytic nevus',
+   #     'vocabularyCodes': ['HPO/HP:0000995',
+   #     'HPO/HP:0003764',
+   #     'MSH/D009508',
+   #     'MTH/NOCODE',
+   #     'NCI/C7570']}]}
+
+    
+   #  "entityMentions" should be a root level key to this dictionary
+   #
+
+   if ("entityMentions" in i_arg1):
       #
       #  Loop thru these
       #
-      for l_entity in i_arg1["entities"]:
-            
-         if ("entityId" in l_entity):
-            #
-            #  Build a dictionary that we will append to an array
-            #
-            l_recd1 = { "id": l_entity["entityId"], "entity_id" : l_entity["entityId"], "LABEL": "UmlsEntity" }
-            #
-            #  If this key is present, add it to the dictionary
-            #
-            if ("preferredTerm" in l_entity):
-               #
-               #  We have an additional key, add to the record and add to our array
-               #
-               l_recd1.update( {"preferred_term": str(l_entity["preferredTerm"])} )
-            else:
-               l_recd1.update( {"preferred_term": "None"                        } )
+      for l_each in i_arg1["entityMentions"]:
+         if ("linkedEntities" in l_each):
+            for l_entity in l_each["linkedEntities"]:
+               if ("entityId" in l_entity):
                   #
-            l_UmlsEntityNodes.append(l_recd1)
-            #
-            #  Above was our list of Nodes of LABEL "UmlsEntity"
-            #  
-            #  Here we make our Edge list from;  PatientVisit --> UmlsEntity
-            #
-            #  We make all Edges to be bi-directional. As a heterogeneous relationship,
-            #  we need two arrays.
-            #
-            l_recd2a = { "start_id": i_arg2                   , "end_id": str(l_entity["entityId"]), "TYPE": "VISIT_CONTAINS" }
-            l_recd2b = { "start_id": str(l_entity["entityId"]), "end_id": i_arg2                   , "TYPE": "VISIT_CONTAINS" }
-               #
-            l_PatientVisitToEntityEdge_N.append(l_recd2a)
-            l_PatientVisitToEntityEdge_S.append(l_recd2b)
-            #
-            #  We are done with UmlsEntity and its Edge to PatientVisit
-            #
-            #  Also in "entities" is another array, "vocabularyCodes"
-            #
-            if ("vocabularyCodes" in l_entity):
-               for l_vocab in l_entity["vocabularyCodes"]:
+                  #  Build a dictionary that we will append to the DataFrame
                   #
-                  #  Add to our set of Vocabulary Nodes
+                  l_recd1 = { "id": l_entity["entityId"], "entity_id" : l_entity["entityId"], "LABEL": "UmlsEntity" }
                   #
-                  #  l_recd3 = { "id": l_vocab, "vocabulary_code": l_vocab, "LABEL": "UmlsVocabulary" }
-                  l_recd3 = { "id": l_vocab, "vocabulary_code": "MMM", "LABEL": "UmlsVocabulary" }
+                  #  If this key is present, add it to the dictionary
+                  #
+                  if ("preferredTerm" in l_entity):
                      #
-                  l_UmlsVocabularyNodes.append(l_recd3)
-                  #
-                  #  And create the Edge from UmlsEntity --> UmlsVocabulary
-                  #
-                  l_recd4a = { "start_id": str(l_entity["entityId"]), "end_id": str(l_vocab             ), "TYPE": "ALSO_CODED_AS" }
-                  l_recd4b = { "start_id": str(l_vocab             ), "end_id": str(l_entity["entityId"]), "TYPE": "ALSO_CODED_AS" }
+                     #  We have an additional key, add to the record and add to our array
                      #
-                  l_EntityToVocabularyEdge_N.append(l_recd4a)
-                  l_EntityToVocabularyEdge_S.append(l_recd4b)
-                    
-                    
-   df_UmlsEntityNodes             = pd.DataFrame.from_records(l_UmlsEntityNodes           ).drop_duplicates()
-   df_UmlsVocabularyNodes         = pd.DataFrame.from_records(l_UmlsVocabularyNodes       ).drop_duplicates()
-      #
-   df_PatientVisitToEntityEdge_N  = pd.DataFrame.from_records(l_PatientVisitToEntityEdge_N).drop_duplicates()
-   df_PatientVisitToEntityEdge_S  = pd.DataFrame.from_records(l_PatientVisitToEntityEdge_S).drop_duplicates()
-   df_EntityToVocabularyEdge_N    = pd.DataFrame.from_records(l_EntityToVocabularyEdge_N  ).drop_duplicates()
-   df_EntityToVocabularyEdge_S    = pd.DataFrame.from_records(l_EntityToVocabularyEdge_S  ).drop_duplicates()
+                     l_recd1.update( {"preferred_term": str(l_entity["preferredTerm"])} )
+                  else:
+                     l_recd1.update( {"preferred_term": "Unknown"                     } )
+               print(l_recd1)
+
     
+    
+    
+    
+#  if (l_entity := i_arg1.get("entityMentions", {}).get("linkedEntities")):
+#     print("AAA")
+#  else:
+#     print("BBB")
+
+
+#  if ("linkedEntities" in i_arg1):
+#     #
+#     #  Loop thru these
+#     #
+#     for l_entity in i_arg1["linkedEntities"]:
+#           
+#        print("MMM")
+#       
+#        if ("entityId" in l_entity):
+#           print("NNN")
+#           #
+#           #  Build a dictionary that we will append to the DataFrame
+#           #
+#           l_recd1 = { "id": l_entity["entityId"], "entity_id" : l_entity["entityId"], "LABEL": "UmlsEntity" }
+#           #
+#           #  If this key is present, add it to the dictionary
+#           #
+#           if ("preferredTerm" in l_entity):
+#              #
+#              #  We have an additional key, add to the record and add to our array
+#              #
+#              l_recd1.update( {"preferred_term": str(l_entity["preferredTerm"])} )
+#           else:
+#              l_recd1.update( {"preferred_term": "Unknown"                     } )
+#                 #
+#           df_UmlsEntityNodes.append(l_recd1, ignore_index = True)
+#           #
+#           #  Above was our list of Nodes of LABEL "UmlsEntity"
+#           #  
+#           #  Here we make our Edge list from;  PatientVisit --> UmlsEntity
+#           #
+#           #  We make all Edges to be bi-directional. As a heterogeneous relationship,
+#           #  we need two arrays.
+#           #
+#           l_recd2a = { "start_id": i_arg2                   , "end_id": str(l_entity["entityId"]), "TYPE": "VISIT_CONTAINS" }
+#           l_recd2b = { "start_id": str(l_entity["entityId"]), "end_id": i_arg2                   , "TYPE": "VISIT_CONTAINS" }
+#              #
+#           df_PatientVisitToEntityEdge_N.append(l_recd2a, ignore_index = True)
+#           df_PatientVisitToEntityEdge_S.append(l_recd2b, ignore_index = True)
+#           #
+#           #  We are done with UmlsEntity and its Edge to PatientVisit
+#           #
+#           #  Also in "entities" is another array, "vocabularyCodes"
+#           #
+#           if ("vocabularyCodes" in l_entity):
+#              for l_vocab in l_entity["vocabularyCodes"]:
+#                 #
+#                 #  Add to our set of Vocabulary Nodes
+#                 #
+#                 #  l_recd3 = { "id": l_vocab, "vocabulary_code": l_vocab, "LABEL": "UmlsVocabulary" }
+#                 l_recd3 = { "id": l_vocab, "vocabulary_code": "MMM", "LABEL": "UmlsVocabulary" }
+#                    #
+#                 df_UmlsVocabularyNodes.append(l_recd3, ignore_index = True)
+#                 #
+#                 #  And create the Edge from UmlsEntity --> UmlsVocabulary
+#                 #
+#                 l_recd4a = { "start_id": str(l_entity["entityId"]), "end_id": str(l_vocab             ), "TYPE": "ALSO_CODED_AS" }
+#                 l_recd4b = { "start_id": str(l_vocab             ), "end_id": str(l_entity["entityId"]), "TYPE": "ALSO_CODED_AS" }
+#                    #
+#                 df_EntityToVocabularyEdge_N.append(l_recd4a, ignore_index = True)
+#                 df_EntityToVocabularyEdge_S.append(l_recd4b, ignore_index = True)
+#  else:
+#     print("BBB")
+                    
     
    return  df_PatientVisit, df_UmlsEntityNodes, df_UmlsVocabularyNodes, df_PatientVisitToEntityEdge_N, df_PatientVisitToEntityEdge_S, df_EntityToVocabularyEdge_N, df_EntityToVocabularyEdge_S
         
@@ -368,9 +458,11 @@ def f_enrich(i_arg1, i_arg2):
    l_uniqkey += 1
    l_uniqid  = str("PV-" + str(l_uniqkey))
       #
-   l_df1, l_df2, l_fg3, l_df4, l_df5, l_df6, l_df7 = f_ready_for_graph_int(l_data_asjson, l_uniqid)
+   l_df1, l_df2, l_df3, l_df4, l_df5, l_df6, l_df7 = f_ready_for_graph_int(l_data_asjson, l_uniqid)
       #
-   f_insert_into_graph(i_arg2, l_df1, l_df2, l_fg3, l_df4, l_df5, l_df6, l_df7)
+#  f_insert_into_graph(i_arg2, l_df1, l_df2, l_df3, l_df4, l_df5, l_df6, l_df7)
 
+
+   print(l_df2)
         
    return l_data_asjson, l_uniqid
