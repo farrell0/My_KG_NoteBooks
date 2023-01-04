@@ -264,7 +264,6 @@ def f_ready_for_graph_int(i_arg1, i_arg2):
       for l_each in i_arg1["entityMentions"]:
          if ("linkedEntities" in l_each):
             for l_entity in l_each["linkedEntities"]:
-               print("LLL")
                if ("entityId" in l_entity):
                   #
                   #  Build a dictionary that we will append to the DataFrame
@@ -282,6 +281,7 @@ def f_ready_for_graph_int(i_arg1, i_arg2):
                      l_recd1.update( {"preferred_term": "Unknown"                     } )
                         #
                   df_UmlsEntityNodes.append(l_recd1, ignore_index = True)
+                  print(l_recd1)
                 
                   #
                   #  Above was our list of Nodes of LABEL "UmlsEntity"
