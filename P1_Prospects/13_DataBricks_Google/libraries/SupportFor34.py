@@ -318,6 +318,8 @@ def f_ready_for_graph_int(i_arg1, i_arg2):
                            #
                         df_EntityToVocabularyEdge_N.append(l_recd4a, ignore_index = True)
                         df_EntityToVocabularyEdge_S.append(l_recd4b, ignore_index = True)
+               else:
+                  print("GGG")
                     
     
    return  df_PatientVisit, df_UmlsEntityNodes, df_UmlsVocabularyNodes, df_PatientVisitToEntityEdge_N, df_PatientVisitToEntityEdge_S, df_EntityToVocabularyEdge_N, df_EntityToVocabularyEdge_S
