@@ -281,8 +281,10 @@ def f_ready_for_graph_int(i_arg1, i_arg2):
                      l_recd1.update( {"preferred_term": "Unknown"                     } )
                         #
                   #  df_UmlsEntityNodes.append(l_recd1, ignore_index = True)
-                  df_UmlsEntityNodes.append(pd.DataFrl_recd1)
-                  print(l_recd1)
+                  df_UmlsEntityNodes.append( pd.DataFrame([l_recd1], 
+                     columns = ["id", "entity_id", "preferred_term", "LABEL"]) )
+                
+                
                 
                   #
                   #  Above was our list of Nodes of LABEL "UmlsEntity"
