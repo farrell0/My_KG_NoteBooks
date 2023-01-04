@@ -158,18 +158,18 @@ def f_ready_for_graph_int(i_arg1, i_arg2):
       ], columns = ["id", "transcription", "LABEL"])
          #
    df_UmlsEntityNodes     = pd.DataFrame([
-      ["XX-1001", "XX-1001", "Unknown", "UmlsEntity"],
-      ["XX-1002", "XX-1002", "Unknown", "UmlsEntity"],
-      ["XX-1003", "XX-1003", "Unknown", "UmlsEntity"],
-      ["XX-1004", "XX-1004", "Unknown", "UmlsEntity"],
+#     ["XX-1001", "XX-1001", "Unknown", "UmlsEntity"],
+#     ["XX-1002", "XX-1002", "Unknown", "UmlsEntity"],
+#     ["XX-1003", "XX-1003", "Unknown", "UmlsEntity"],
+#     ["XX-1004", "XX-1004", "Unknown", "UmlsEntity"],
          #
       ], columns = ["id", "entity_id", "preferred_term", "LABEL"])
          #
    df_UmlsVocabularyNodes =  pd.DataFrame([
-      ["XX-1001", "UmlsVocabulary"],
-      ["XX-1002", "UmlsVocabulary"],
-      ["XX-1003", "UmlsVocabulary"],
-      ["XX-1004", "UmlsVocabulary"],
+#     ["XX-1001", "UmlsVocabulary"],
+#     ["XX-1002", "UmlsVocabulary"],
+#     ["XX-1003", "UmlsVocabulary"],
+#     ["XX-1004", "UmlsVocabulary"],
          #
       ], columns = ["id", "LABEL"])
 
@@ -424,7 +424,7 @@ def f_enrich(i_arg1, i_arg2):
       #
    l_df1, l_df2, l_df3, l_df4, l_df5, l_df6, l_df7 = f_ready_for_graph_int(l_data_asjson, l_uniqid)
       #
-   f_insert_into_graph(i_arg2, l_df1, l_df2, l_df3, l_df4, l_df5, l_df6, l_df7)
+   #  f_insert_into_graph(i_arg2, l_df1, l_df2, l_df3, l_df4, l_df5, l_df6, l_df7)
 
 
    print(l_df1)
