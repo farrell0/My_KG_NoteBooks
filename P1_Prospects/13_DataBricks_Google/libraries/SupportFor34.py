@@ -270,7 +270,7 @@ def f_ready_for_graph_int(i_arg1, i_arg2):
             #
             #  If this key is present, add it to the dictionary
             #
-            if ("preferredTerm" in l_each):
+            if ("preferredTerm" in l_entity):
                #
                #  We have an additional key, add to the record 
                #
