@@ -279,44 +279,9 @@ def f_ready_for_graph_int(i_arg1, i_arg2):
                      l_recd1.update( {"preferred_term": str(l_entity["preferredTerm"])} )
                   else:
                      l_recd1.update( {"preferred_term": "Unknown"                     } )
-               print(l_recd1)
-
-    
-    
-    
-    
-#  if (l_entity := i_arg1.get("entityMentions", {}).get("linkedEntities")):
-#     print("AAA")
-#  else:
-#     print("BBB")
-
-
-#  if ("linkedEntities" in i_arg1):
-#     #
-#     #  Loop thru these
-#     #
-#     for l_entity in i_arg1["linkedEntities"]:
-#           
-#        print("MMM")
-#       
-#        if ("entityId" in l_entity):
-#           print("NNN")
-#           #
-#           #  Build a dictionary that we will append to the DataFrame
-#           #
-#           l_recd1 = { "id": l_entity["entityId"], "entity_id" : l_entity["entityId"], "LABEL": "UmlsEntity" }
-#           #
-#           #  If this key is present, add it to the dictionary
-#           #
-#           if ("preferredTerm" in l_entity):
-#              #
-#              #  We have an additional key, add to the record and add to our array
-#              #
-#              l_recd1.update( {"preferred_term": str(l_entity["preferredTerm"])} )
-#           else:
-#              l_recd1.update( {"preferred_term": "Unknown"                     } )
-#                 #
-#           df_UmlsEntityNodes.append(l_recd1, ignore_index = True)
+                        #
+                  df_UmlsEntityNodes.append(l_recd1, ignore_index = True)
+                
 #           #
 #           #  Above was our list of Nodes of LABEL "UmlsEntity"
 #           #  
