@@ -220,8 +220,8 @@ def f_ready_for_graph_int(i_arg1, i_arg2):
             ],
          'temporalAssessment': {'value': 'UPCOMING', 'confidence': 0.6084825992584229},
          'certaintyAssessment': {'value': 'LIKELY', 'confidence': 0.057481713593006134},
-          'subject': {'value': 'PATIENT', 'confidence': 0.9589220881462097},
-          'confidence': 0.5596652626991272
+         'subject': {'value': 'PATIENT', 'confidence': 0.9589220881462097},
+         'confidence': 0.5596652626991272
          },
          {
          'mentionId': '2',
