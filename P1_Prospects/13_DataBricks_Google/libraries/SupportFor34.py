@@ -274,7 +274,7 @@ def f_ready_for_graph_int(i_arg1, i_arg2):
                   #
                   if ("preferredTerm" in l_entity):
                      #
-                     #  We have an additional key, add to the record and add to our array
+                     #  We have an additional key, add to the record and add to our record
                      #
                      l_recd1.update( {"preferred_term": str(l_entity["preferredTerm"])} )
                   else:
