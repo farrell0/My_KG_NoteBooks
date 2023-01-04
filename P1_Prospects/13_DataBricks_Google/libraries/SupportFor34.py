@@ -249,8 +249,10 @@ def f_ready_for_graph_int(i_arg1, i_arg2):
         {
         'entityId': 'UMLS/C0027962',
         'preferredTerm': 'Melanocytic nevus',
-        'vocabularyCodes': ['HPO/HP:0000995', 'HPO/HP:0003764', 'MSH/D009508', 'MTH/NOCODE', 'NCI/C7570']}]
+        'vocabularyCodes': ['HPO/HP:0000995', 'HPO/HP:0003764', 'MSH/D009508', 'MTH/NOCODE', 'NCI/C7570']
         }
+        ]
+     }
 
     
    #  "entityMentions" should be a root level key to this dictionary
