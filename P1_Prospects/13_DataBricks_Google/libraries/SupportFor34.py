@@ -265,6 +265,7 @@ def f_ready_for_graph_int(i_arg1, i_arg2):
          if ("linkedEntities" in l_each):
             for l_entity in l_each["linkedEntities"]:
                if ("entityId" in l_entity):
+                  print("AAA")
                   #
                   #  Build a dictionary that we will append to the DataFrame
                   #
@@ -273,11 +274,13 @@ def f_ready_for_graph_int(i_arg1, i_arg2):
                   #  If this key is present, add it to the dictionary
                   #
                   if ("preferredTerm" in l_entity):
+                     print("BBB")
                      #
                      #  We have an additional key, add to the record 
                      #
                      l_recd1.update( {"preferred_term": [str(l_entity["preferredTerm"])]} )
                   else:
+                     print("CCC")
                      l_recd1.update( {"preferred_term": ["Unknown"                     ]} )
                         #
                   df_UmlsEntityNodes = df_UmlsEntityNodes.append( pd.DataFrame(l_recd1) )
