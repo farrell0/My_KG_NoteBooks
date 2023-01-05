@@ -166,10 +166,10 @@ def f_ready_for_graph_int(i_arg1, i_arg2):
       ], columns = ["id", "entity_id", "preferred_term", "LABEL"])
          #
    df_UmlsVocabularyNodes =  pd.DataFrame([
-#     ["XX-1001", "UmlsVocabulary"],
-#     ["XX-1002", "UmlsVocabulary"],
-#     ["XX-1003", "UmlsVocabulary"],
-#     ["XX-1004", "UmlsVocabulary"],
+      ["XX-1001", "UmlsVocabulary"],
+      ["XX-1002", "UmlsVocabulary"],
+      ["XX-1003", "UmlsVocabulary"],
+      ["XX-1004", "UmlsVocabulary"],
          #
       ], columns = ["id", "LABEL"])
 
@@ -350,38 +350,38 @@ def f_insert_into_graph(i_arg1, i_arg2, i_arg3, i_arg4, i_arg5, i_arg6, i_arg7, 
 
       #  Just edges
       #
-#     df_importer.edges_dataframe(
-#        i_arg5, 
-#        source_id_space       = "PatientVisit", 
-#        destination_id_space  = "UmlsEntity",   
-#        source_column         = "start_id",
-#        destination_column    = "end_id",
-#        type                  = "VISIT_CONTAINS"
-#        )
-#     df_importer.edges_dataframe(
-#        i_arg6, 
-#        source_id_space       = "UmlsEntity", 
-#        destination_id_space  = "PatientVisit",   
-#        source_column         = "start_id",
-#        destination_column    = "end_id",
-#        type                  = "VISIT_CONTAINS"
-#        )
-#     df_importer.edges_dataframe(
-#        i_arg7, 
-#        source_id_space       = "UmlsEntity", 
-#        destination_id_space  = "UmlsVocabulary",   
-#        source_column         = "start_id",
-#        destination_column    = "end_id",
-#        type                  = "ALSO_CODED_AS"
-#        )
-#     df_importer.edges_dataframe(
-#        i_arg8, 
-#        source_id_space       = "UmlsVocabulary", 
-#        destination_id_space  = "UmlsEntity",   
-#        source_column         = "start_id",
-#        destination_column    = "end_id",
-#        type                  = "ALSO_CODED_AS"
-#        )
+      df_importer.edges_dataframe(
+         i_arg5, 
+         source_id_space       = "PatientVisit", 
+         destination_id_space  = "UmlsEntity",   
+         source_column         = "start_id",
+         destination_column    = "end_id",
+         type                  = "VISIT_CONTAINS"
+         )
+      df_importer.edges_dataframe(
+         i_arg6, 
+         source_id_space       = "UmlsEntity", 
+         destination_id_space  = "PatientVisit",   
+         source_column         = "start_id",
+         destination_column    = "end_id",
+         type                  = "VISIT_CONTAINS"
+         )
+      df_importer.edges_dataframe(
+         i_arg7, 
+         source_id_space       = "UmlsEntity", 
+         destination_id_space  = "UmlsVocabulary",   
+         source_column         = "start_id",
+         destination_column    = "end_id",
+         type                  = "ALSO_CODED_AS"
+         )
+      df_importer.edges_dataframe(
+         i_arg8, 
+         source_id_space       = "UmlsVocabulary", 
+         destination_id_space  = "UmlsEntity",   
+         source_column         = "start_id",
+         destination_column    = "end_id",
+         type                  = "ALSO_CODED_AS"
+         )
 
       df_importer.insert()
     
