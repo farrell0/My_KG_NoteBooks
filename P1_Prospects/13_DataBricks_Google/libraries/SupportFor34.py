@@ -290,8 +290,8 @@ def f_ready_for_graph_int(i_arg1, i_arg2):
             l_recd2a = { "start_id": [i_arg2                   ], "end_id": [str(l_entity["entityId"])], "TYPE": ["VISIT_CONTAINS"] }
             l_recd2b = { "start_id": [str(l_entity["entityId"])], "end_id": [i_arg2                   ], "TYPE": ["VISIT_CONTAINS"] }
                   #
-            df_PatientVisitToEntityEdge_N = df_PatientVisitToEntityEdge_N.append(l_recd2a) ignore_index = True)
-            df_PatientVisitToEntityEdge_S = df_PatientVisitToEntityEdge_S.append(l_recd2b) ignore_index = True)
+            df_PatientVisitToEntityEdge_N = df_PatientVisitToEntityEdge_N.append(l_recd2a)
+            df_PatientVisitToEntityEdge_S = df_PatientVisitToEntityEdge_S.append(l_recd2b)
             #
             #  We are done with UmlsEntity and its Edge to PatientVisit
             #
