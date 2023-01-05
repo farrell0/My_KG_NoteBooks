@@ -143,19 +143,19 @@ def f_enrich_int(i_arg1, i_arg2):
 #  # #############################################################
 
 
-def f_ready_for_graph_int(i_arg1, i_arg2):
+def f_ready_for_graph_int(i_arg1, i_arg2, i_arg3):
     
    import pandas as pd
 
 
    df_PatientVisit        = pd.DataFrame([
-      [ i_arg2   , str(i_arg1)           , "PatientVisit"],
+      [ i_arg2   , str(i_arg1), str(i_arg3), "PatientVisit"],
          #
-      [ "XX-1001", "{'x-col': 'XX-1001'}", "PatientVisit"],
-      [ "XX-1002", "{'x-col': 'XX-1002'}", "PatientVisit"],
-      [ "XX-1003", "{'x-col': 'XX-1003'}", "PatientVisit"],
+      [ "XX-1001", "XX-1001"  , "XX-1001"  , "PatientVisit"],
+      [ "XX-1002", "XX-1002"  , "XX-1002"  , "PatientVisit"],
+      [ "XX-1003", "XX-1003"  , "XX-1002"  , "PatientVisit"],
          #
-      ], columns = ["id", "transcription", "LABEL"])
+      ], columns = ["id", "transcription", "short_text", "LABEL"])
          #
    df_UmlsEntityNodes     = pd.DataFrame([
       ["XX-1001", "XX-1001", "Unknown", "UmlsEntity"],
@@ -417,7 +417,7 @@ def f_enrich(i_arg1, i_arg2):
    l_uniqkey += 1
    l_uniqid  = str("PV-" + str(l_uniqkey))
       #
-   l_df1, l_df2, l_df3, l_df4, l_df5, l_df6, l_df7 = f_ready_for_graph_int(l_data_asjson, l_uniqid, )
+   l_df1, l_df2, l_df3, l_df4, l_df5, l_df6, l_df7 = f_ready_for_graph_int(l_data_asjson, l_uniqid, i_arg1)
       #
    f_insert_into_graph(i_arg2, l_df1, l_df2, l_df3, l_df4, l_df5, l_df6, l_df7)
 
