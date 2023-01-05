@@ -266,7 +266,7 @@ def f_ready_for_graph_int(i_arg1, i_arg2):
          if ("entityId" in l_entity):
             #  Build a dictionary that we will append to the DataFrame
             #
-            l_recd1 = { "id": [l_entity["entityId"]], "entity_id" : [l_entity["entityId"]], "LABEL": ["UmlsEntity"] }
+            l_recd1 = { "id": [str(l_entity["entityId"])], "entity_id" : [str(l_entity["entityId"])], "LABEL": ["UmlsEntity"] }
             #
             #  If this key is present, add it to the dictionary
             #
