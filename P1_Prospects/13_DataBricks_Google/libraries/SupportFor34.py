@@ -290,8 +290,8 @@ def f_ready_for_graph_int(i_arg1, i_arg2):
             l_recd2a = { "start_id": [i_arg2                   ], "end_id": [str(l_entity["entityId"])], "TYPE": ["VISIT_CONTAINS"] }
             l_recd2b = { "start_id": [str(l_entity["entityId"])], "end_id": [i_arg2                   ], "TYPE": ["VISIT_CONTAINS"] }
                   #
-            df_PatientVisitToEntityEdge_N = df_PatientVisitToEntityEdge_N.append(l_recd2a)
-            df_PatientVisitToEntityEdge_S = df_PatientVisitToEntityEdge_S.append(l_recd2b)
+            df_PatientVisitToEntityEdge_N = df_PatientVisitToEntityEdge_N.append( pd.DataFrame(l_recd2a) )
+            df_PatientVisitToEntityEdge_S = df_PatientVisitToEntityEdge_S.append( pd.DataFrame(l_recd2b) )
             #
             #  We are done with UmlsEntity and its Edge to PatientVisit
             #
@@ -311,8 +311,8 @@ def f_ready_for_graph_int(i_arg1, i_arg2):
                   l_recd4a = { "start_id": [str(l_entity["entityId"])], "end_id": [str(l_vocab             )], "TYPE": ["ALSO_CODED_AS"] }
                   l_recd4b = { "start_id": [str(l_vocab             )], "end_id": [str(l_entity["entityId"])], "TYPE": ["ALSO_CODED_AS"] }
                      #
-                  df_EntityToVocabularyEdge_N = df_EntityToVocabularyEdge_N.append(l_recd4a)
-                  df_EntityToVocabularyEdge_S = df_EntityToVocabularyEdge_S.append(l_recd4b)
+                  df_EntityToVocabularyEdge_N = df_EntityToVocabularyEdge_N.append( pd.DataFrame(l_recd4a) )
+                  df_EntityToVocabularyEdge_S = df_EntityToVocabularyEdge_S.append( pd.DataFrame(l_recd4b) )
                     
     
    return  df_PatientVisit, df_UmlsEntityNodes, df_UmlsVocabularyNodes, df_PatientVisitToEntityEdge_N, df_PatientVisitToEntityEdge_S, df_EntityToVocabularyEdge_N, df_EntityToVocabularyEdge_S
