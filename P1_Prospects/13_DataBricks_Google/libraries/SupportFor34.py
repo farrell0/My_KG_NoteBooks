@@ -302,18 +302,17 @@ def f_ready_for_graph_int(i_arg1, i_arg2):
                   #
                   #  Add to our set of Vocabulary Nodes
                   #
-                  #  l_recd3 = { "id": l_vocab, "vocabulary_code": l_vocab, "LABEL": "UmlsVocabulary" }
-                  l_recd3 = { "id": [l_vocab], "vocabulary_code": [l_vocab], "LABEL": "UmlsVocabulary" }
+                  l_recd3 = { "id": [l_vocab], "vocabulary_code": [l_vocab], "LABEL": [ "UmlsVocabulary"] }
                      #
-                  df_UmlsVocabularyNodes.append(l_recd3, ignore_index = True)
+                  df_UmlsVocabularyNodes = df_UmlsVocabularyNodes.append(l_recd3)
                   #
                   #  And create the Edge from UmlsEntity --> UmlsVocabulary
                   #
-                  l_recd4a = { "start_id": str(l_entity["entityId"]), "end_id": str(l_vocab             ), "TYPE": "ALSO_CODED_AS" }
-                  l_recd4b = { "start_id": str(l_vocab             ), "end_id": str(l_entity["entityId"]), "TYPE": "ALSO_CODED_AS" }
+                  l_recd4a = { "start_id": [str(l_entity["entityId"])], "end_id": [str(l_vocab             )], "TYPE": ["ALSO_CODED_AS"] }
+                  l_recd4b = { "start_id": [str(l_vocab             )], "end_id": [str(l_entity["entityId"])], "TYPE": ["ALSO_CODED_AS"] }
                      #
-                  df_EntityToVocabularyEdge_N.append(l_recd4a, ignore_index = True)
-                  df_EntityToVocabularyEdge_S.append(l_recd4b, ignore_index = True)
+                  df_EntityToVocabularyEdge_N = df_EntityToVocabularyEdge_N.append(l_recd4a)
+                  df_EntityToVocabularyEdge_S = df_EntityToVocabularyEdge_S.append(l_recd4b)
                     
     
    return  df_PatientVisit, df_UmlsEntityNodes, df_UmlsVocabularyNodes, df_PatientVisitToEntityEdge_N, df_PatientVisitToEntityEdge_S, df_EntityToVocabularyEdge_N, df_EntityToVocabularyEdge_S
