@@ -166,12 +166,12 @@ def f_ready_for_graph_int(i_arg1, i_arg2):
       ], columns = ["id", "entity_id", "preferred_term", "LABEL"])
          #
    df_UmlsVocabularyNodes =  pd.DataFrame([
-      ["XX-1001", "UmlsVocabulary"],
-      ["XX-1002", "UmlsVocabulary"],
-      ["XX-1003", "UmlsVocabulary"],
-      ["XX-1004", "UmlsVocabulary"],
+      ["XX-1001", "XX-1001", "UmlsVocabulary"],
+      ["XX-1002", "XX-1002", "UmlsVocabulary"],
+      ["XX-1003", "XX-1003", "UmlsVocabulary"],
+      ["XX-1004", "XX-1004", "UmlsVocabulary"],
          #
-      ], columns = ["id", "LABEL"])
+      ], columns = ["id", "vocabulary_code", "LABEL"])
 
 
    df_PatientVisitToEntityEdge_N = pd.DataFrame([
