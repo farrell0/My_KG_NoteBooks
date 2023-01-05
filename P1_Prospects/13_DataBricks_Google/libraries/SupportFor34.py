@@ -302,7 +302,7 @@ def f_ready_for_graph_int(i_arg1, i_arg2):
                   #
                   #  Add to our set of Vocabulary Nodes
                   #
-                  l_recd3 = { "id": [l_vocab], "vocabulary_code": [l_vocab], "LABEL": [ "UmlsVocabulary"] }
+                  l_recd3 = { "id": [str(l_vocab)], "vocabulary_code": [str(l_vocab)], "LABEL": [ "UmlsVocabulary"] }
                      #
                   df_UmlsVocabularyNodes = df_UmlsVocabularyNodes.append( pd.DataFrame(l_recd3) )
                   #
