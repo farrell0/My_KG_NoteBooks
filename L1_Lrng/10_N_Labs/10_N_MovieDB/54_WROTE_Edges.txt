@@ -1,0 +1,11 @@
+r.end.id|r.end.labels|r.internal_id|r.label|r.TYPE|r.start.id|r.start.labels|r.type
+562949953421363|['Movie']|62|WROTE|WROTE|3|['Person']|edge
+562949953421364|['Movie']|87|WROTE|WROTE|3|['Person']|edge
+562949953421363|['Movie']|63|WROTE|WROTE|4|['Person']|edge
+562949953421364|['Movie']|88|WROTE|WROTE|4|['Person']|edge
+562949953421361|['Movie']|74|WROTE|WROTE|11|['Person']|edge
+562949953421362|['Movie']|66|WROTE|WROTE|21|['Person']|edge
+56|['Movie']|25|WROTE|WROTE|26|['Person']|edge
+59|['Movie']|35|WROTE|WROTE|40|['Person']|edge
+47|['Movie']|281474976710706|WROTE|WROTE|281474976710669|['Person']|edge
+281474976710697|['Movie']|281474976710660|WROTE|WROTE|281474976710666|['Person']|edge

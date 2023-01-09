@@ -1,4 +1,20 @@
 n.internal_id|n.labels|n.born|n.id|n.label|n.name|n.type
+16|['Person']|1996.0|44.0|Person|Jonathan Lipnicki|node
+17|['Person']|1942.0|51.0|Person|Marshall Bell|node
+18|['Person']|1970.0|63.0|Person|Ethan Hawke|node
+19|['Person']|1940.0|65.0|Person|James Cromwell|node
+20|['Person']|1956.0|71.0|Person|Tom Hanks|node
+21|['Person']|1941.0|72.0|Person|Nora Ephron|node
+22|['Person']|1950.0|79.0|Person|John Patrick Stanley|node
+23|['Person']|1949.0|84.0|Person|Bruno Kirby|node
+24|['Person']|1947.0|101.0|Person|Takeshi Kitano|node
+25|['Person']|1965.0|108.0|Person|Tom Tykwer|node
+26|['Person']|1969.0|109.0|Person|David Mitchell|node
+27|['Person']|1961.0|110.0|Person|Stefan Arndt|node
+28|['Person']|1976.0|113.0|Person|Audrey Tautou|node
+29|['Person']|1971.0|114.0|Person|Paul Bettany|node
+30|['Person']|1954.0|115.0|Person|Ron Howard|node
+31|['Person']|1981.0|117.0|Person|Natalie Portman|node
 32|['Person']|1946.0|118.0|Person|Stephen Rea|node
 33|['Person']|1946.0|124.0|Person|Susan Sarandon|node
 34|['Person']|1966.0|125.0|Person|Matthew Fox|node
@@ -29,22 +45,6 @@ n.internal_id|n.labels|n.born|n.id|n.label|n.name|n.type
 13|['Person']|1962.0|39.0|Person|Kelly Preston|node
 14|['Person']|1974.0|40.0|Person|Jerry O'Connell|node
 15|['Person']|1971.0|43.0|Person|Regina King|node
-16|['Person']|1996.0|44.0|Person|Jonathan Lipnicki|node
-17|['Person']|1942.0|51.0|Person|Marshall Bell|node
-18|['Person']|1970.0|63.0|Person|Ethan Hawke|node
-19|['Person']|1940.0|65.0|Person|James Cromwell|node
-20|['Person']|1956.0|71.0|Person|Tom Hanks|node
-21|['Person']|1941.0|72.0|Person|Nora Ephron|node
-22|['Person']|1950.0|79.0|Person|John Patrick Stanley|node
-23|['Person']|1949.0|84.0|Person|Bruno Kirby|node
-24|['Person']|1947.0|101.0|Person|Takeshi Kitano|node
-25|['Person']|1965.0|108.0|Person|Tom Tykwer|node
-26|['Person']|1969.0|109.0|Person|David Mitchell|node
-27|['Person']|1961.0|110.0|Person|Stefan Arndt|node
-28|['Person']|1976.0|113.0|Person|Audrey Tautou|node
-29|['Person']|1971.0|114.0|Person|Paul Bettany|node
-30|['Person']|1954.0|115.0|Person|Ron Howard|node
-31|['Person']|1981.0|117.0|Person|Natalie Portman|node
 281474976710669|['Person']|1957.0|45.0|Person|Cameron Crowe|node
 281474976710670|['Person']|1966.0|50.0|Person|John Cusack|node
 281474976710671|['Person']|1963.0|53.0|Person|Helen Hunt|node
@@ -86,35 +86,6 @@ n.internal_id|n.labels|n.born|n.id|n.label|n.name|n.type
 281474976710666|['Person']|1941.0|36.0|Person|Jim Cash|node
 281474976710667|['Person']|1969.0|38.0|Person|Renee Zellweger|node
 281474976710668|['Person']|1970.0|41.0|Person|Jay Mohr|node
-562949953421312|['Person']|1952.0|7.0|Person|Joel Silver|node
-562949953421313|['Person']|1975.0|12.0|Person|Charlize Theron|node
-562949953421314|['Person']|1940.0|13.0|Person|Al Pacino|node
-562949953421315|['Person']|1944.0|14.0|Person|Taylor Hackford|node
-562949953421316|['Person']|1958.0|19.0|Person|Kevin Bacon|node
-562949953421317|['Person']|1947.0|27.0|Person|Rob Reiner|node
-562949953421318|['Person']|1961.0|34.0|Person|Meg Ryan|node
-562949953421319|['Person']|1961.0|42.0|Person|Bonnie Hunt|node
-562949953421320|['Person']|1970.0|47.0|Person|River Phoenix|node
-562949953421321|['Person']|1971.0|48.0|Person|Corey Feldman|node
-562949953421322|['Person']|1972.0|49.0|Person|Wil Wheaton|node
-562949953421323|['Person']|1963.0|54.0|Person|Greg Kinnear|node
-562949953421324|['Person']|1929.0|58.0|Person|Max von Sydow|node
-562949953421325|['Person']|1942.0|59.0|Person|Werner Herzog|node
-562949953421326|['Person']|1951.0|60.0|Person|Robin Williams|node
-562949953421341|['Person']|1930.0|99.0|Person|Clint Eastwood|node
-562949953421342|['Person']|1968.0|102.0|Person|Dina Meyer|node
-562949953421343|['Person']|1966.0|106.0|Person|Halle Berry|node
-562949953421344|['Person']|1949.0|107.0|Person|Jim Broadbent|node
-562949953421345|['Person']|1939.0|112.0|Person|Ian McKellen|node
-562949953421346|['Person']|1940.0|119.0|Person|John Hurt|node
-562949953421347|['Person']|1967.0|120.0|Person|Ben Miles|node
-562949953421348|['Person']|1960.0|123.0|Person|John Goodman|node
-562949953421349|['Person']|1982.0|127.0|Person|Rain|node
-562949953421350|['Person']|0.0|129.0|Person|Naomie Harris|node
-562949953421351|['Person']|1953.0|132.0|Person|David Morse|node
-562949953421352|['Person']|1968.0|133.0|Person|Sam Rockwell|node
-562949953421353|['Person']|1938.0|138.0|Person|Frank Langella|node
-562949953421354|['Person']|1944.0|142.0|Person|Danny DeVito|node
 562949953421327|['Person']|1956.0|61.0|Person|Vincent Ward|node
 562949953421328|['Person']|1971.0|64.0|Person|Rick Yune|node
 562949953421329|['Person']|1968.0|68.0|Person|Parker Posey|node
@@ -132,3 +103,32 @@ n.internal_id|n.labels|n.born|n.id|n.label|n.name|n.type
 562949953421355|['Person']|1950.0|145.0|Person|Ed Harris|node
 562949953421356|['Person']|1932.0|153.0|Person|Milos Forman|node
 562949953421357|['Person']|0.0|169.0|Person|Jessica Thompson|node
+562949953421341|['Person']|1930.0|99.0|Person|Clint Eastwood|node
+562949953421342|['Person']|1968.0|102.0|Person|Dina Meyer|node
+562949953421343|['Person']|1966.0|106.0|Person|Halle Berry|node
+562949953421344|['Person']|1949.0|107.0|Person|Jim Broadbent|node
+562949953421345|['Person']|1939.0|112.0|Person|Ian McKellen|node
+562949953421346|['Person']|1940.0|119.0|Person|John Hurt|node
+562949953421347|['Person']|1967.0|120.0|Person|Ben Miles|node
+562949953421348|['Person']|1960.0|123.0|Person|John Goodman|node
+562949953421349|['Person']|1982.0|127.0|Person|Rain|node
+562949953421350|['Person']|0.0|129.0|Person|Naomie Harris|node
+562949953421351|['Person']|1953.0|132.0|Person|David Morse|node
+562949953421352|['Person']|1968.0|133.0|Person|Sam Rockwell|node
+562949953421353|['Person']|1938.0|138.0|Person|Frank Langella|node
+562949953421354|['Person']|1944.0|142.0|Person|Danny DeVito|node
+562949953421312|['Person']|1952.0|7.0|Person|Joel Silver|node
+562949953421313|['Person']|1975.0|12.0|Person|Charlize Theron|node
+562949953421314|['Person']|1940.0|13.0|Person|Al Pacino|node
+562949953421315|['Person']|1944.0|14.0|Person|Taylor Hackford|node
+562949953421316|['Person']|1958.0|19.0|Person|Kevin Bacon|node
+562949953421317|['Person']|1947.0|27.0|Person|Rob Reiner|node
+562949953421318|['Person']|1961.0|34.0|Person|Meg Ryan|node
+562949953421319|['Person']|1961.0|42.0|Person|Bonnie Hunt|node
+562949953421320|['Person']|1970.0|47.0|Person|River Phoenix|node
+562949953421321|['Person']|1971.0|48.0|Person|Corey Feldman|node
+562949953421322|['Person']|1972.0|49.0|Person|Wil Wheaton|node
+562949953421323|['Person']|1963.0|54.0|Person|Greg Kinnear|node
+562949953421324|['Person']|1929.0|58.0|Person|Max von Sydow|node
+562949953421325|['Person']|1942.0|59.0|Person|Werner Herzog|node
+562949953421326|['Person']|1951.0|60.0|Person|Robin Williams|node

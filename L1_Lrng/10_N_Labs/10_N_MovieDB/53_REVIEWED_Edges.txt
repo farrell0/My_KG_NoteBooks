@@ -1,0 +1,10 @@
+r.end.id|r.end.labels|r.internal_id|r.label|r.RATING|r.SUMMARY|r.TYPE|r.start.id|r.start.labels|r.type
+52|['Movie']|17|REVIEWED|100.0|The coolest football movie ever|REVIEWED|45|['Person']|edge
+281474976710703|['Movie']|93|REVIEWED|65.0|Fun, but a little far fetched|REVIEWED|45|['Person']|edge
+52|['Movie']|281474976710679|REVIEWED|62.0|Pretty funny at times|REVIEWED|281474976710696|['Person']|edge
+52|['Movie']|562949953421338|REVIEWED|65.0|Silly, but fun|REVIEWED|562949953421357|['Person']|edge
+47|['Movie']|562949953421362|REVIEWED|92.0|You had me at Jerry|REVIEWED|562949953421357|['Person']|edge
+281474976710703|['Movie']|562949953421380|REVIEWED|68.0|A solid romp|REVIEWED|562949953421357|['Person']|edge
+56|['Movie']|562949953421383|REVIEWED|95.0|An amazing journey|REVIEWED|562949953421357|['Person']|edge
+54|['Movie']|562949953421388|REVIEWED|85.0|Dark, but compelling|REVIEWED|562949953421357|['Person']|edge
+53|['Movie']|562949953421392|REVIEWED|45.0|Slapstick redeemed only by the Robin Williams and Gene Hackman's stellar performances|REVIEWED|562949953421357|['Person']|edge

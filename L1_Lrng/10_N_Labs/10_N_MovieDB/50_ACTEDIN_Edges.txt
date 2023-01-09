@@ -1,0 +1,173 @@
+r.end.id|r.end.labels|r.internal_id|r.label|r.ROLES|r.TYPE|r.start.id|r.start.labels|r.type
+46|['Movie']|0|ACTEDIN|"[""Neo""]"|ACTED_IN|0|['Person']|edge
+52|['Movie']|16|ACTEDIN|"[""Shane Falco""]"|ACTED_IN|0|['Person']|edge
+55|['Movie']|18|ACTEDIN|"[""Johnny Mnemonic""]"|ACTED_IN|0|['Person']|edge
+59|['Movie']|30|ACTEDIN|"[""Julian Mercer""]"|ACTED_IN|0|['Person']|edge
+562949953421360|['Movie']|55|ACTEDIN|"[""Kevin Lomax""]"|ACTED_IN|0|['Person']|edge
+562949953421359|['Movie']|96|ACTEDIN|"[""Neo""]"|ACTED_IN|0|['Person']|edge
+562949953421358|['Movie']|101|ACTEDIN|"[""Neo""]"|ACTED_IN|0|['Person']|edge
+46|['Movie']|1|ACTEDIN|"[""Trinity""]"|ACTED_IN|1|['Person']|edge
+562949953421359|['Movie']|97|ACTEDIN|"[""Trinity""]"|ACTED_IN|1|['Person']|edge
+562949953421358|['Movie']|102|ACTEDIN|"[""Trinity""]"|ACTED_IN|1|['Person']|edge
+46|['Movie']|2|ACTEDIN|"[""Morpheus""]"|ACTED_IN|2|['Person']|edge
+562949953421359|['Movie']|98|ACTEDIN|"[""Morpheus""]"|ACTED_IN|2|['Person']|edge
+562949953421358|['Movie']|103|ACTEDIN|"[""Morpheus""]"|ACTED_IN|2|['Person']|edge
+47|['Movie']|5|ACTEDIN|"[""Jerry Maguire""]"|ACTED_IN|5|['Person']|edge
+281474976710697|['Movie']|53|ACTEDIN|"[""Maverick""]"|ACTED_IN|5|['Person']|edge
+562949953421361|['Movie']|67|ACTEDIN|"[""Lt. Daniel Kaffee""]"|ACTED_IN|5|['Person']|edge
+59|['Movie']|31|ACTEDIN|"[""Harry Sanborn""]"|ACTED_IN|6|['Person']|edge
+281474976710707|['Movie']|43|ACTEDIN|"[""Randle McMurphy""]"|ACTED_IN|6|['Person']|edge
+562949953421365|['Movie']|45|ACTEDIN|"[""Hoffa""]"|ACTED_IN|6|['Person']|edge
+281474976710699|['Movie']|49|ACTEDIN|"[""Melvin Udall""]"|ACTED_IN|6|['Person']|edge
+562949953421361|['Movie']|68|ACTEDIN|"[""Col. Nathan R. Jessup""]"|ACTED_IN|6|['Person']|edge
+562949953421361|['Movie']|69|ACTEDIN|"[""Lt. Cdr. JoAnne Galloway""]"|ACTED_IN|7|['Person']|edge
+281474976710698|['Movie']|50|ACTEDIN|"[""Ace Merrill""]"|ACTED_IN|8|['Person']|edge
+562949953421361|['Movie']|70|ACTEDIN|"[""Lt. Jonathan Kendrick""]"|ACTED_IN|8|['Person']|edge
+562949953421361|['Movie']|71|ACTEDIN|"[""Cpl. Jeffrey Barnes""]"|ACTED_IN|9|['Person']|edge
+562949953421361|['Movie']|72|ACTEDIN|"[""Dr. Stone""]"|ACTED_IN|10|['Person']|edge
+562949953421361|['Movie']|73|ACTEDIN|"[""Man in Bar""]"|ACTED_IN|11|['Person']|edge
+281474976710697|['Movie']|54|ACTEDIN|"[""Viper""]"|ACTED_IN|12|['Person']|edge
+47|['Movie']|6|ACTEDIN|"[""Avery Bishop""]"|ACTED_IN|13|['Person']|edge
+47|['Movie']|7|ACTEDIN|"[""Frank Cushman""]"|ACTED_IN|14|['Person']|edge
+281474976710698|['Movie']|51|ACTEDIN|"[""Vern Tessio""]"|ACTED_IN|14|['Person']|edge
+47|['Movie']|8|ACTEDIN|"[""Marcee Tidwell""]"|ACTED_IN|15|['Person']|edge
+47|['Movie']|9|ACTEDIN|"[""Ray Boyd""]"|ACTED_IN|16|['Person']|edge
+281474976710702|['Movie']|46|ACTEDIN|"[""Admiral""]"|ACTED_IN|17|['Person']|edge
+281474976710698|['Movie']|52|ACTEDIN|"[""Mr. Lachance""]"|ACTED_IN|17|['Person']|edge
+281474976710700|['Movie']|47|ACTEDIN|"[""Ishmael Chambers""]"|ACTED_IN|18|['Person']|edge
+57|['Movie']|26|ACTEDIN|"[""Warden Hal Moores""]"|ACTED_IN|19|['Person']|edge
+281474976710700|['Movie']|48|ACTEDIN|"[""Judge Fielding""]"|ACTED_IN|19|['Person']|edge
+49|['Movie']|10|ACTEDIN|"[""Joe Fox""]"|ACTED_IN|20|['Person']|edge
+50|['Movie']|12|ACTEDIN|"[""Sam Baldwin""]"|ACTED_IN|20|['Person']|edge
+51|['Movie']|14|ACTEDIN|"[""Mr. White""]"|ACTED_IN|20|['Person']|edge
+56|['Movie']|20|ACTEDIN|"[""Zachry"",""Dr. Henry Goose"",""Isaac Sachs"",""Dermot Hoggins""]"|ACTED_IN|20|['Person']|edge
+57|['Movie']|27|ACTEDIN|"[""Paul Edgecomb""]"|ACTED_IN|20|['Person']|edge
+60|['Movie']|36|ACTEDIN|"[""Rep. Charlie Wilson""]"|ACTED_IN|20|['Person']|edge
+61|['Movie']|38|ACTEDIN|"[""Hero Boy"",""Father"",""Conductor"",""Hobo"",""Scrooge"",""Santa Claus""]"|ACTED_IN|20|['Person']|edge
+562949953421368|['Movie']|39|ACTEDIN|"[""Jimmy Dugan""]"|ACTED_IN|20|['Person']|edge
+281474976710706|['Movie']|44|ACTEDIN|"[""Chuck Noland""]"|ACTED_IN|20|['Person']|edge
+281474976710705|['Movie']|79|ACTEDIN|"[""Jim Lovell""]"|ACTED_IN|20|['Person']|edge
+281474976710703|['Movie']|89|ACTEDIN|"[""Dr. Robert Langdon""]"|ACTED_IN|20|['Person']|edge
+281474976710701|['Movie']|94|ACTEDIN|"[""Joe Banks""]"|ACTED_IN|20|['Person']|edge
+562949953421362|['Movie']|64|ACTEDIN|"[""Jess""]"|ACTED_IN|23|['Person']|edge
+55|['Movie']|19|ACTEDIN|"[""Takahashi""]"|ACTED_IN|24|['Person']|edge
+281474976710703|['Movie']|90|ACTEDIN|"[""Sophie Neveu""]"|ACTED_IN|28|['Person']|edge
+281474976710703|['Movie']|91|ACTEDIN|"[""Silas""]"|ACTED_IN|29|['Person']|edge
+562949953421363|['Movie']|58|ACTEDIN|"[""Evey Hammond""]"|ACTED_IN|31|['Person']|edge
+562949953421363|['Movie']|59|ACTEDIN|"[""Eric Finch""]"|ACTED_IN|32|['Person']|edge
+562949953421364|['Movie']|83|ACTEDIN|"[""Mom""]"|ACTED_IN|33|['Person']|edge
+562949953421364|['Movie']|84|ACTEDIN|"[""Racer X""]"|ACTED_IN|34|['Person']|edge
+57|['Movie']|28|ACTEDIN|"[""Burt Hammersmith""]"|ACTED_IN|35|['Person']|edge
+281474976710705|['Movie']|80|ACTEDIN|"[""Ken Mattingly""]"|ACTED_IN|35|['Person']|edge
+562949953421368|['Movie']|40|ACTEDIN|"[""Bob Hinson""]"|ACTED_IN|36|['Person']|edge
+562949953421366|['Movie']|76|ACTEDIN|"[""Bill Harding""]"|ACTED_IN|36|['Person']|edge
+281474976710705|['Movie']|81|ACTEDIN|"[""Fred Haise""]"|ACTED_IN|36|['Person']|edge
+60|['Movie']|37|ACTEDIN|"[""Gust Avrakotos""]"|ACTED_IN|37|['Person']|edge
+562949953421366|['Movie']|77|ACTEDIN|"[""Dustin \""Dusty\"" Davis""]"|ACTED_IN|37|['Person']|edge
+59|['Movie']|32|ACTEDIN|"[""Erica Barry""]"|ACTED_IN|39|['Person']|edge
+562949953421368|['Movie']|41|ACTEDIN|"[""\""All the Way\"" Mae Mordabito""]"|ACTED_IN|42|['Person']|edge
+562949953421368|['Movie']|42|ACTEDIN|"[""Kit Keller""]"|ACTED_IN|43|['Person']|edge
+55|['Movie']|281474976710691|ACTEDIN|"[""J-Bone""]"|ACTED_IN|281474976710682|['Person']|edge
+562949953421364|['Movie']|281474976710675|ACTEDIN|"[""Speed Racer""]"|ACTED_IN|281474976710684|['Person']|edge
+562949953421364|['Movie']|281474976710676|ACTEDIN|"[""Trixie""]"|ACTED_IN|281474976710685|['Person']|edge
+57|['Movie']|281474976710686|ACTEDIN|"[""John Coffey""]"|ACTED_IN|281474976710686|['Person']|edge
+57|['Movie']|281474976710687|ACTEDIN|"[""Melinda Moores""]"|ACTED_IN|281474976710687|['Person']|edge
+58|['Movie']|281474976710673|ACTEDIN|"[""David Frost""]"|ACTED_IN|281474976710689|['Person']|edge
+562949953421367|['Movie']|281474976710669|ACTEDIN|"[""Rupert Burns""]"|ACTED_IN|281474976710690|['Person']|edge
+58|['Movie']|281474976710674|ACTEDIN|"[""Bob Zelnick""]"|ACTED_IN|281474976710690|['Person']|edge
+562949953421365|['Movie']|281474976710672|ACTEDIN|"[""Peter \""Pete\"" Connelly""]"|ACTED_IN|281474976710691|['Person']|edge
+60|['Movie']|281474976710684|ACTEDIN|"[""Joanne Herring""]"|ACTED_IN|281474976710693|['Person']|edge
+562949953421368|['Movie']|281474976710681|ACTEDIN|"[""Dottie Hinson""]"|ACTED_IN|281474976710694|['Person']|edge
+281474976710698|['Movie']|281474976710661|ACTEDIN|"[""Denny Lachance""]"|ACTED_IN|281474976710670|['Person']|edge
+281474976710699|['Movie']|281474976710663|ACTEDIN|"[""Carol Connelly""]"|ACTED_IN|281474976710671|['Person']|edge
+281474976710706|['Movie']|281474976710667|ACTEDIN|"[""Kelly Frears""]"|ACTED_IN|281474976710671|['Person']|edge
+562949953421366|['Movie']|281474976710670|ACTEDIN|"[""Dr. Jo Harding""]"|ACTED_IN|281474976710671|['Person']|edge
+48|['Movie']|281474976710700|ACTEDIN|"[""Annie Collins-Nielsen""]"|ACTED_IN|281474976710673|['Person']|edge
+49|['Movie']|281474976710698|ACTEDIN|"[""Kevin Jackson""]"|ACTED_IN|281474976710675|['Person']|edge
+562949953421368|['Movie']|281474976710680|ACTEDIN|"[""Doris Murphy""]"|ACTED_IN|281474976710676|['Person']|edge
+50|['Movie']|281474976710697|ACTEDIN|"[""Becky""]"|ACTED_IN|281474976710676|['Person']|edge
+562949953421362|['Movie']|281474976710695|ACTEDIN|"[""Harry Burns""]"|ACTED_IN|281474976710677|['Person']|edge
+562949953421362|['Movie']|281474976710696|ACTEDIN|"[""Marie""]"|ACTED_IN|281474976710678|['Person']|edge
+51|['Movie']|281474976710694|ACTEDIN|"[""Faye Dolan""]"|ACTED_IN|281474976710679|['Person']|edge
+54|['Movie']|281474976710678|ACTEDIN|"[""English Bob""]"|ACTED_IN|281474976710681|['Person']|edge
+56|['Movie']|281474976710677|ACTEDIN|"[""Bill Smoke"",""Haskell Moore"",""Tadeusz Kesselring"",""Nurse Noakes"",""Boardman Mephi"",""Old Georgie""]"|ACTED_IN|281474976710656|['Person']|edge
+562949953421363|['Movie']|281474976710689|ACTEDIN|"[""V""]"|ACTED_IN|281474976710656|['Person']|edge
+562949953421359|['Movie']|281474976710711|ACTEDIN|"[""Agent Smith""]"|ACTED_IN|281474976710656|['Person']|edge
+562949953421358|['Movie']|281474976710712|ACTEDIN|"[""Agent Smith""]"|ACTED_IN|281474976710656|['Person']|edge
+46|['Movie']|281474976710713|ACTEDIN|"[""Agent Smith""]"|ACTED_IN|281474976710656|['Person']|edge
+46|['Movie']|281474976710714|ACTEDIN|"[""Emil""]"|ACTED_IN|281474976710657|['Person']|edge
+281474976710699|['Movie']|281474976710662|ACTEDIN|"[""Frank Sachs""]"|ACTED_IN|281474976710658|['Person']|edge
+48|['Movie']|281474976710699|ACTEDIN|"[""Albert Lewis""]"|ACTED_IN|281474976710658|['Person']|edge
+47|['Movie']|281474976710701|ACTEDIN|"[""Rod Tidwell""]"|ACTED_IN|281474976710658|['Person']|edge
+562949953421361|['Movie']|281474976710707|ACTEDIN|"[""Cpl. Carl Hammaker""]"|ACTED_IN|281474976710658|['Person']|edge
+562949953421361|['Movie']|281474976710708|ACTEDIN|"[""Lt. Sam Weinberg""]"|ACTED_IN|281474976710659|['Person']|edge
+562949953421365|['Movie']|281474976710671|ACTEDIN|"[""Frank Fitzsimmons""]"|ACTED_IN|281474976710660|['Person']|edge
+562949953421361|['Movie']|281474976710709|ACTEDIN|"[""Lt. Col. Matthew Andrew Markinson""]"|ACTED_IN|281474976710660|['Person']|edge
+562949953421361|['Movie']|281474976710710|ACTEDIN|"[""Pfc. Louden Downey""]"|ACTED_IN|281474976710661|['Person']|edge
+281474976710697|['Movie']|281474976710656|ACTEDIN|"[""Charlie""]"|ACTED_IN|281474976710662|['Person']|edge
+281474976710697|['Movie']|281474976710657|ACTEDIN|"[""Iceman""]"|ACTED_IN|281474976710663|['Person']|edge
+281474976710697|['Movie']|281474976710658|ACTEDIN|"[""Goose""]"|ACTED_IN|281474976710664|['Person']|edge
+47|['Movie']|281474976710702|ACTEDIN|"[""Dorothy Boyd""]"|ACTED_IN|281474976710667|['Person']|edge
+47|['Movie']|281474976710703|ACTEDIN|"[""Bob Sugar""]"|ACTED_IN|281474976710668|['Person']|edge
+281474976710705|['Movie']|562949953421367|ACTEDIN|"[""Gene Kranz""]"|ACTED_IN|562949953421355|['Person']|edge
+281474976710700|['Movie']|562949953421351|ACTEDIN|"[""Kazuo Miyamoto""]"|ACTED_IN|562949953421328|['Person']|edge
+281474976710704|['Movie']|562949953421374|ACTEDIN|"[""Takeshi""]"|ACTED_IN|562949953421328|['Person']|edge
+49|['Movie']|562949953421348|ACTEDIN|"[""Patricia Eden""]"|ACTED_IN|562949953421329|['Person']|edge
+49|['Movie']|562949953421349|ACTEDIN|"[""George Pappas""]"|ACTED_IN|562949953421330|['Person']|edge
+281474976710702|['Movie']|562949953421393|ACTEDIN|"[""Duane""]"|ACTED_IN|562949953421330|['Person']|edge
+50|['Movie']|562949953421343|ACTEDIN|"[""Suzy""]"|ACTED_IN|562949953421331|['Person']|edge
+50|['Movie']|562949953421344|ACTEDIN|"[""Walter""]"|ACTED_IN|562949953421332|['Person']|edge
+50|['Movie']|562949953421345|ACTEDIN|"[""Greg""]"|ACTED_IN|562949953421333|['Person']|edge
+281474976710701|['Movie']|562949953421341|ACTEDIN|"[""Baw""]"|ACTED_IN|562949953421334|['Person']|edge
+53|['Movie']|562949953421390|ACTEDIN|"[""Albert Goldman""]"|ACTED_IN|562949953421334|['Person']|edge
+52|['Movie']|562949953421334|ACTEDIN|"[""Annabelle Farrell""]"|ACTED_IN|562949953421335|['Person']|edge
+52|['Movie']|562949953421335|ACTEDIN|"[""Jimmy McGinty""]"|ACTED_IN|562949953421336|['Person']|edge
+54|['Movie']|562949953421385|ACTEDIN|"[""Little Bill Daggett""]"|ACTED_IN|562949953421336|['Person']|edge
+53|['Movie']|562949953421391|ACTEDIN|"[""Sen. Kevin Keeley""]"|ACTED_IN|562949953421336|['Person']|edge
+52|['Movie']|562949953421336|ACTEDIN|"[""Clifford Franklin""]"|ACTED_IN|562949953421337|['Person']|edge
+281474976710702|['Movie']|562949953421394|ACTEDIN|"[""Dieter Dengler""]"|ACTED_IN|562949953421339|['Person']|edge
+562949953421366|['Movie']|562949953421331|ACTEDIN|"[""Eddie""]"|ACTED_IN|562949953421340|['Person']|edge
+281474976710702|['Movie']|562949953421395|ACTEDIN|"[""Squad Leader""]"|ACTED_IN|562949953421340|['Person']|edge
+54|['Movie']|562949953421386|ACTEDIN|"[""Bill Munny""]"|ACTED_IN|562949953421341|['Person']|edge
+55|['Movie']|562949953421384|ACTEDIN|"[""Jane""]"|ACTED_IN|562949953421342|['Person']|edge
+56|['Movie']|562949953421381|ACTEDIN|"[""Luisa Rey"",""Jocasta Ayrs"",""Ovid"",""Meronym""]"|ACTED_IN|562949953421343|['Person']|edge
+56|['Movie']|562949953421382|ACTEDIN|"[""Vyvyan Ayrs"",""Captain Molyneux"",""Timothy Cavendish""]"|ACTED_IN|562949953421344|['Person']|edge
+281474976710703|['Movie']|562949953421379|ACTEDIN|"[""Sir Leight Teabing""]"|ACTED_IN|562949953421345|['Person']|edge
+562949953421363|['Movie']|562949953421322|ACTEDIN|"[""High Chancellor Adam Sutler""]"|ACTED_IN|562949953421346|['Person']|edge
+562949953421363|['Movie']|562949953421323|ACTEDIN|"[""Dascomb""]"|ACTED_IN|562949953421347|['Person']|edge
+562949953421364|['Movie']|562949953421325|ACTEDIN|"[""Cass Jones""]"|ACTED_IN|562949953421347|['Person']|edge
+281474976710704|['Movie']|562949953421375|ACTEDIN|"[""Ryan Maslow""]"|ACTED_IN|562949953421347|['Person']|edge
+562949953421364|['Movie']|562949953421326|ACTEDIN|"[""Pops""]"|ACTED_IN|562949953421348|['Person']|edge
+562949953421364|['Movie']|562949953421327|ACTEDIN|"[""Taejo Togokahn""]"|ACTED_IN|562949953421349|['Person']|edge
+281474976710704|['Movie']|562949953421376|ACTEDIN|"[""Raizo""]"|ACTED_IN|562949953421349|['Person']|edge
+281474976710704|['Movie']|562949953421377|ACTEDIN|"[""Mika Coretti""]"|ACTED_IN|562949953421350|['Person']|edge
+57|['Movie']|562949953421372|ACTEDIN|"[""Brutus \""Brutal\"" Howell""]"|ACTED_IN|562949953421351|['Person']|edge
+58|['Movie']|562949953421369|ACTEDIN|"[""James Reston, Jr.""]"|ACTED_IN|562949953421352|['Person']|edge
+57|['Movie']|562949953421373|ACTEDIN|"[""\""Wild Bill\"" Wharton""]"|ACTED_IN|562949953421352|['Person']|edge
+58|['Movie']|562949953421370|ACTEDIN|"[""Richard Nixon""]"|ACTED_IN|562949953421353|['Person']|edge
+562949953421365|['Movie']|562949953421329|ACTEDIN|"[""Robert \""Bobby\"" Ciaro""]"|ACTED_IN|562949953421354|['Person']|edge
+281474976710707|['Movie']|562949953421364|ACTEDIN|"[""Martini""]"|ACTED_IN|562949953421354|['Person']|edge
+562949953421360|['Movie']|562949953421314|ACTEDIN|"[""Mary Ann Lomax""]"|ACTED_IN|562949953421313|['Person']|edge
+51|['Movie']|562949953421339|ACTEDIN|"[""Tina""]"|ACTED_IN|562949953421313|['Person']|edge
+562949953421360|['Movie']|562949953421315|ACTEDIN|"[""John Milton""]"|ACTED_IN|562949953421314|['Person']|edge
+562949953421361|['Movie']|562949953421317|ACTEDIN|"[""Capt. Jack Ross""]"|ACTED_IN|562949953421316|['Person']|edge
+281474976710705|['Movie']|562949953421366|ACTEDIN|"[""Jack Swigert""]"|ACTED_IN|562949953421316|['Person']|edge
+58|['Movie']|562949953421368|ACTEDIN|"[""Jack Brennan""]"|ACTED_IN|562949953421316|['Person']|edge
+562949953421362|['Movie']|562949953421319|ACTEDIN|"[""Sally Albright""]"|ACTED_IN|562949953421318|['Person']|edge
+281474976710701|['Movie']|562949953421340|ACTEDIN|"[""DeDe"",""Angelica Graynamore"",""Patricia Graynamore""]"|ACTED_IN|562949953421318|['Person']|edge
+50|['Movie']|562949953421342|ACTEDIN|"[""Annie Reed""]"|ACTED_IN|562949953421318|['Person']|edge
+49|['Movie']|562949953421346|ACTEDIN|"[""Kathleen Kelly""]"|ACTED_IN|562949953421318|['Person']|edge
+281474976710697|['Movie']|562949953421363|ACTEDIN|"[""Carole""]"|ACTED_IN|562949953421318|['Person']|edge
+47|['Movie']|562949953421361|ACTEDIN|"[""Laurel Boyd""]"|ACTED_IN|562949953421319|['Person']|edge
+57|['Movie']|562949953421371|ACTEDIN|"[""Jan Edgecomb""]"|ACTED_IN|562949953421319|['Person']|edge
+281474976710698|['Movie']|562949953421357|ACTEDIN|"[""Chris Chambers""]"|ACTED_IN|562949953421320|['Person']|edge
+281474976710698|['Movie']|562949953421358|ACTEDIN|"[""Teddy Duchamp""]"|ACTED_IN|562949953421321|['Person']|edge
+281474976710698|['Movie']|562949953421359|ACTEDIN|"[""Gordie Lachance""]"|ACTED_IN|562949953421322|['Person']|edge
+49|['Movie']|562949953421347|ACTEDIN|"[""Frank Navasky""]"|ACTED_IN|562949953421323|['Person']|edge
+281474976710699|['Movie']|562949953421356|ACTEDIN|"[""Simon Bishop""]"|ACTED_IN|562949953421323|['Person']|edge
+281474976710700|['Movie']|562949953421350|ACTEDIN|"[""Nels Gudmundsson""]"|ACTED_IN|562949953421324|['Person']|edge
+48|['Movie']|562949953421352|ACTEDIN|"[""The Tracker""]"|ACTED_IN|562949953421324|['Person']|edge
+48|['Movie']|562949953421353|ACTEDIN|"[""The Face""]"|ACTED_IN|562949953421325|['Person']|edge
+562949953421367|['Movie']|562949953421332|ACTEDIN|"[""Andrew Marin""]"|ACTED_IN|562949953421326|['Person']|edge
+48|['Movie']|562949953421354|ACTEDIN|"[""Chris Nielsen""]"|ACTED_IN|562949953421326|['Person']|edge
+53|['Movie']|562949953421389|ACTEDIN|"[""Armand Goldman""]"|ACTED_IN|562949953421326|['Person']|edge
