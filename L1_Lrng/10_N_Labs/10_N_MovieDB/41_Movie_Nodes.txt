@@ -1,0 +1,39 @@
+n.internal_id|n.labels|n.id|n.label|n.tagline|n.title|n.type
+47|['Movie']|37.0|Movie|The rest of his life begins now.|Jerry Maguire|node
+48|['Movie']|56.0|Movie|After life there is more. The end is just the beginning.|What Dreams May Come|node
+49|['Movie']|67.0|Movie|At odds in life... in love on-line.|You've Got Mail|node
+50|['Movie']|73.0|Movie|What if someone you never met, someone you never saw, someone you never knew was the only someone for you?|Sleepless in Seattle|node
+51|['Movie']|85.0|Movie|In every life there comes a time when that thing you dream becomes that thing you do|That Thing You Do|node
+52|['Movie']|87.0|Movie|Pain heals, Chicks dig scars... Glory lasts forever|The Replacements|node
+53|['Movie']|95.0|Movie|Come as you are|The Birdcage|node
+54|['Movie']|97.0|Movie|It's a hell of a thing, killing a man|Unforgiven|node
+55|['Movie']|100.0|Movie|The hottest data on earth. In the coolest head in town|Johnny Mnemonic|node
+56|['Movie']|105.0|Movie|Everything is connected|Cloud Atlas|node
+57|['Movie']|130.0|Movie|Walk a mile you'll never forget.|The Green Mile|node
+58|['Movie']|137.0|Movie|400 million people were waiting for the truth.|Frost/Nixon|node
+59|['Movie']|154.0|Movie||Something's Gotta Give|node
+60|['Movie']|159.0|Movie|A stiff drink. A little mascara. A lot of nerve. Who said they couldn't bring down the Soviet empire.|Charlie Wilson's War|node
+61|['Movie']|161.0|Movie|This Holiday Season... Believe|The Polar Express|node
+46|['Movie']|0.0|Movie|Welcome to the Real World|The Matrix|node
+281474976710697|['Movie']|29.0|Movie|I feel the need, the need for speed.|Top Gun|node
+281474976710698|['Movie']|46.0|Movie|For some, it's the last real taste of innocence, and the first real taste of life. But for everyone, it's the time that memories are made of.|Stand By Me|node
+281474976710699|['Movie']|52.0|Movie|A comedy from the heart that goes for the throat.|As Good as It Gets|node
+281474976710700|['Movie']|62.0|Movie|First loves last. Forever.|Snow Falling on Cedars|node
+281474976710701|['Movie']|78.0|Movie|A story of love, lava and burning desire.|Joe Versus the Volcano|node
+281474976710702|['Movie']|92.0|Movie|Based on the extraordinary true story of one man's fight for freedom|RescueDawn|node
+281474976710703|['Movie']|111.0|Movie|Break The Codes|The Da Vinci Code|node
+281474976710704|['Movie']|128.0|Movie|Prepare to enter a secret world of assassins|Ninja Assassin|node
+281474976710705|['Movie']|144.0|Movie|Houston, we have a problem.|Apollo 13|node
+281474976710706|['Movie']|150.0|Movie|At the edge of the world, his journey begins.|Cast Away|node
+281474976710707|['Movie']|152.0|Movie|If he's crazy, what does that make you?|One Flew Over the Cuckoo's Nest|node
+562949953421358|['Movie']|9.0|Movie|Free your mind|The Matrix Reloaded|node
+562949953421359|['Movie']|10.0|Movie|Everything that has a beginning has an end|The Matrix Revolutions|node
+562949953421360|['Movie']|11.0|Movie|Evil has its winning ways|The Devil's Advocate|node
+562949953421361|['Movie']|15.0|Movie|In the heart of the nation's capital, in a courthouse of the U.S. government, one man will stop at nothing to keep his honor, and one will stop at nothing to find the truth.|A Few Good Men|node
+562949953421362|['Movie']|81.0|Movie|Can two friends sleep together and still love each other in the morning?|When Harry Met Sally|node
+562949953421363|['Movie']|116.0|Movie|Freedom! Forever!|V for Vendetta|node
+562949953421364|['Movie']|121.0|Movie|Speed has no limits|Speed Racer|node
+562949953421365|['Movie']|141.0|Movie|He didn't want law. He wanted justice.|Hoffa|node
+562949953421366|['Movie']|147.0|Movie|Don't Breathe. Don't Look Back.|Twister|node
+562949953421367|['Movie']|157.0|Movie|One robot's 200 year journey to become an ordinary man.|Bicentennial Man|node
+562949953421368|['Movie']|162.0|Movie|Once in a lifetime you get a chance to do something different.|A League of Their Own|node
