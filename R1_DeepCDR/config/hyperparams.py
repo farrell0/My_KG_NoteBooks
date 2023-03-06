@@ -26,9 +26,9 @@ class InputConfig:
     # Generate graph
     # Nodes paths
     cell_lines_path: str = "gs://hls-dataset-bucket/DeepCDR_data/cell_lines.csv"
-    drugs_path:      str = "gs://hls-dataset-bucket/DeepCDR_data/drugs.csv"
-    gdsc_path:       str = "gs://hls-dataset-bucket/DeepCDR_data/gdsc.csv"
-    genes_path:      str = "gs://hls-dataset-bucket/DeepCDR_data/genes.csv"
+    drugs_path:                      str = "gs://hls-dataset-bucket/DeepCDR_data/drugs.csv"
+    gdsc_path:                       str = "gs://hls-dataset-bucket/DeepCDR_data/gdsc.csv"
+    genes_path:                      str = "gs://hls-dataset-bucket/DeepCDR_data/genes.csv"
 
     # Edges paths
     gdsc_cell_line_path:             str = "gs://hls-dataset-bucket/DeepCDR_data/gdsc_cell_line_edges.csv"
