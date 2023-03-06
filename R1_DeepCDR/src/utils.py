@@ -1,22 +1,17 @@
 """
-utils.py contains methods that can not be immediately categorized into any of the
-four stages.
+Utils methods for the recipe.
 """
 
-import warnings
+import dataclasses
 
 import matplotlib.pyplot as plt
-import numpy
-import scipy.sparse as sp
+import pandas
+from IPython.utils.capture import capture_output
+from katana.ai.hls.featurizer import CanonicalAtomFeaturizer
+from katana.ai.hls.smiles_to_graph import smiles2PyG
+from src.split import SplitType
 
-with warnings.catch_warnings():
-    from deepchem.feat import ConvMolFeaturizer
-
-import torch
-from torch_geometric.data import Data
-from torch_geometric.utils import remove_self_loops
-
-TCGA_label_set = [
+TCGA_label_set = {
     "ALL",
     "BLCA",
     "BRCA",
@@ -42,45 +37,68 @@ TCGA_label_set = [
     "STAD",
     "THCA",
     "COAD/READ",
-]
+}
 
 
-def normalized_adj(adj):
-    adj = adj + numpy.eye(adj.shape[0])
-    d = sp.diags(numpy.power(numpy.array(adj.sum(1)), -0.5).flatten(), 0).toarray()
-    a_norm = adj.dot(d).transpose().dot(d)
-    return a_norm
+def compare_baselines(result, index="DeepCDR_Katana"):
+    result["Use GNN"] = "\u2714"
+
+    ridge_baseline = {"pearson": 0.780, "rmse": 2.368, "spearman": 0.731, "Use GNN": "\u274C"}
+    rf_baseline = {"pearson": 0.809, "rmse": 2.270, "spearman": 0.767, "Use GNN": "\u274C"}
+    moli_baseline = {"pearson": 0.813, "rmse": 2.282, "spearman": 0.782, "Use GNN": "\u274C"}
+    cdr_baseline = {"pearson": 0.871, "rmse": 1.982, "spearman": 0.852, "Use GNN": "\u274C"}
+    tcnn_baseline = {"pearson": 0.885, "rmse": 1.782, "spearman": 0.862, "Use GNN": "\u274C"}
+    indexes = [
+        "Ridge Regression",
+        "Random Forest",
+        "MOLI",
+        "CDRscan",
+        "tCNNs",
+        index,
+    ]
+    baselines = [
+        ridge_baseline,
+        rf_baseline,
+        moli_baseline,
+        cdr_baseline,
+        tcnn_baseline,
+        result,
+    ]
+
+    df = pandas.DataFrame(baselines, index=indexes)[["pearson", "spearman", "rmse"]]
+    df = df.rename(columns={"pearson": "pearson (\u2B06)", "rmse": "rmse (\u2B07)", "spearman": "spearman (\u2B06)"})
+    return df.style.apply(highlight_df)
 
 
-def calculate_graph_feat(feat_mat, adj_list):
-    max_atoms = 100
-    assert feat_mat.shape[0] == len(adj_list)
-    feat = numpy.zeros((max_atoms, feat_mat.shape[-1]), dtype="float32")
-    adj_mat = numpy.zeros((max_atoms, max_atoms), dtype="float32")
-    feat[: feat_mat.shape[0], :] = feat_mat
-    for i, nodes in enumerate(adj_list):
-        for each in nodes:
-            adj_mat[i, int(each)] = 1
-    assert numpy.allclose(adj_mat, adj_mat.T)
-    adj_ = adj_mat[: len(adj_list), : len(adj_list)]
-    adj_2 = adj_mat[len(adj_list) :, len(adj_list) :]
-    norm_adj_ = normalized_adj(adj_)
-    norm_adj_2 = normalized_adj(adj_2)
-
-    adj_mat[: len(adj_list), : len(adj_list)] = norm_adj_
-    adj_mat[len(adj_list) :, len(adj_list) :] = norm_adj_2
-
-    return Data(x=torch.tensor(feat), edge_index=remove_self_loops(torch.tensor(adj_mat).to_sparse_coo().indices())[0])
+def get_node_number(graph, node_type):
+    return graph.query(
+        f"""
+        MATCH (a:{node_type})
+        RETURN COUNT(a) as n
+        """
+    ).head()["n"][0]
 
 
 def smiles_to_pyg(smiles):
-    f = ConvMolFeaturizer()
-    mol = f(smiles)[0]
-    return calculate_graph_feat(mol.get_atom_features(), mol.get_adjacency_list())
+    return smiles2PyG(smiles, CanonicalAtomFeaturizer())
+
+
+def disable_warnings(func):
+    def wrapper(*args, **kwargs):
+        with capture_output(False, True, False):
+            return func(*args, **kwargs)
+
+    return wrapper
+
+
+def dataclass_repr(dataclass):
+    s = ",\n    ".join(f"{field.name} = {getattr(dataclass, field.name)}" for field in dataclasses.fields(dataclass))
+    s = f"{type(dataclass).__name__}:\n    {s}"
+    return s
 
 
 def highlight_df(x):
-    if x.name == "rmse":
+    if "rmse" in x.name:
         return ["font-weight: bold" if v == x.min() else "" for v in x]
     return ["font-weight: bold" if v == x.max() else "" for v in x]
 
@@ -93,3 +111,52 @@ def plot_prediction(y, ypred):
     plt.xlim([y.min(), y.max()])
     plt.ylim([y.min(), y.max()])
     plt.show()
+
+
+def smiles_dict(smiles_list):
+    smiles_dict = {}
+    for smiles in smiles_list:
+        smiles_dict[smiles] = smiles_to_pyg(smiles)
+    return smiles_dict
+
+
+def pairs_query_str(graph, split):
+    if split == SplitType.TEST:
+        df_test = graph.query(
+            f"""
+            MATCH (a:DRUG)-[u:SPLIT]->(c:CELL_LINE)
+            WHERE u.split = {SplitType.VAL}
+            RETURN a.smiles as smiles, c.id as id, u.label as label,
+            c.genomics_expression as genomics_expression,
+            c.genomics_mutation as genomics_mutation,
+            c.genomics_methylation as genomics_methylation
+            ORDER BY smiles, id, label
+            """,
+            balance_output=False,
+        ).to_pandas()
+        return df_test
+
+    df_pairs = graph.query(
+        f"""
+        MATCH (a:DRUG)-[u:SPLIT]->(c:CELL_LINE)
+        WHERE u.split = {split}
+        RETURN a.smiles as smiles, u.label as label,
+        c.id as id
+        """,
+        balance_output=True,
+    ).to_pandas()
+
+    df_features = graph.query(
+        """
+        MATCH (c:CELL_LINE)
+        RETURN c.id as id,
+        c.genomics_expression as genomics_expression,
+        c.genomics_mutation as genomics_mutation,
+        c.genomics_methylation as genomics_methylation
+        ORDER BY id
+        """
+    ).to_pandas()
+    
+    from katana.distributed import network
+    df_features = network.broadcast(0, df_features)
+    return pandas.merge(df_pairs, df_features, left_on="id", right_on="id").drop(["id"], axis=1)

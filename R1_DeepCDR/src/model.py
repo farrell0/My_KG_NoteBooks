@@ -1,8 +1,5 @@
 """
-In the model.py, add any custom models that you are using for the recipe. If you are using
-katana wrapped dgl/pyg model, then skip this file.
-
-
+DeepCDR model construction.
 """
 import torch
 import torch_geometric
@@ -91,7 +88,7 @@ class DrugModel(torch.nn.Module):
         super().__init__()
         self.pooling_method = PygPoolingMethod.MAX
         self.gcn = torch_geometric.nn.models.GCN(
-            in_channels=75,
+            in_channels=74,
             hidden_channels=256,
             num_layers=3,
             out_channels=100,
