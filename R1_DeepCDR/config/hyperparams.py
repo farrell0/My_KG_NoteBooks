@@ -21,11 +21,11 @@ class InputConfig:
 
     # Trained graph
     use_train_rdg: bool = False
-    trained_rdg_path: str = "gs://hls-dataset-bucket/DeepCDR_trained"
+    trained_rdg_path:                str = "gs://hls-dataset-bucket/DeepCDR_trained"
 
     # Generate graph
     # Nodes paths
-    cell_lines_path: str = "gs://hls-dataset-bucket/DeepCDR_data/cell_lines.csv"
+    cell_lines_path:                 str = "gs://hls-dataset-bucket/DeepCDR_data/cell_lines.csv"
     drugs_path:                      str = "gs://hls-dataset-bucket/DeepCDR_data/drugs.csv"
     gdsc_path:                       str = "gs://hls-dataset-bucket/DeepCDR_data/gdsc.csv"
     genes_path:                      str = "gs://hls-dataset-bucket/DeepCDR_data/genes.csv"
