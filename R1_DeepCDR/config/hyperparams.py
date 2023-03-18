@@ -41,8 +41,8 @@ class InputConfig:
     test_size: float = 0.05
     random_state: int = 42
 
-    # Save Graph path
-    save_graph_path = None
+#   # Save Graph path
+#   save_graph_path = None
 
     def __repr__(self):
         return utils.dataclass_repr(self)
