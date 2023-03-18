@@ -14,28 +14,28 @@ from src import utils
 class InputConfig:
     """Data class that includes all the parameters needed to setup the recipe."""
 
-    # Number of partitions
+#   # Number of partitions
     
-    #  num_partitions: int = 4
-    num_partitions: int = 3
+#   #  num_partitions: int = 4
+#   num_partitions: int = 3
 
     # Trained graph
-    use_train_rdg: bool = False
+#   use_train_rdg: bool = False
     trained_rdg_path:                str = "gs://hls-dataset-bucket/DeepCDR_trained"
 
-    # Generate graph
-    # Nodes paths
-    cell_lines_path:                 str = "gs://hls-dataset-bucket/DeepCDR_data/cell_lines.csv"
-    drugs_path:                      str = "gs://hls-dataset-bucket/DeepCDR_data/drugs.csv"
-    gdsc_path:                       str = "gs://hls-dataset-bucket/DeepCDR_data/gdsc.csv"
-    genes_path:                      str = "gs://hls-dataset-bucket/DeepCDR_data/genes.csv"
+#   # Generate graph
+#   # Nodes paths
+#   cell_lines_path:                 str = "gs://hls-dataset-bucket/DeepCDR_data/cell_lines.csv"
+#   drugs_path:                      str = "gs://hls-dataset-bucket/DeepCDR_data/drugs.csv"
+#   gdsc_path:                       str = "gs://hls-dataset-bucket/DeepCDR_data/gdsc.csv"
+#   genes_path:                      str = "gs://hls-dataset-bucket/DeepCDR_data/genes.csv"
 
-    # Edges paths
-    gdsc_cell_line_path:             str = "gs://hls-dataset-bucket/DeepCDR_data/gdsc_cell_line_edges.csv"
-    gdsc_drug_path:                  str = "gs://hls-dataset-bucket/DeepCDR_data/gdsc_drug_edges.csv"
-    cell_line_gene_expression_path:  str = "gs://hls-dataset-bucket/DeepCDR_data/cell_line_gene_expression_edges.csv"
-    cell_line_gene_methylation_path: str = "gs://hls-dataset-bucket/DeepCDR_data/cell_line_gene_methylation_edges.csv"
-    cell_line_gene_mutation_path:    str = "gs://hls-dataset-bucket/DeepCDR_data/cell_line_gene_mutation_edges.csv"
+#   # Edges paths
+#   gdsc_cell_line_path:             str = "gs://hls-dataset-bucket/DeepCDR_data/gdsc_cell_line_edges.csv"
+#   gdsc_drug_path:                  str = "gs://hls-dataset-bucket/DeepCDR_data/gdsc_drug_edges.csv"
+#   cell_line_gene_expression_path:  str = "gs://hls-dataset-bucket/DeepCDR_data/cell_line_gene_expression_edges.csv"
+#   cell_line_gene_methylation_path: str = "gs://hls-dataset-bucket/DeepCDR_data/cell_line_gene_methylation_edges.csv"
+#   cell_line_gene_mutation_path:    str = "gs://hls-dataset-bucket/DeepCDR_data/cell_line_gene_mutation_edges.csv"
 
     # Split parameters
     test_size: float = 0.05
