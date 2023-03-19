@@ -32,7 +32,14 @@ cloudpickle.register_pickle_by_value(utils)
 cloudpickle.register_pickle_by_value(split)
 
 
+##########################################################################################
+
+
+#
+#  Done after load
+#
 class RecipePipeline:
+    
     def __init__(self, graph: remote.Graph) -> None:
         """Initialization of the pipeline
         Args:
