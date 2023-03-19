@@ -66,6 +66,8 @@ class RecipePipeline:
         print(f"Number of CELL_LINE nodes in the graph: {cell_lines}")
         print(f"Number of pairs between a drug and a cell line: {pairs}")
 
+        
+   
     @utils.disable_warnings
     def feature_generator(self) -> None:
         """Preprocessing and generation of features in the graph"""
