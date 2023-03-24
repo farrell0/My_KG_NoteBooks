@@ -10,6 +10,9 @@ from src import utils
 # pylint: disable=too-many-instance-attributes
 
 
+###########################################################################
+
+
 @dataclasses.dataclass
 class InputConfig:
     """Data class that includes all the parameters needed to setup the recipe."""
@@ -21,13 +24,15 @@ class InputConfig:
     use_train_rdg: bool = False
     trained_rdg_path: str = "gs://hls-dataset-bucket/DeepCDR_trained"
 
-    # Generate graph
-    # Nodes paths
-    cell_lines_path: str = "gs://katana-demo-datasets/csv-datasets/DeepCDR/cell_lines.csv"
-    drugs_path: str = "gs://katana-demo-datasets/csv-datasets/DeepCDR/drugs.csv"
-    gdsc_path: str = "gs://katana-demo-datasets/csv-datasets/DeepCDR/gdsc.csv"
-    genes_path: str = "gs://katana-demo-datasets/csv-datasets/DeepCDR/genes.csv"
-
+    # MMM
+    #
+    #     # Generate graph
+    #     # Nodes paths
+    #     cell_lines_path: str = "gs://katana-demo-datasets/csv-datasets/DeepCDR/cell_lines.csv"
+    #     drugs_path: str = "gs://katana-demo-datasets/csv-datasets/DeepCDR/drugs.csv"
+    #     gdsc_path: str = "gs://katana-demo-datasets/csv-datasets/DeepCDR/gdsc.csv"
+    #     genes_path: str = "gs://katana-demo-datasets/csv-datasets/DeepCDR/genes.csv"
+#     
     # Edges paths
     gdsc_cell_line_path: str = "gs://katana-demo-datasets/csv-datasets/DeepCDR/gdsc_cell_line_edges.csv"
     gdsc_drug_path: str = "gs://katana-demo-datasets/csv-datasets/DeepCDR/gdsc_drug_edges.csv"
@@ -44,6 +49,9 @@ class InputConfig:
 
     def __repr__(self):
         return utils.dataclass_repr(self)
+
+
+###########################################################################
 
 
 @dataclasses.dataclass
@@ -85,6 +93,9 @@ class TrainingConfig:
     def __repr__(self):
         return utils.dataclass_repr(self)
 
+    
+###########################################################################
+    
 
 def load_input_config():
     """Generate input parameters."""
