@@ -68,6 +68,10 @@ class RecipePipeline:
         print(f"Number of CELL_LINE nodes in the graph: {cell_lines}")
         print(f"Number of pairs between a drug and a cell line: {pairs}")
 
+        
+    ##############################################################3
+    
+    
     @utils.disable_warnings
     def feature_generator(self) -> None:
         """Preprocessing and generation of features in the graph"""
@@ -84,6 +88,10 @@ class RecipePipeline:
         preprocessing.remove_null_cells(self.graph)
         print("Deleting single nodes")
         preprocessing.delete_single_node(self.graph)
+        
+        
+    ##############################################################3
+        
 
     @utils.disable_warnings
     def split_generator(self, input_hp) -> None:
