@@ -39,7 +39,11 @@ def edges_dataframe(input_config):
 
     for filename, edge_type in edges.items():
         edge_dd[edge_type] = dd.read_csv(filename, sep=",", dtype={"START_ID": "string", "END_ID": "string"})
+        
+        # MMM
+        #
         edge_dd[edge_type] = edge_dd[edge_type].dropna()
+        
     return edge_dd
 
 

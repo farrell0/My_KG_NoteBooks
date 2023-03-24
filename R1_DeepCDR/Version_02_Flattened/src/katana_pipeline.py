@@ -45,7 +45,7 @@ class RecipePipeline:
         
         # MMM
         #
-        print("This ran MMM")
+        print("This ran MMM 01")
         
         self.graph = graph
 
