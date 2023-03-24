@@ -103,20 +103,21 @@ class RecipePipeline:
 
         print("Deleting old split")
         split.delete_split(self.graph)
-        print("Generating split")
-        split_df = pandas.concat(
-            self.graph.query(
-                """
-            MATCH (a:DRUG)<-[:FOR_DRUG]-(:GDSC)-[u:HAS_CELL_LINE]->(c:CELL_LINE)
-            RETURN u.label as label, c.tcga_code as tcga_code,
-            a.id as drug_id, c.id as cell_line_id
-            """
-            )
-        )
-        split_df = split_df.sort_values(by=["drug_id", "cell_line_id", "label"]).reset_index(drop=True)
-        df_split = split.generate_split(split_df, input_hp.random_state, input_hp.test_size)
-        print("Upsert split on the graph")
-        split.upsert_split(self.graph, df_split)
+        
+#       print("Generating split")
+#       split_df = pandas.concat(
+#           self.graph.query(
+#               """
+#           MATCH (a:DRUG)<-[:FOR_DRUG]-(:GDSC)-[u:HAS_CELL_LINE]->(c:CELL_LINE)
+#           RETURN u.label as label, c.tcga_code as tcga_code,
+#           a.id as drug_id, c.id as cell_line_id
+#           """
+#           )
+#       )
+#       split_df = split_df.sort_values(by=["drug_id", "cell_line_id", "label"]).reset_index(drop=True)
+#       df_split = split.generate_split(split_df, input_hp.random_state, input_hp.test_size)
+#       print("Upsert split on the graph")
+#       split.upsert_split(self.graph, df_split)
 
     @utils.disable_warnings
     def train(self, model_hp: DeepCDRConfig, training_hp: TrainingConfig) -> None:
