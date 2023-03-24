@@ -42,6 +42,11 @@ class RecipePipeline:
         Args:
             graph: The input graph
         """
+        
+        # MMM
+        #
+        print("This ran MMM")
+        
         self.graph = graph
 
     @utils.disable_warnings
