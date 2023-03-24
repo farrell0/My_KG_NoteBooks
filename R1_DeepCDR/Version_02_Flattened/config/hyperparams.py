@@ -17,12 +17,14 @@ from src import utils
 class InputConfig:
     """Data class that includes all the parameters needed to setup the recipe."""
 
+    # MMM
     # Number of partitions
-    num_partitions: int = 4
+    #  num_partitions: int = 4
+    num_partitions: int = 3
 
-    # Trained graph
-    use_train_rdg: bool = False
-    trained_rdg_path: str = "gs://hls-dataset-bucket/DeepCDR_trained"
+    #     # Trained graph
+    #     use_train_rdg: bool = False
+    #     trained_rdg_path: str = "gs://hls-dataset-bucket/DeepCDR_trained"
 
     # MMM
     #
@@ -32,13 +34,13 @@ class InputConfig:
     #     drugs_path: str = "gs://katana-demo-datasets/csv-datasets/DeepCDR/drugs.csv"
     #     gdsc_path: str = "gs://katana-demo-datasets/csv-datasets/DeepCDR/gdsc.csv"
     #     genes_path: str = "gs://katana-demo-datasets/csv-datasets/DeepCDR/genes.csv"
-#     
-    # Edges paths
-    gdsc_cell_line_path: str = "gs://katana-demo-datasets/csv-datasets/DeepCDR/gdsc_cell_line_edges.csv"
-    gdsc_drug_path: str = "gs://katana-demo-datasets/csv-datasets/DeepCDR/gdsc_drug_edges.csv"
-    cell_line_gene_expression_path: str = "gs://katana-demo-datasets/csv-datasets/DeepCDR/cell_line_gene_expression_edges.csv"
-    cell_line_gene_methylation_path: str = "gs://katana-demo-datasets/csv-datasets/DeepCDR/cell_line_gene_methylation_edges.csv"
-    cell_line_gene_mutation_path: str = "gs://katana-demo-datasets/csv-datasets/DeepCDR/cell_line_gene_mutation_edges.csv"
+    #     
+    #     # Edges paths
+    #     gdsc_cell_line_path: str = "gs://katana-demo-datasets/csv-datasets/DeepCDR/gdsc_cell_line_edges.csv"
+    #     gdsc_drug_path: str = "gs://katana-demo-datasets/csv-datasets/DeepCDR/gdsc_drug_edges.csv"
+    #     cell_line_gene_expression_path: str = "gs://katana-demo-datasets/csv-datasets/DeepCDR/cell_line_gene_expression_edges.csv"
+    #     cell_line_gene_methylation_path: str = "gs://katana-demo-datasets/csv-datasets/DeepCDR/cell_line_gene_methylation_edges.csv"
+    #     cell_line_gene_mutation_path: str = "gs://katana-demo-datasets/csv-datasets/DeepCDR/cell_line_gene_mutation_edges.csv"
 
     # Split parameters
     test_size: float = 0.05
