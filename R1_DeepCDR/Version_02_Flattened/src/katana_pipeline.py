@@ -116,6 +116,7 @@ class RecipePipeline:
         )
         split_df = split_df.sort_values(by=["drug_id", "cell_line_id", "label"]).reset_index(drop=True)
         df_split = split.generate_split(split_df, input_hp.random_state, input_hp.test_size)
+        
 #       print("Upsert split on the graph")
 #       split.upsert_split(self.graph, df_split)
 
