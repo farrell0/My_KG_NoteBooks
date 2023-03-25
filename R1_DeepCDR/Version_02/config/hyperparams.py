@@ -33,10 +33,10 @@ class InputConfig:
     #  gdsc_path: str                       = "gs://katana-demo-datasets/csv-datasets/DeepCDR/gdsc.csv"
     #  genes_path: str                      = "gs://katana-demo-datasets/csv-datasets/DeepCDR/genes.csv"
     #
-    cell_lines_path: str                 = "gs://katana-demo-datasets/csv-datasets/DeepCDR/cell_lines.csv"
-    drugs_path: str                      = "gs://katana-demo-datasets/csv-datasets/DeepCDR/drugs.csv"
-    gdsc_path: str                       = "gs://katana-demo-datasets/csv-datasets/DeepCDR/gdsc.csv"
-    genes_path: str                      = "gs://katana-demo-datasets/csv-datasets/DeepCDR/genes.csv"
+    cell_lines_path: str                 = "gs://bucket-farrell/DeepCDR/cell_lines.csv"
+    drugs_path: str                      = "gs://bucket-farrell/DeepCDR/drugs.csv"
+    gdsc_path: str                       = "gs://bucket-farrell/DeepCDR/gdsc.csv"
+    genes_path: str                      = "gs://bucket-farrell/DeepCDR/genes.csv"
 
     # Edges paths
     #
@@ -45,16 +45,13 @@ class InputConfig:
     # cell_line_gene_expression_path: str  = "gs://katana-demo-datasets/csv-datasets/DeepCDR/cell_line_gene_expression_edges.csv"
     # cell_line_gene_methylation_path: str = "gs://katana-demo-datasets/csv-datasets/DeepCDR/cell_line_gene_methylation_edges.csv"
     # cell_line_gene_mutation_path: str    = "gs://katana-demo-datasets/csv-datasets/DeepCDR/cell_line_gene_mutation_edges.csv"
-    gdsc_cell_line_path: str             = "gs://katana-demo-datasets/csv-datasets/DeepCDR/gdsc_cell_line_edges.csv"
-    gdsc_drug_path: str                  = "gs://katana-demo-datasets/csv-datasets/DeepCDR/gdsc_drug_edges.csv"
-    cell_line_gene_expression_path: str  = "gs://katana-demo-datasets/csv-datasets/DeepCDR/cell_line_gene_expression_edges.csv"
-    cell_line_gene_methylation_path: str = "gs://katana-demo-datasets/csv-datasets/DeepCDR/cell_line_gene_methylation_edges.csv"
-    cell_line_gene_mutation_path: str    = "gs://katana-demo-datasets/csv-datasets/DeepCDR/cell_line_gene_mutation_edges.csv"
+    gdsc_cell_line_path: str             = "gs://bucket-farrell/DeepCDR/gdsc_cell_line_edges.csv"
+    gdsc_drug_path: str                  = "gs://bucket-farrell/DeepCDR/gdsc_drug_edges.csv"
+    cell_line_gene_expression_path: str  = "gs://bucket-farrell/DeepCDR/cell_line_gene_expression_edges.csv"
+    cell_line_gene_methylation_path: str = "gs://bucket-farrell/DeepCDR/cell_line_gene_methylation_edges.csv"
+    cell_line_gene_mutation_path: str    = "gs://bucket-farrell/DeepCDR/cell_line_gene_mutation_edges.csv"
     
     
-    
-    
-
     # Split parameters
     test_size: float = 0.05
     random_state: int = 42
