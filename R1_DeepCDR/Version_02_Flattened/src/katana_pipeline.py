@@ -75,17 +75,17 @@ class RecipePipeline:
     @utils.disable_warnings
     def feature_generator(self) -> None:
         """Preprocessing and generation of features in the graph"""
-#       features = {
-#           "HAS_EXPRESSION_OBSERVATION": "genomics_expression",
-#           "HAS_METHYLATION_OBSERVATION": "genomics_methylation",
-#           "HAS_MUTATION_OBSERVATION": "genomics_mutation",
-#       }
-#       for u, v in features.items():
-#           print(f"Collecting {v} features...")
-#           preprocessing.set_cell_line_property(self.graph, u, v)
+        features = {
+            "HAS_EXPRESSION_OBSERVATION": "genomics_expression",
+            "HAS_METHYLATION_OBSERVATION": "genomics_methylation",
+            "HAS_MUTATION_OBSERVATION": "genomics_mutation",
+        }
+        for u, v in features.items():
+            print(f"Collecting {v} features...")
+            preprocessing.set_cell_line_property(self.graph, u, v)
 
-#       print("Deleting Cell lines with NULL features...")
-#       preprocessing.remove_null_cells(self.graph)
+        print("Deleting Cell lines with NULL features...")
+        preprocessing.remove_null_cells(self.graph)
         print("Deleting single nodes")
         preprocessing.delete_single_node(self.graph)
         
