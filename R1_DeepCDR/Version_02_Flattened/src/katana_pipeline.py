@@ -115,6 +115,11 @@ class RecipePipeline:
             )
         )
         split_df = split_df.sort_values(by=["drug_id", "cell_line_id", "label"]).reset_index(drop=True)
+        
+        #  MMM,  I added this next line,
+        #
+        split_df = {x for x in split_df if x[0] is not None}
+
         df_split = split.generate_split(split_df, input_hp.random_state, input_hp.test_size)
         
 #       print("Upsert split on the graph")
