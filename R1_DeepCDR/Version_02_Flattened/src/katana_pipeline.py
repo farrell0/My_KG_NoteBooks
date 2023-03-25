@@ -101,8 +101,8 @@ class RecipePipeline:
             input_hp: The graph input parameters.
         """
 
-#       print("Deleting old split")
-#       split.delete_split(self.graph)
+        print("Deleting old split")
+        split.delete_split(self.graph)
         
         print("Generating split")
         split_df = pandas.concat(
@@ -118,7 +118,7 @@ class RecipePipeline:
         
         #  MMM,  I added this next line,
         #
-        split_df = {x for x in split_df if x[0] is not None}
+#       split_df = {x for x in split_df if x[0] is not None}
 
         df_split = split.generate_split(split_df, input_hp.random_state, input_hp.test_size)
         
