@@ -41,6 +41,10 @@ class InputConfig:
     #     cell_line_gene_expression_path: str = "gs://katana-demo-datasets/csv-datasets/DeepCDR/cell_line_gene_expression_edges.csv"
     #     cell_line_gene_methylation_path: str = "gs://katana-demo-datasets/csv-datasets/DeepCDR/cell_line_gene_methylation_edges.csv"
     #     cell_line_gene_mutation_path: str = "gs://katana-demo-datasets/csv-datasets/DeepCDR/cell_line_gene_mutation_edges.csv"
+    
+    
+    
+    
 
     # Split parameters
     test_size: float = 0.05
