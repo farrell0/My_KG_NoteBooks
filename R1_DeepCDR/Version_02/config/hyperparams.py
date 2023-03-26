@@ -15,7 +15,8 @@ class InputConfig:
     """Data class that includes all the parameters needed to setup the recipe."""
 
     # Number of partitions
-    num_partitions: int = 4
+    #  num_partitions: int = 4
+    num_partitions: int = 8
 
     # Trained graph
     use_train_rdg: bool = False
