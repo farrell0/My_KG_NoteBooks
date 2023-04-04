@@ -1,0 +1,138 @@
+
+
+
+
+   Reference ..
+   ======================================================
+
+   https://docs.k9h.dev/latest/user-guides/apps/analytics_remote.html
+   https://neo4j.com/blog/graph-algorithms-neo4j-single-source-shortest-path/
+
+   Was,
+      #  https://github.com/KatanaGraph/katana-enterprise/blob/master/python/test/notebooks/docs/user-guides/apps/analytics_remote.ipynb
+   Now,
+      https://github.com/KatanaGraph/katana-enterprise/blob/master/python/test/notebooks/red/analytics_remote.ipynb
+
+
+   # nomad job stop -purge graph-worker
+   # katana reset
+
+
+   with open('/dev/null', 'w') as f:
+      with contextlib.redirect_stdout(f):
+         graph.query(...
+
+
+   Other stuff/projects ..
+   ======================================================
+
+   https://github.com/conda-forge/miniforge
+
+
+   Airport thing
+   ======================================================
+
+                                              MKE
+                                            x
+                                           /
+                                          /
+      SJC                           ORD  /
+          x  .........................  x 
+             \                     /
+                \               /
+                   \         /
+                      \   /
+                        x
+                          DEN
+
+      .  Travel East, not West
+      .  Connection time   (walk between gates)
+      .  Number of hops
+
+
+   .  High traffic nodes
+   .  Planes gone to bed, fuel
+
+
+   Our SSSP
+   ======================================================
+
+   RDG,
+      https://console.cloud.google.com/storage/browser/katana-demo-datasets/rdg-datasets/v3/rmat10_symmetric
+
+   analytics.sssp(
+      my_graph,
+      weight_property      = "DISTANCE",
+      source               = l_source,
+      result_property_name = l_prop_name,
+      max_iterations       = l_sssp_max_iterations,
+      delta                = l_sssp_delta,
+      )
+
+
+   Justin:
+   ------------------------------------------
+      Paths: SSSP, Dijkstra, BFS, DFS, A*, weighted SP
+
+      Clustering: Louvain, Weakly connected components, triangle count
+      Centrality: Pagerank, degree, betweenness, closeness
+      Similarity: Jaccard, Pearson, Cosine, KNN
+      AI: FastRP, GNN, GraphSage, Node2vec
+      ML: Link prediction
+
+   Amy:
+   ------------------------------------------
+      Pathfinding
+      Centrality
+      Community detection
+
+
+   Amy book
+   ======================================================
+
+   Breadth first search
+      Goal oriented; shortest path, connected components, closeness centrality
+   Depth first search
+      Simulate possible paths, mazes
+
+   Eulerian; visit every relationship once, can repeat nodes
+      Konigsburg bridge, snow plow, deliver mail
+   Hamiltonian; visit every node once, can repeat edges
+      Traveling salesman
+
+   Weight, time, distance, cost, capacity
+
+   Logistics; optimal route
+   Least cost call, IP routing
+
+   Shortest path
+      Between 2 nodes
+      Best known, Dijstra
+         Starts with lowest weight, keeps accum total
+      Use cases
+         Driving
+         Alternate route (road closure)
+      Variations
+         A*
+            For example, Neo; uses geospatial distance as a hueristic
+         Yen's
+            Also calculates 2nd and 3rd shortest (K-SP)
+   Single source shortest path (SSSP), All pairs shortest path
+      Shortest path from a given node, to all other nodes
+      Phone call rotuing
+      (Lowest accumulative weight from the root, to each node)           <-- Page 40 to diff these 2
+   Minimum spanning tree
+      Smallest cost for visting all nodes from a given node
+      Optimized connected routing; laying cable, garbage collection, traveling salesman
+      ??  What about a subgraph of nodes
+      (Lowest weight to next node only)
+   Random walk
+      Generate data for ML
+
+   Pg 52; Do we have these steps ?
+
+
+
+
+
+

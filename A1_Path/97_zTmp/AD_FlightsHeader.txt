@@ -1,0 +1,8 @@
+
+
+KATANA_DEFAULT_LABEL=IS_LOCATED_IN
+:START_ID(airports)|:END_ID(airports)|DISTANCE|NUM_HOPS
+AB_Flights.txt
+
+
+
