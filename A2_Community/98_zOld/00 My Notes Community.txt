@@ -1,0 +1,113 @@
+
+
+
+
+   Reference ..
+   ======================================================
+
+
+   Airport thing
+   ======================================================
+
+                                              MKE
+                                            x
+                                           /
+                                          /
+      SJC                           ORD  /
+          x  .........................  x 
+             \                     /
+                \               /
+                   \         /
+                      \   /
+                        x
+                          DEN
+
+      .  Travel East, not West
+      .  Connection time   (walk between gates)
+      .  Number of hops
+
+
+   .  High traffic nodes
+   .  Planes gone to bed, fuel
+
+
+   Our Community
+   ======================================================
+
+   Connected components
+   Community detection using label propagation
+   Louvain
+   Local clustering coefficient
+   Triangle counting
+   K-Core
+   K-truss
+
+
+   Justin:
+   ------------------------------------------
+      Paths: SSSP, Dijkstra, BFS, DFS, A*, weighted SP
+
+      Clustering: Louvain, Weakly connected components, triangle count
+
+      Centrality: Pagerank, degree, betweenness, closeness
+      Similarity: Jaccard, Pearson, Cosine, KNN
+      AI: FastRP, GNN, GraphSage, Node2vec
+      ML: Link prediction
+
+   Mono-parthied == homogeneous
+
+
+   My stuff
+   ------------------------------------------
+
+   .  Which airports are hubs ?
+   .  Does the airline employ a hub and spoke, or not ?
+   .  Differently/possibly than num 1 above; Which airports are airplane service centers ?
+   .  International flight, but you clear customs on the source, not destination ?    (Common; Canada to US)
+   .  Airport is only a fuel stop, not a destination by itself ?  (N.Africa, between US and S.Africa)
+
+
+   Amy book
+   ======================================================
+
+    Triangle count                              +--|  Relationship density
+   Clustering coefficent                        +--|
+      Group stability, small world behaviors
+         --
+      Triangle; 3 nodes, where each node has relationship to all other nodes
+   Strongly connected components (bi-directional) 
+      Recommendation egine
+      Group with similar behavior, inclicnation
+   Connected components (uni-directional okay)
+      Finding connected clusters
+      Sets where all nodes can rach all other nodes
+      Product recommendation, identify islands (similar behaviors ?)
+         --
+      Commonly DFS
+   Label propagation
+      Quickly inferring groups based on node labels
+      Consensus in social communities, dangerous combinations of co-prescribed drugs
+   Louvain modularity
+      Grouping quality, hierarchies
+      Fraud ring
+
+          x
+          |
+          |                 Number of triangles (2)  * 2
+   x-----(n)---------x           -----------------
+   |     / \                Degree of node DON  *  (DON -1)
+   |    /   \                        5                4
+   |   /     \
+   |  /       \                   4/20 == .20
+   x-----------x
+                            ** Degree of node, number of relationships
+
+
+
+
+
+
+
+
+
+
