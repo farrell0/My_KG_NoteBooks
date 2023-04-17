@@ -21,7 +21,7 @@ toggle_code_prepare_str = '''
 
 display(HTML(toggle_code_prepare_str + toggle_code_str))
 
-def hide_sloution():
+def hide_solution():
     display(HTML(toggle_code_str))
     
     
