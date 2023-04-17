@@ -1,5 +1,7 @@
 
-from IPython.core.display import display, HTML
+#  from IPython.core.display import display, HTML
+from IPython.display import display, HTML
+
 toggle_code_str = '''
 <form action="javascript:code_toggle()"><input type="submit" id="toggleButton" value="Show Sloution"></form>
 '''
