@@ -20,7 +20,7 @@
 #
 #     .  How you access this server-
 #
-#        ..  You can run the 00_simple_client.py program in this same
+#        ..  You can run the C00_simple_client.py program in this same
 #            folder.
 #
 #        ..  Because of the parameter below (graphiql = True), you can also
