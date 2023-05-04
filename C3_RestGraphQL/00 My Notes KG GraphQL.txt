@@ -1,0 +1,93 @@
+
+
+
+
+   Software pre-reqs
+   ==========================================================
+
+   A number of Python packages must be present for this code to work
+
+      pip install flask flask_graphql graphene extraction requests
+
+
+   Creating an Http tunnel from your laptop to the Jupyter pod
+   ==========================================================
+
+   Given a kubectl that connects to the Kubernetes cluster
+   And a namespace titled, product-sandbox
+   And a user titled, farrell
+
+      kubectl -n product-sandbox get pods | grep farrell
+
+         >>> std-8-katana-notebook-farrell                                1/1     Running                  0                  17h
+
+   To create a port forward, run,
+
+      kubectl port-forward std-8-katana-notebook-farrell -n product-sandbox 5000:5000
+
+         Forwarding from 127.0.0.1:5000 -> 5000
+         Forwarding from [::1]:5000 -> 5000
+         Handling connection for 5000
+         Handling connection for 5000
+
+
+   GraphQL queries you can use
+   ==========================================================
+
+   #  In the Web UI, a query for one Airport
+   #
+   query {
+     airport(airportCode: "SJC") {
+     airportCode
+     airportName
+     LABEL
+     }
+   }
+
+
+   #  A unioned select
+   #
+   #  This example displays overfetching and underfetching
+   #
+   query {
+     airport1: airport (airportCode: "ORD") {
+       airportName
+       }
+     airport2: airport (airportCode: "MKE") {
+       airportName
+       LABEL
+       }
+   }
+
+
+   #  One of many built in schema operators
+   #
+   query {
+      __schema {
+        types {
+          name
+          description
+          }
+       }
+    }
+
+
+   #  Creating a new Airport record
+   #
+   mutation {
+     createAirport(
+       airportCode: "NEW",
+       airportName: "NEW_AIRPORT",
+       LABEL:       "Airport"
+       )
+     {
+     airport {
+       airportName
+       LABEL
+     }
+     }
+   }
+
+
+
+
