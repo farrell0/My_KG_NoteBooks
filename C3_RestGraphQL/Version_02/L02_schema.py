@@ -104,6 +104,7 @@ class Query(graphene.ObjectType):
    def resolve_airport(self, info, airportCode):
       #  l_result =  pd.DataFrame( get_airport(airportCode) )
       l_result =  get_airport(airportCode) 
+      print(type(l_result))
          #
         
       return l_result
