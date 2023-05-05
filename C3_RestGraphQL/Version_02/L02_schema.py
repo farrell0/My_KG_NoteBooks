@@ -57,6 +57,7 @@ def get_airport(airport_code):
       """.format(airport_code) )
          #
     
+   l_result = pd.DataFrame(my_graph.query_unpaginated(l_query))
    l_return = l_result    # [0].to_dict()
     
     
@@ -72,7 +73,7 @@ def add_airport(airport_code, airport_name, LABEL):
       
       """.format(LABEL, airport_code, airport_name)
 
-   l_result = pd.DataFrame(my_graph.query_unpaginated(l_query))
+   l_result = my_graph.query_unpaginated(l_query)
          #
    return True
 
