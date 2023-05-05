@@ -53,7 +53,7 @@ def get_airport(airport_code):
       MATCH (n: Airport) 
       WHERE n.airport_code = '{0}'
       // RETURN n.airport_code AS airportCode, n.airport_name AS airportName, LABELS(n)[0] AS LABEL
-      RETURN n
+      RETURN n.airport_code AS airportCode
       
       """.format(airport_code) )
          #
