@@ -101,11 +101,14 @@ class Query(graphene.ObjectType):
       #  l_result =  pd.DataFrame( get_airport(airportCode) )
       l_result =  get_airport(airportCode) 
          #
-      return Airport(
-         airportCode = l_result.airportCode,
-         airportName = l_result.airportName,
-         LABEL       = l_result.LABEL,
-         )
+        
+      return l_result
+        
+#     return Airport(
+#        airportCode = l_result.airportCode,
+#        airportName = l_result.airportName,
+#        LABEL       = l_result.LABEL,
+#        )
 
 
    ###
