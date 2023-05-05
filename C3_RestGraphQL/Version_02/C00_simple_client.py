@@ -51,7 +51,7 @@ l_query = """
 l_result = requests.post("http://localhost:5000/", params = {"query": l_query})
    #
 print()
-print(l_result.json)
+print(l_result.json())
 print()
 
 
