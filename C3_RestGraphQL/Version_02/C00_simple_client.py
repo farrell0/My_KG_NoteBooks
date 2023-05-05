@@ -48,8 +48,8 @@ l_query = """
 }
 """
 
-l_result = requests.post("http://localhost:5000/", params = {"query": l_query}, json = payload)
-#  l_result.encoding = "utf-8"
+l_result = requests.post("http://localhost:5000/", params = {"query": l_query})
+l_result.encoding = "utf-8"
    #
 print()
 print(l_result.json())
