@@ -95,9 +95,9 @@ class Query(graphene.ObjectType):
    #  GraphQL Query string, [ and ] in the 'resolve_'
    #  method below ..
 
-   airport = graphene.Field(Airport, airportCode = graphene.String(), airportName = graphene.String(), LABEL = graphene.String())
+   airport44 = graphene.Field(Airport, airportCode = graphene.String(), airportName = graphene.String(), LABEL = graphene.String())
     
-   def resolve_airport(self, info, airportCode):
+   def resolve_airport44(self, info, airportCode):
       l_result =  pd.DataFrame( get_airport(airportCode) )
          #
       return Airport(
