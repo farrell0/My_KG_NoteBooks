@@ -52,13 +52,16 @@ def get_airport(airport_code):
 
       MATCH (n: Airport) 
       WHERE n.airport_code = '{0}'
-      RETURN n.airport_code AS airportCode, n.airport_name AS airportName, LABELS(n)[0] AS LABEL
+      // RETURN n.airport_code AS airportCode, n.airport_name AS airportName, LABELS(n)[0] AS LABEL
+      RETURN n
       
       """.format(airport_code) )
          #
     
    l_return = pd.DataFrame(l_result).to_dict()
+   print("lll")
    print(l_return)
+   print("lll")
     
     
    return l_return
