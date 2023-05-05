@@ -56,7 +56,11 @@ def get_airport(airport_code):
       
       """.format(airport_code) )
          #
-   return l_result
+    
+   l_return = l_result 
+    
+    
+   return l_return
 
 
 def add_airport(airport_code, airport_name, LABEL):
