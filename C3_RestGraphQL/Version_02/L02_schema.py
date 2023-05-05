@@ -111,25 +111,25 @@ class Query(graphene.ObjectType):
    ###
     
 
-class CreateAirport(graphene.Mutation):
-    
-   class Arguments:
-      airportCode = graphene.String()
-      airportName = graphene.String()
-      LABEL       = graphene.String()
-
-   airport = graphene.Field(lambda: Airport)
-
-   def mutate(root, info, airportCode, airportName, LABEL):
-         #
-      add_airport(airportCode, airportName, LABEL)
-      airport = Airport(airportCode = airportCode, airportName = airportName, LABEL = LABEL)
-         #
-      return CreateAirport(airport = airport)
-
-
-class Mutate(graphene.ObjectType):
-    create_airport = CreateAirport.Field()
+#  class CreateAirport(graphene.Mutation):
+#      
+#     class Arguments:
+#        airportCode = graphene.String()
+#        airportName = graphene.String()
+#        LABEL       = graphene.String()
+#  
+#     airport = graphene.Field(lambda: Airport)
+#  
+#     def mutate(root, info, airportCode, airportName, LABEL):
+#           #
+#        add_airport(airportCode, airportName, LABEL)
+#        airport = Airport(airportCode = airportCode, airportName = airportName, LABEL = LABEL)
+#           #
+#        return CreateAirport(airport = airport)
+#  
+#  
+#  class Mutate(graphene.ObjectType):
+#      create_airport = CreateAirport.Field()
     
     
 ####################################################
@@ -138,7 +138,8 @@ class Mutate(graphene.ObjectType):
 #  Surface all of the contents of this file for use by our Python Flask
 #  Web server
 #
-l_schema = graphene.Schema(query = Query, mutation = Mutate, types = [Airport])
+#  l_schema = graphene.Schema(query = Query, mutation = Mutate, types = [Airport])
+l_schema = graphene.Schema(query = Query, types = [Airport])
 
 
 
