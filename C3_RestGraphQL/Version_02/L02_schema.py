@@ -95,7 +95,7 @@ class Query(graphene.ObjectType):
    #  GraphQL Query string, [ and ] in the 'resolve_'
    #  method below ..
 
-   #  airport = graphene.Field(Airport, airportCode = graphene.String())
+   airport = graphene.Field(Airport, airportCode = graphene.String())
    #  print("LLL")
    #  print(airport)
    #  print()
