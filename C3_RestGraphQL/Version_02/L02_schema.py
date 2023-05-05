@@ -57,7 +57,7 @@ def get_airport(airport_code):
       """.format(airport_code) )
          #
     
-   l_return = pd.DataFrame(l_result).to_dict().values()
+   l_return = pd.DataFrame(l_result).to_dict()
     
     
    return l_return
