@@ -57,8 +57,7 @@ def get_airport(airport_code):
       """.format(airport_code) )
          #
     
-   l_result = pd.DataFrame(my_graph.query_unpaginated(l_query))
-   l_return = l_result    # [0].to_dict()
+   l_return = pd.DataFrame(l_result).to_dict()
     
     
    return l_return
