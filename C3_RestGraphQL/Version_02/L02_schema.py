@@ -57,7 +57,7 @@ def get_airport(airport_code):
       """.format(airport_code) )
          #
     
-   l_return = l_result 
+   l_return = l_result[0].to_dict()
     
     
    return l_return
