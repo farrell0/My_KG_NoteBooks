@@ -98,7 +98,8 @@ class Query(graphene.ObjectType):
    airport = graphene.Field(Airport, airportCode = graphene.String(), airportName = graphene.String(), LABEL = graphene.String())
     
    def resolve_airport(self, info, airportCode):
-      l_result =  pd.DataFrame( get_airport(airportCode) )
+      #  l_result =  pd.DataFrame( get_airport(airportCode) )
+      l_result =  get_airport(airportCode) 
          #
       return Airport(
          airportCode = l_result.airportCode,
