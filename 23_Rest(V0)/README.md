@@ -6,8 +6,7 @@
 
 <table>
   <tr>
-    <td><a href="../README.md"><strong>Archive Home</strong></a></td>
-    <td><strong>2016</strong></td><td><a href="../2017/README.md"><strong>2017</strong></a></td>
+    <td><a href="../2017/README.md"><strong>2017</strong></a></td><td><strong>2016</strong></td><td><a href="../README.md"><strong>Archive Home</strong></a></td>
   </tr>
 </table>
 

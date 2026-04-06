@@ -260,30 +260,31 @@ def markdown_path(path: str) -> str:
 
 
 def tabs_block(active: str) -> str:
-    root_cell = "<strong>Archive Home</strong>" if active == "home" else '<a href="../README.md"><strong>Archive Home</strong></a>'
-    year_cells = []
-    for year in YEARS:
+    cells = []
+    for year in reversed(YEARS):
         if year == active:
-            year_cells.append(f"<td><strong>{year}</strong></td>")
+            cells.append(f"<td><strong>{year}</strong></td>")
         else:
-            year_cells.append(f'<td><a href="../{year}/README.md"><strong>{year}</strong></a></td>')
+            cells.append(f'<td><a href="../{year}/README.md"><strong>{year}</strong></a></td>')
+    if active == "home":
+        cells.append("<td><strong>Archive Home</strong></td>")
+    else:
+        cells.append('<td><a href="../README.md"><strong>Archive Home</strong></a></td>')
     return (
         "<table>\n"
         "  <tr>\n"
-        f"    <td>{root_cell}</td>\n"
-        f"    {''.join(year_cells)}\n"
+        f"    {''.join(cells)}\n"
         "  </tr>\n"
         "</table>\n"
     )
 
 
 def root_tabs_block() -> str:
-    year_cells = "".join([f'<td><a href="{year}/README.md"><strong>{year}</strong></a></td>' for year in YEARS])
+    year_cells = "".join([f'<td><a href="{year}/README.md"><strong>{year}</strong></a></td>' for year in reversed(YEARS)])
     return (
         "<table>\n"
         "  <tr>\n"
-        "    <td><strong>Archive Home</strong></td>\n"
-        f"    {year_cells}\n"
+        f"    {year_cells}<td><strong>Archive Home</strong></td>\n"
         "  </tr>\n"
         "</table>\n"
     )
